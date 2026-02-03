@@ -68,7 +68,3 @@ cp -r ~/.config/omarchy/themes/coppernight/waybar/. ~/.config/waybar/ && \
 chmod +x ~/.config/waybar/scripts/* && \
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark' && \
 killall waybar; waybar &
-
-
-
-
