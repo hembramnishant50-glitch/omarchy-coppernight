@@ -3,18 +3,16 @@ import json
 import requests
 from datetime import datetime
 from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+from urllib3.util.retr
+y import Retry
 
 # ==============================================================================
 #  CONFIGURATION
 # ==============================================================================
-# Specify city as "New+York" or "New York" for a manual query
-# Use units="u" for USCS (Fahrenheit/Miles) or units="m" for Metric (Celsius)
 CITY = "New York" 
 UNITS = "m" 
 # ==============================================================================
 
-# Weather icons mapping
 WEATHER_CODES = {
     '113': '☀️', '116': '⛅', '119': '☁️', '122': '☁️', '143': '🌫', '176': '🌦', '179': '🌧', '182': '🌧', 
     '185': '🌧', '200': '⛈', '227': '🌨', '230': '❄️', '248': '🌫', '260': '🌫', '263': '🌦', '266': '🌦', 
@@ -46,16 +44,25 @@ def format_time(time_str):
 def get_weather():
     data = {}
     try:
+        # Improved Retry Strategy
         session = requests.Session()
-        retry = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
+        retry = Retry(
+            total=5, 
+            backoff_factor=1, 
+            status_forcelist=[429, 500, 502, 503, 504],
+            raise_on_status=False
+        )
         session.mount('https://', HTTPAdapter(max_retries=retry))
 
-        # Build request with location and unit override
         query_city = CITY.replace(" ", "+")
+        # Added a 10s timeout to prevent hanging the bar
         response = session.get(f"https://wttr.in/{query_city}?format=j1&{UNITS}", timeout=10)
+        
+        if response.status_code != 200:
+            raise ConnectionError(f"HTTP {response.status_code}")
+
         weather = response.json()
         
-        # Pull area and country directly from nearest_area data
         nearest_area = weather['nearest_area'][0]
         city_name = nearest_area['areaName'][0]['value']
         country_name = nearest_area['country'][0]['value']
@@ -70,17 +77,13 @@ def get_weather():
         humidity = current['humidity']
         unit_label = "°F" if UNITS == 'u' else "°C"
         
-        # --- HUD HEADER ---
         tt = "<b><span color='#89dceb'>╔════════ METEOROLOGICAL DATA ════════╗</span></b>\n"
-        
-        # --- CURRENT CONDITIONS ---
         tt += f"<b><span color='#89dceb'>║ LOCATION</span></b>   <span color='#cdd6f4'>{city_name.upper()}, {country_name.upper()}</span>\n"
         tt += f"<b><span color='#89dceb'>║ STATUS</span></b>     <span color='#cdd6f4'>{desc}</span>\n"
         tt += f"<b><span color='#89dceb'>║ TEMP</span></b>       <span color='#fab387'>{temp}{unit_label}</span> <span color='#6c7086'>(Feels: {current[feels_key]}{unit_label})</span>\n"
         tt += f"<b><span color='#89dceb'>║ HUMIDITY</span></b>   <span color='#45475a'>[{get_progress_bar(humidity)}]</span> <span color='#cdd6f4'>{humidity}%</span>\n"
         tt += "<b><span color='#89dceb'>╠═════════════════════════════════════╣</span></b>\n"
         
-        # --- 24-HOUR HOURLY TRAJECTORY ---
         tt += "<b><span color='#f9e2af'>║ 24-HOUR TRAJECTORY                  ║</span></b>\n"
         hourly_data = []
         for day in weather['weather'][:2]: 
@@ -95,19 +98,14 @@ def get_weather():
             tt += f"<b><span color='#89dceb'>║</span></b> <span color='#cdd6f4'>{h_time:<9}</span> {h_icon} <span color='#fab387'>{h_temp:<4}</span> <span color='#89b4fa'>󰖗 {h_rain:>3}</span>\n"
 
         tt += "<b><span color='#89dceb'>╠═════════════════════════════════════╣</span></b>\n"
-        
-        # --- DAILY FORECAST ---
         tt += "<b><span color='#cba6f7'>║ DAILY FORECAST                      ║</span></b>\n"
         for day in weather['weather']:
             date_obj = datetime.strptime(day['date'], "%Y-%m-%d")
             day_name = date_obj.strftime("%A")
-            
             m_temp = day['maxtemp' + ('F' if UNITS == 'u' else 'C')]
             n_temp = day['mintemp' + ('F' if UNITS == 'u' else 'C')]
-            
             noon_code = day['hourly'][4]['weatherCode']
             d_icon = WEATHER_CODES.get(noon_code, '✨')
-            
             tt += f"<b><span color='#89dceb'>║</span></b> <span color='#cdd6f4'>{day_name[:9]:<10}</span> {d_icon}  <span color='#fab387'>{m_temp}°/{n_temp}°</span>\n"
         
         tt += "<b><span color='#89dceb'>╚═════════════════════════════════════╝</span></b>"
@@ -115,9 +113,10 @@ def get_weather():
         data['text'] = f"{WEATHER_CODES.get(code, '✨')} {temp}{unit_label}"
         data['tooltip'] = tt
         
-    except Exception as e:
-        data['text'] = "󰖪 Offline"
-        data['tooltip'] = f"<span color='#f38ba8'><b>Error:</b></span> {str(e)}"
+    except Exception:
+        # Silent fail: keeps the icon but shows we are disconnected
+        data['text'] = "󰖪 --°" 
+        data['tooltip'] = "<b><span color='#f38ba8'>Offline</span></b>\nConnecting..."
 
     return data
 

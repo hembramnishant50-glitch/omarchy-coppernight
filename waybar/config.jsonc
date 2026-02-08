@@ -70,15 +70,16 @@
         "return-type": "json",
         "interval": 2,
         "format": "{}", 
-        "on-click": "foot --title='System Monitor' sh -c 'btop' || alacritty -e htop", 
+        "on-click": "omarchy-launch-or-focus-tui btop", 
         "tooltip": true
     },
 
     "custom/weather": {
-        "exec": "python ~/.config/waybar/scripts/weather.py",
-        "return-type": "json",
-        "interval": 1800,
-        "format": "{}"
+    "exec": "python ~/.config/waybar/scripts/weather.py",
+    "return-type": "json",
+    "interval": 600,         // Refresh every 10 minutes normally
+    "signal": 1,             // Allows you to force refresh manually
+    "format": "{}"
     },
 
     "pulseaudio": {
