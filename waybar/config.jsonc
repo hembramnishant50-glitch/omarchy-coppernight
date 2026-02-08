@@ -75,11 +75,11 @@
     },
 
     "custom/weather": {
-    "exec": "python ~/.config/waybar/scripts/weather.py",
+    "exec": "python /home/nishant/.config/waybar/scripts/weather.py", // Use full path
     "return-type": "json",
-    "interval": 600,         // Refresh every 10 minutes normally
-    "signal": 1,             // Allows you to force refresh manually
-    "format": "{}"
+    "interval": 600,
+    "format": "{}",
+    "tooltip": true
     },
 
     "pulseaudio": {

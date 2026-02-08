@@ -14,7 +14,7 @@
 window#waybar {
     background-color: #11111b;
     color: #cdd6f4;
-    border-bottom: 2px solid #fab387;
+    border-bottom: 2px solid #fab387; /* Omarchy Peach Border */
 }
 
 /* -----------------------------------------------------
@@ -49,25 +49,45 @@ window#waybar {
 #custom-weather, 
 #battery {
     padding: 0 10px;
-    margin: 4px 2px; /* Adds space between modules */
-    border-radius: 10px; /* ROUNDNESS FIX for hover effects */
-    transition: background 0.3s ease;
+    margin: 4px 2px; 
+    border-radius: 12px; /* Set base roundness for clean hover shapes */
+    transition: all 0.3s ease;
 }
 
-/* Add a subtle hover effect to these text modules */
+/* Rounded Hover Effects for all Text Modules */
 #clock:hover, 
 #pulseaudio:hover, 
 #network:hover, 
 #custom-weather:hover, 
 #battery:hover {
-    background: rgba(88, 91, 112, 0.3);
+    background: rgba(137, 180, 250, 0.15); /* Light blue tint on hover */
+    border-radius: 12px; /* The roundness when cursor is on top */
 }
 
 /* Specific Colors */
 #clock { color: #cba6f7; font-weight: bold; }
-#custom-weather { color: #94e2d5; }
 #pulseaudio { color: #a6e3a1; }
 #network { color: #89dceb; }
+
+/* -----------------------------------------------------
+   Weather Module (Offline & Animation)
+   ----------------------------------------------------- */
+#custom-weather { 
+    color: #94e2d5; 
+}
+
+/* When searching for signal (󰚄) */
+#custom-weather.offline {
+    color: #f38ba8; 
+    font-weight: bold;
+    animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
 
 /* -----------------------------------------------------
    System Module (The "Pill")
@@ -75,7 +95,7 @@ window#waybar {
 #custom-system { 
     color: #cdd6f4; 
     background: rgba(49, 50, 68, 0.5); 
-    border-radius: 12px; /* Increased Roundness */
+    border-radius: 12px; 
     margin: 4px 4px;
     padding: 0 12px;
 }
@@ -94,15 +114,15 @@ window#waybar {
 }
 
 /* -----------------------------------------------------
-   TOOLTIPS (The Main Fix)
+   TOOLTIPS
    ----------------------------------------------------- */
 tooltip {
     background: #11111b; 
-    border: 2px solid #fab387; /* Peach Border */
-    border-radius: 08px; /* FIX: Smoother, rounder corners */
+    border: 2px solid #fab387; 
+    border-radius: 8px; 
 }
 
 tooltip label {
     font-family: "JetBrainsMono Nerd Font";
-    padding: 16px; /* More breathing room */
+    padding: 16px; 
 }

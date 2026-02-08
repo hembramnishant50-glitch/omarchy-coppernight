@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 import json
 import requests
+import sys
 from datetime import datetime
 from requests.adapters import HTTPAdapter
-from urllib3.util.retr
-y import Retry
+from urllib3.util.retry import Retry
 
 # ==============================================================================
 #  CONFIGURATION
@@ -44,23 +44,13 @@ def format_time(time_str):
 def get_weather():
     data = {}
     try:
-        # Improved Retry Strategy
         session = requests.Session()
-        retry = Retry(
-            total=5, 
-            backoff_factor=1, 
-            status_forcelist=[429, 500, 502, 503, 504],
-            raise_on_status=False
-        )
+        retry = Retry(total=5, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504])
         session.mount('https://', HTTPAdapter(max_retries=retry))
 
         query_city = CITY.replace(" ", "+")
-        # Added a 10s timeout to prevent hanging the bar
         response = session.get(f"https://wttr.in/{query_city}?format=j1&{UNITS}", timeout=10)
-        
-        if response.status_code != 200:
-            raise ConnectionError(f"HTTP {response.status_code}")
-
+        response.raise_for_status()
         weather = response.json()
         
         nearest_area = weather['nearest_area'][0]
@@ -110,15 +100,18 @@ def get_weather():
         
         tt += "<b><span color='#89dceb'>╚═════════════════════════════════════╝</span></b>"
 
-        data['text'] = f"{WEATHER_CODES.get(code, '✨')} {temp}{unit_label}"
-        data['tooltip'] = tt
+        # IMPORTANT: Escape ampersands for Pango Markup to prevent Waybar hide
+        data['text'] = f"{WEATHER_CODES.get(code, '✨')} {temp}{unit_label}".replace("&", "&amp;")
+        data['tooltip'] = tt.replace("&", "&amp;")
         
-    except Exception:
-        # Silent fail: keeps the icon but shows we are disconnected
-        data['text'] = "󰖪 --°" 
-        data['tooltip'] = "<b><span color='#f38ba8'>Offline</span></b>\nConnecting..."
+    except Exception as e:
+        # 󰚄 is the "Satellite Dish" icon from Nerd Fonts
+        data['text'] = "󰚄 --°" 
+        data['tooltip'] = f"<b><span color='#f38ba8'>Searching for Signal...</span></b>\n{str(e)}"
 
     return data
 
 if __name__ == "__main__":
-    print(json.dumps(get_weather()))
+    # Use flush=True to ensure Waybar receives the output immediately
+    sys.stdout.write(json.dumps(get_weather()) + '\n')
+    sys.stdout.flush()
