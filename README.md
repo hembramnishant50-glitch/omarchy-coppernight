@@ -6,7 +6,7 @@
 
 A high-performance **Hyprland** rice for Omarchy featuring a custom **Tokyo Night** palette accented by a striking **Copper-Orange** border.
 
-![Version](https://img.shields.io/badge/version-1.0-orange?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.2-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
 ![Hyprland](https://img.shields.io/badge/Hyprland-Rice-indigo?style=for-the-badge&logo=archlinux)
 
