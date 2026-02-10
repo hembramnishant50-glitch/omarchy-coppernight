@@ -40,7 +40,7 @@ Run the following command to install this theme:
 omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git
 ```
 
-## 🚀 Easy Installation (One-Line)
+## 🚀 Easy Installation (One-Line) : Install Theme and Waybar
 
 This command installs all system dependencies (Python libraries, NetworkManager, and Papirus Icons), performs a safe backup of your existing Waybar config, and applies the Copper Night theme.
 
