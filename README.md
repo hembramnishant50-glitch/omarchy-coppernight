@@ -31,7 +31,6 @@ A high-performance **Hyprland** rice for Omarchy featuring a custom **Tokyo Nigh
 | 🎨 **Colors** | Deep Indigos, Magentas, and Copper-Orange accents. |
 
 ---
-## ⚙️ Configuration
 
 ## Installation Only Theme
 
@@ -40,6 +39,23 @@ Run the following command to install this theme:
 ```bash
 omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git
 ```
+
+## 🚀 Easy Installation (One-Line)
+
+This command installs all system dependencies (Python libraries, NetworkManager, and Papirus Icons), performs a safe backup of your existing Waybar config, and applies the Copper Night theme.
+
+```bash
+sudo pacman -S --needed python-requests python-psutil networkmanager papirus-icon-theme && \
+omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git && \
+{ [ -d ~/.config/waybar ] && mv ~/.config/waybar ~/.config/waybar-backup-$RANDOM; }; \
+mkdir -p ~/.config/waybar && \
+cp -r ~/.config/omarchy/themes/coppernight/waybar/. ~/.config/waybar/ && \
+chmod +x ~/.config/waybar/scripts/* && \
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark' && \
+killall waybar; waybar &
+```
+
+## ⚙️ Configuration
 
 ### 🌤️ Changing the Weather Location
 The weather widget is set to **New York** by default. To change this to your city:
@@ -88,17 +104,4 @@ cp -r ~/.config/omarchy/current/theme/scripts ~/.config/omarchy/current/theme/qu
 chmod +x ~/.config/hypr/scripts/*
 ```
 
-## 🚀 Easy Installation (One-Line)
-
-This command installs all system dependencies (Python libraries, NetworkManager, and Papirus Icons), performs a safe backup of your existing Waybar config, and applies the Copper Night theme.
-
-```bash
-sudo pacman -S --needed python-requests python-psutil networkmanager papirus-icon-theme && \
-omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git && \
-{ [ -d ~/.config/waybar ] && mv ~/.config/waybar ~/.config/waybar-backup-$RANDOM; }; \
-mkdir -p ~/.config/waybar && \
-cp -r ~/.config/omarchy/themes/coppernight/waybar/. ~/.config/waybar/ && \
-chmod +x ~/.config/waybar/scripts/* && \
-gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark' && \
-killall waybar; waybar &
 
