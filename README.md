@@ -103,11 +103,34 @@ cp -r ~/.config/omarchy/current/theme/scripts ~/.config/omarchy/current/theme/qu
 # Make scripts executable
 chmod +x ~/.config/hypr/scripts/*
 ```
-## 🖼️ Customization
+### 🖼️ Customizing Lock Screen Images
 
-### 🔒 Changing Lock Screen & Profile Picture
-To change the lock screen background or your profile picture, navigate to the theme's asset folder:
+To change your **Profile Picture** or **Background Wallpaper**, you need to edit the Hyprlock configuration file directly.
 
-```bash
-cd ~/.config/omarchy/current/theme/Lockscreen
+1.  **Open the configuration file:**
+    ```bash
+    nano ~/.config/hypr/hyprlock.conf
+    ```
+
+2.  **Find and Edit the Image Paths:**
+    * Look for the `background { ... }` section to change the wallpaper.
+    * Look for the `image { ... }` section to change the profile picture.
+    * Update the `path = ...` line to point to your desired `.jpg` or `.png` file.
+
+    **Example:**
+    ```ini
+    background {
+        monitor =
+        path = /home/nishant/Pictures/my-wallpaper.jpg   # <--- Change this path
+        color = rgba(25, 20, 20, 1.0)
+        blur_passes = 0
+    }
+
+    image {
+        monitor =
+        path = /home/nishant/Pictures/me.png             # <--- Change this path
+        size = 150
+        ...
+    }
+    ```
 
