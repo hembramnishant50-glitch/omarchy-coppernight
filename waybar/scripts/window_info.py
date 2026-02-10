@@ -84,7 +84,8 @@ APP_MAP = {
     "edge":       ("", "#0078d7", "Edge"),
     "opera":      ("", "#ff1b2d", "Opera"),
     "vivaldi":    ("", "#ef3939", "Vivaldi"),
-    "tor":        ("", "#7d4698", "Tor Browser"),
+    "tor-browser": ("", "#7d4698", "Tor Browser"), # Added variant for better matching
+   
 
     # --- 8. SYSTEM APPS ---
     "ghostty":    ("", "#cba6f7", "Ghostty"),
@@ -98,6 +99,38 @@ APP_MAP = {
     "vlc":        ("󰕼", "#ff9900", "VLC"),
     "obs":        ("", "#262626", "OBS Studio"),
     "steam":      ("", "#1b2838", "Steam"),
+    "calculator":   ("", "#4193f4", "Calculator"),
+    "helium":       ("󰈹", "#ffeb3b", "Helium"),
+    "basecamp":     ("", "#ffea00", "Basecamp"),
+    "docker":       ("", "#2496ed", "Docker"),
+    "fizzy":        ("󰭹", "#ff00ff", "Fizzy"),
+    "obsidian":     ("󱓧", "#7c4dff", "Obsidian"),
+    "hey":          ("󰮏", "#ffcc00", "HEY Mail"),
+    "aether":     ("󰲽", "#5e5ce6", "Aether"),
+    "Li.oever.aether":          ("󰲽", "#5e5ce6", "Aether"),
+    
+    # GNOME Specific Suite
+    "gnome-terminal": ("", "#3584e4", "Terminal"),
+    "gnome-system-monitor": ("󱓟", "#3584e4", "System Monitor"),
+    "gnome-control-center": ("⚙️", "#9a9996", "Settings"),
+    "gnome-weather":  ("🌦️", "#3584e4", "Weather"),
+    "gnome-clocks":   ("󰥔", "#3584e4", "Clocks"),
+    "gnome-maps":     ("⠈", "#3584e4", "Maps"),
+    "gnome-calendar": ("📅", "#ed333b", "Calendar"),
+    "gnome-contacts": ("👤", "#3584e4", "Contacts"),
+    "gnome-photos":   ("🖼️", "#3584e4", "Photos"),
+    "gnome-disks":    ("󰋊", "#9a9996", "Disks"),
+    "gnome-logs":     ("📜", "#9a9996", "Logs"),
+    "gnome-font-viewer": ("󰬶", "#3584e4", "Fonts"),
+    "gnome-characters": ("🔤", "#3584e4", "Characters"),
+    "gnome-software": ("🛍️", "#3584e4", "Software"),
+    "totem":          ("🎬", "#3584e4", "Videos"),
+    "gedit":          ("📝", "#4a86e8", "Gedit"),
+    "text-editor":    ("📝", "#4a86e8", "Text Editor"),
+    "evince":         ("📕", "#ed333b", "Document Viewer"),
+    "eog":            ("🖼️", "#3584e4", "Image Viewer"),
+    "loupe":          ("🖼️", "#3584e4", "Image Viewer"),
+    "baobab":         ("󰋊", "#3584e4", "Disk Usage"),
 }
 
 PATTERNS = [" ▃▆▄", " ▄▃▇", " ▆▃▅", " ▇▆▃", " ▃▅▇"]
