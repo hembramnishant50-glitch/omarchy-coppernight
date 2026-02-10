@@ -116,6 +116,10 @@ To change your **Profile Picture** or **Background Wallpaper**, you need to edit
     * Look for the `background { ... }` section to change the wallpaper.
     * Look for the `image { ... }` section to change the profile picture.
     * Update the `path = ...` line to point to your desired `.jpg` or `.png` file.
+    * **Blur Effect:** Adjust `blur_passes` and `blur_size` to change the glass effect.
+        * `blur_passes = 0` (No blur, sharp image)
+        * `blur_passes = 3` (Standard blur)
+        * `blur_size = 7` (Strength of the blur)
 
     **Example:**
     ```ini
