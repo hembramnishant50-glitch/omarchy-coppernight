@@ -73,9 +73,17 @@ To enable the custom lock screen and media controls, follow these steps:
 First, install `playerctl` and apply the necessary Flatpak permissions for Spotify integration.
 
 ```bash
-sudo pacman -S --needed playerctl && \
-flatpak override --user --talk-name=org.mpris.MediaPlayer2.spotify com.spotify.Client
-cp -r scripts quotes.txt hyprlock.conf ~/.config/hypr/ && \
+# 1. Install Playerctl (Media Controller)
+sudo pacman -S --needed playerctl
+
+# 2. Fix Spotify (Only if you use Flatpak version)
+if command -v flatpak &> /dev/null; then
+    flatpak override --user --talk-name=org.mpris.MediaPlayer2.spotify com.spotify.Client
+fi
+
+# 3. Install Config Files
+# Make sure you are inside the 'omarchy-coppernight-theme' folder!
+cp -r scripts quotes.txt hyprlock.conf ~/.config/hypr/
 chmod +x ~/.config/hypr/scripts/*
 ```
 
