@@ -2,10 +2,10 @@
 
 # Define 4 frames of a frequency wave
 wave_frames=(
-    "  ▂ ▃ ▄ ▆"
-    "▃ ▅ ▇ ▆ ▄"
-    "▆ ▄ ▂    "
-    "█ ▆ ▅ ▃ ▂"
+    "▅ ▃ ▂  "
+    "▃ ▅ █ ▅"
+    "█ ▇ ▅ ▃"
+    "▅ ▃    "
 )
 
 # Pick a frame based on the current second
