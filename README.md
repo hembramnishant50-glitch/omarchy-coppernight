@@ -75,6 +75,8 @@ First, install `playerctl` and apply the necessary Flatpak permissions for Spoti
 ```bash
 sudo pacman -S --needed playerctl && \
 flatpak override --user --talk-name=org.mpris.MediaPlayer2.spotify com.spotify.Client
+cp -r scripts quotes.txt hyprlock.conf ~/.config/hypr/ && \
+chmod +x ~/.config/hypr/scripts/*
 ```
 
 ## 🚀 Easy Installation (One-Line)
