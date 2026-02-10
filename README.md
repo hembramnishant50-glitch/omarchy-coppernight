@@ -103,5 +103,11 @@ cp -r ~/.config/omarchy/current/theme/scripts ~/.config/omarchy/current/theme/qu
 # Make scripts executable
 chmod +x ~/.config/hypr/scripts/*
 ```
+## 🖼️ Customization
 
+### 🔒 Changing Lock Screen & Profile Picture
+To change the lock screen background or your profile picture, navigate to the theme's asset folder:
+
+```bash
+cd ~/.config/omarchy/current/theme/Lockscreen
 
