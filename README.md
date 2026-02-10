@@ -16,12 +16,14 @@ A high-performance **Hyprland** rice for Omarchy featuring a custom **Tokyo Nigh
 
 ## 📸 Preview
 
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a3d1a123-d1fa-42a8-91cf-a25dcbcf6e2a" />
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/5866f47e-486c-4c46-9fc9-0b76489d6a1f" />
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/cbb78c2d-9ecd-4c36-a5ff-94e0a9fd434b" />
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/859d656f-9031-4899-af3d-74216516b4d9" />
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3084a665-4a04-4b8a-97b1-557ae9e77c46" />
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/7bd9a22f-c05c-4876-8e61-1af675908163" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/39ec8953-3b6f-4420-a9fe-88eb83d76899" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/b84e6655-4653-408d-8281-03d9a34d7b4d" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/9560a87d-5b0a-4dfb-803c-29b647411de4" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16bef38a-b05b-4b98-8da7-eb614974d2d3" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/5521874f-feab-4880-b59c-bb2350045173" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d2dd0073-0f8d-4a87-91e2-7772e865e705" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3a8c2c4a-7bdd-4c73-94c1-8d4ae6f0c6ef" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c0208938-787d-4e68-8d97-022438678f02" />
 ---
 
 | **Feature** | **Description** |
