@@ -47,7 +47,7 @@ omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppern
 This command installs all system dependencies (Python libraries, NetworkManager, and Papirus Icons), performs a safe backup of your existing Waybar config, and applies the Copper Night theme.
 
 ```bash
-sudo pacman -S --needed python-requests python-psutil networkmanager papirus-icon-theme && \
+sudo pacman -S --needed python-requests python-psutil networkmanager papirus-icon-theme pavucontrol && \
 omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git && \
 { [ -d ~/.config/waybar ] && mv ~/.config/waybar ~/.config/waybar-backup-$RANDOM; }; \
 mkdir -p ~/.config/waybar && \
