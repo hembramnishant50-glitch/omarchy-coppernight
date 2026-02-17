@@ -85,6 +85,12 @@ The weather widget is set to **New York** by default. To change this to your cit
 
 ## 🔒 Hyprlock Setup
 
+## 📸 Preview
+
+<img width="1311" height="737" alt="Image" src="https://github.com/user-attachments/assets/86b69c94-6096-411f-a41e-4704c238f394" />
+
+---
+
 Note : Use this after 🚀 Easy Installation (One-Line) Or Installation Only Theme
 
 To enable the custom lock screen and fix media controls, run the following commands:
