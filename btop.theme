@@ -1,4 +1,4 @@
-# Omarchy BTOP Theme - Waybar & Walker Color Match
+# Omarchy BTOP Theme 
 
 # Main background (Empty for terminal transparency)
 theme[main_bg]=""
