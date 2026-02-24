@@ -36,8 +36,6 @@ kissed by a striking **Copper-Orange** border that glows like a setting sun.
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/39ec8953-3b6f-4420-a9fe-88eb83d76899" width="100%"> | <img src="https://github.com/user-attachments/assets/b84e6655-4653-408d-8281-03d9a34d7b4d" width="100%"> |
 | <img src="https://github.com/user-attachments/assets/9560a87d-5b0a-4dfb-803c-29b647411de4" width="100%"> | <img src="https://github.com/user-attachments/assets/16bef38a-b05b-4b98-8da7-eb614974d2d3" width="100%"> |
-| <img src="https://github.com/user-attachments/assets/5521874f-feab-4880-b59c-bb2350045173" width="100%"> | <img src="https://github.com/user-attachments/assets/d2dd0073-0f8d-4a87-91e2-7772e865e705" width="100%"> |
-| <img src="https://github.com/user-attachments/assets/3a8c2c4a-7bdd-4c73-94c1-8d4ae6f0c6ef" width="100%"> | <img src="https://github.com/user-attachments/assets/c0208938-787d-4e68-8d97-022438678f02" width="100%"> |
 | <img src="https://github.com/user-attachments/assets/cfb9a3e2-c1ba-4a9c-ac66-248c5705d8eb" width="100%"> | <img src="https://github.com/user-attachments/assets/ab64aa85-bfb6-4b89-8574-3a6e83230cc0" width="100%"> |
 | <img src="https://github.com/user-attachments/assets/ccf2cc6d-b891-4ec3-9605-a2d1805fff1b" width="100%"> | <img src="https://github.com/user-attachments/assets/d6114edb-e239-4f6e-8fdd-85d7b54e4ece" width="100%"> |
 
