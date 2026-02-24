@@ -133,7 +133,7 @@ The default bar — included in the main install.
 
 <div align="center">
 
-<img src="screenshots/waybar-1.png" width="100%" alt="Waybar-1 — Pill-style status bar with neon rounded borders showing workspaces, clock, CPU, temperature, wifi, volume and battery">
+<img width="1920" height="78" alt="Image" src="https://github.com/user-attachments/assets/bd546819-018f-431e-851d-3615b1a48e81" />
 
 *Neon pill borders · Rounded segments · Compact & clean*
 
