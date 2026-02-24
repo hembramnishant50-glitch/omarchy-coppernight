@@ -133,7 +133,7 @@ The default bar — included in the main install.
 
 <div align="center">
 
-<img width="1920" height="78" alt="Image" src="https://github.com/user-attachments/assets/bd546819-018f-431e-851d-3615b1a48e81" />
+<img width="1920" height="78" src="https://github.com/user-attachments/assets/05fd9edb-4d6b-4f5b-8fd4-56a004b1c428" alt="Waybar-1 — Pill-style status bar with neon rounded borders showing workspaces, clock, CPU, temperature, wifi, volume and battery">
 
 *Neon pill borders · Rounded segments · Compact & clean*
 
@@ -313,20 +313,13 @@ image {
 
 <div align="center">
 
-> All wallpapers are included with the theme and optimized for dark desktop aesthetics.  
-> Upload images to your repo under `wallpapers/` and update the paths below.
+> All wallpapers are included with the theme and optimized for dark desktop aesthetics.
 
 <br>
 
-<!-- ┌─────────────────────────────────────────────────────────────────┐ -->
-<!-- │  WALLPAPER SHOWCASE — replace paths after uploading your images │ -->
-<!-- │  Path format: https://raw.githubusercontent.com/YOUR_USER/      │ -->
-<!-- │               YOUR_REPO/main/wallpapers/filename.jpg            │ -->
-<!-- └─────────────────────────────────────────────────────────────────┘ -->
-
 ### 🌙 Featured — Cats at Moonrise
 
-<img src="wallpapers/cats-anime.jpg" width="100%" alt="Cats at Moonrise — Lofi Ghibli aesthetic, five cats seated before a copper sunset and full moon">
+<img src="https://github.com/user-attachments/assets/0d5fdda4-00e9-4478-a342-7dc5f7bb214d" width="100%" alt="Cats at Moonrise — Lofi Ghibli aesthetic, five cats seated before a copper sunset and full moon">
 
 *Five cats perched before a copper sunset — the spirit of Copper Night in one frame.*
 
@@ -336,9 +329,9 @@ image {
 
 | | |
 |:---:|:---:|
-| ![Image](https://github.com/user-attachments/assets/522c7509-d478-4d8c-a3db-e6b7ed36b987)" width="100%" alt="Japanese Castle Pixel Art">  | <img src="wallpapers/Character_with_Glowing_Eyes_and_Katana.jpg" width="100%" alt="Character with Glowing Eyes and Katana"> |
+| <img src="https://github.com/user-attachments/assets/b15da239-27ee-4555-b2d9-24f8f8f15602" width="100%" alt="Japanese Castle Pixel Art"> | <img src="https://github.com/user-attachments/assets/55cc1ac0-f377-4fb0-9eb9-0da644e1d9d4" width="100%" alt="Character with Glowing Eyes and Katana"> |
 | 🏯 **Mountain Castle** · *Pixel Art* | ⚔️ **The Last Swordsman** · *Dark Fantasy* |
-| <img src="wallpapers/Girl_with_Hannya_Mask.jpeg" width="100%" alt="Girl with Hannya Mask"> | <img src="wallpapers/Itachi_Uchiha.jpg" width="100%" alt="Itachi Uchiha with Crows"> |
+| <img src="https://github.com/user-attachments/assets/34e74655-7dd6-4344-b53b-31707e25a4f9" width="100%" alt="Girl with Hannya Mask"> | <img src="https://github.com/user-attachments/assets/ab07a513-d0d3-4daa-9501-ec87862752c1" width="100%" alt="Itachi Uchiha with Crows"> |
 | 👺 **Girl & Hannya** · *Monochrome Yokai* | 🪶 **Itachi & The Crows** · *Akatsuki* |
 
 <br>
