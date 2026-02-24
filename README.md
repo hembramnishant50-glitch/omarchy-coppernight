@@ -117,6 +117,64 @@ killall waybar; waybar &
 
 ---
 
+## 🎨 Waybar Variants
+
+Copper Night ships with **two Waybar layouts**. Pick the one that fits your style.
+
+<br>
+
+### 🅰️ Waybar Default *(installed by Option B above)*
+
+The default bar — included in the main install.
+
+<br>
+
+### 🅱️ Waybar-1 — Pill Style *(Alternate)*
+
+<div align="center">
+
+<img src="screenshots/waybar-1.png" width="100%" alt="Waybar-1 — Pill-style status bar with neon rounded borders showing workspaces, clock, CPU, temperature, wifi, volume and battery">
+
+*Neon pill borders · Rounded segments · Compact & clean*
+
+</div>
+
+> ⚠️ **Run this after completing Option A or Option B above.** This replaces the default Waybar config.
+
+```bash
+# 1. Create a safe backup of your current waybar config with a random suffix
+[ -d ~/.config/waybar ] && mv ~/.config/waybar ~/.config/waybar-$(head /dev/urandom | tr -dc a-z0-9 | head -c 4)
+
+# 2. Create the target directory
+mkdir -p ~/.config/waybar
+
+# 3. Copy Waybar-1 files from the theme EXTRA folder
+cp -r ~/.config/omarchy/current/theme/EXTRA/waybar-1/* ~/.config/waybar/
+
+# 4. Make all scripts executable
+chmod +x ~/.config/waybar/scripts/*
+
+# 5. Restart Waybar to apply changes
+killall waybar && waybar &
+```
+
+> 💡 **Tip:** Your backup is saved as `~/.config/waybar-XXXX` (4-char random suffix). To restore it, just rename it back to `~/.config/waybar`.
+
+| Widget | Description |
+|:---|:---|
+| `1 2 3 4 5 6` | Workspace switcher with neon pill borders |
+| `Omarchy OS` | Active window title |
+| `🕐 06:59 PM` | Clock — center-aligned |
+| `⊞ 2% 🔄 30%` | CPU & RAM usage |
+| `☀️ 23°F` | Temperature sensor |
+| `📶` | Network / WiFi status |
+| `🔊 90%` | Volume control |
+| `⚡ 100%` | Battery indicator |
+
+<br>
+
+---
+
 ## ⚙️ Configuration
 
 ### 🌤️ Weather Widget — Set Your City
@@ -246,6 +304,56 @@ image {
 | Foreground | `#c0caf5` | ![](https://placehold.co/60x20/c0caf5/c0caf5) |
 
 </div>
+
+<br>
+
+---
+
+## 🖼️ Wallpaper Collection
+
+<div align="center">
+
+> All wallpapers are included with the theme and optimized for dark desktop aesthetics.  
+> Upload images to your repo under `wallpapers/` and update the paths below.
+
+<br>
+
+<!-- ┌─────────────────────────────────────────────────────────────────┐ -->
+<!-- │  WALLPAPER SHOWCASE — replace paths after uploading your images │ -->
+<!-- │  Path format: https://raw.githubusercontent.com/YOUR_USER/      │ -->
+<!-- │               YOUR_REPO/main/wallpapers/filename.jpg            │ -->
+<!-- └─────────────────────────────────────────────────────────────────┘ -->
+
+### 🌙 Featured — Cats at Moonrise
+
+<img src="wallpapers/cats-anime.jpg" width="100%" alt="Cats at Moonrise — Lofi Ghibli aesthetic, five cats seated before a copper sunset and full moon">
+
+*Five cats perched before a copper sunset — the spirit of Copper Night in one frame.*
+
+<br>
+
+### 🗺️ Full Collection
+
+| | |
+|:---:|:---:|
+| <img src="wallpapers/japanese-castle-pixel-digital-art.jpg" width="100%" alt="Japanese Castle Pixel Art"> | <img src="wallpapers/Character_with_Glowing_Eyes_and_Katana.jpg" width="100%" alt="Character with Glowing Eyes and Katana"> |
+| 🏯 **Mountain Castle** · *Pixel Art* | ⚔️ **The Last Swordsman** · *Dark Fantasy* |
+| <img src="wallpapers/Girl_with_Hannya_Mask.jpeg" width="100%" alt="Girl with Hannya Mask"> | <img src="wallpapers/Itachi_Uchiha.jpg" width="100%" alt="Itachi Uchiha with Crows"> |
+| 👺 **Girl & Hannya** · *Monochrome Yokai* | 🪶 **Itachi & The Crows** · *Akatsuki* |
+
+<br>
+
+| Wallpaper | Style | Resolution |
+|:---|:---:|:---:|
+| 🐱 Cats at Moonrise | Lofi · Ghibli | 3840 × 2160 |
+| 🏯 Mountain Castle | Pixel Art | 5120 × 2880 |
+| ⚔️ The Last Swordsman | Dark Fantasy | 3840 × 2160 |
+| 👺 Girl & Hannya | Monochrome · Yokai | 3840 × 2160 |
+| 🪶 Itachi & The Crows | Naruto · Akatsuki | 3840 × 2160 |
+
+</div>
+
+> 💡 **How to set a wallpaper:** Wallpapers are set automatically by the theme. To manually change, edit your `hyprpaper.conf` or use `omarchy-wallpaper-set`.
 
 <br>
 
