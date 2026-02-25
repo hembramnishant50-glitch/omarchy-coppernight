@@ -326,24 +326,27 @@ image {
 
 <br>
 
-### 🗺️ Full Collection
+## 🖼️ Full Collection
 
 | | |
 |:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/b15da239-27ee-4555-b2d9-24f8f8f15602" width="100%" alt="Japanese Castle Pixel Art"> | <img src="https://github.com/user-attachments/assets/55cc1ac0-f377-4fb0-9eb9-0da644e1d9d4" width="100%" alt="Character with Glowing Eyes and Katana"> |
-| 🏯 **Mountain Castle** · *Pixel Art* | ⚔️ **The Last Swordsman** · *Dark Fantasy* |
-| <img src="https://github.com/user-attachments/assets/34e74655-7dd6-4344-b53b-31707e25a4f9" width="100%" alt="Girl with Hannya Mask"> | <img src="https://github.com/user-attachments/assets/ab07a513-d0d3-4daa-9501-ec87862752c1" width="100%" alt="Itachi Uchiha with Crows"> |
-| 👺 **Girl & Hannya** · *Monochrome Yokai* | 🪶 **Itachi & The Crows** · *Akatsuki* |
+| <img src="https://github.com/user-attachments/assets/b15da239-27ee-4555-b2d9-24f8f8f15602" width="100%"> | <img src="https://github.com/user-attachments/assets/55cc1ac0-f377-4fb0-9eb9-0da644e1d9d4" width="100%"> |
+| ⚔️ **The Last Swordsman** · *Dark Fantasy* | 👺 **Girl & Hannya** · *Monochrome Yokai* |
+| <img src="https://github.com/user-attachments/assets/34e74655-7dd6-4344-b53b-31707e25a4f9" width="100%"> | <img src="https://github.com/user-attachments/assets/ab07a513-d0d3-4daa-9501-ec87862752c1" width="100%"> |
+| 🪶 **Itachi & The Crows** · *Akatsuki* | 🏯 **Mountain Castle** · *Pixel Art* |
 
-<br>
+---
+
+## 📊 Catalog & Specs
 
 | Wallpaper | Style | Resolution |
-|:---|:---:|:---:|
-| 🐱 Cats at Moonrise | Lofi · Ghibli | 3840 × 2160 |
-| 🏯 Mountain Castle | Pixel Art | 5120 × 2880 |
-| ⚔️ The Last Swordsman | Dark Fantasy | 3840 × 2160 |
-| 👺 Girl & Hannya | Monochrome · Yokai | 3840 × 2160 |
-| 🪶 Itachi & The Crows | Naruto · Akatsuki | 3840 × 2160 |
+| :--- | :--- | :---: |
+| 🐱 **Cats at Moonrise** | Lofi · Ghibli | 3840 × 2160 |
+| 🏯 **Mountain Castle** | Pixel Art | 5120 × 2880 |
+| ⚔️ **The Last Swordsman** | Dark Fantasy | 3840 × 2160 |
+| 👺 **Girl & Hannya** | Monochrome · Yokai | 3840 × 2160 |
+| 🪶 **Itachi & The Crows** | Naruto · Akatsuki | 3840 × 2160 |
+
 
 </div>
 
