@@ -148,16 +148,6 @@ The default bar — included in the main install.
 cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-1 && chmod +x Setup-Waybar.sh && ./Setup-Waybar.sh && chmod +x ~/.config/waybar/scripts/*
 ```
 
-### 🅱️ Waybar-1 — Pill Style *(Alternate)*
-
-<div align="center">
-
-<img width="1918" height="79" alt="Image" src="https://github.com/user-attachments/assets/31ceeafa-f7c0-4a81-b570-8ff29971ebd2" />
-
-</div>
-```bash
-cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-2 && chmod +x waybar-setup.sh && ./waybar-setup.sh
-```
 
 > 💡 **Tip:** Your backup is saved as `~/.config/waybar-XXXX` (4-char random suffix). To restore it, just rename it back to `~/.config/waybar`.
 
