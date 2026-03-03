@@ -130,7 +130,6 @@ The default bar — included in the main install.
 <img width="1920" height="64" alt="Image" src="https://github.com/user-attachments/assets/5c325dde-bac2-4533-85f7-edefc5da1941" />
 
 <br>
-> ⚠️ **Run this after completing Option A or Option B above.** This replaces the default Waybar config.
 
 ### 🅱️ Waybar-1 — Pill Style *(Alternate)*
 
@@ -138,11 +137,7 @@ The default bar — included in the main install.
 
 <img width="1920" height="78" src="https://github.com/user-attachments/assets/05fd9edb-4d6b-4f5b-8fd4-56a004b1c428" alt="Waybar-1 — Pill-style status bar with neon rounded borders showing workspaces, clock, CPU, temperature, wifi, volume and battery">
 
-*Neon pill borders · Rounded segments · Compact & clean*
-
 </div>
-
-> ⚠️ **Run this after completing Option A or Option B above.** This replaces the default Waybar config.
 
 ```bash
 cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-1 && chmod +x Setup-Waybar.sh && ./Setup-Waybar.sh && chmod +x ~/.config/waybar/scripts/*
@@ -150,17 +145,6 @@ cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-1 && chmod +x Setup-Wayb
 
 
 > 💡 **Tip:** Your backup is saved as `~/.config/waybar-XXXX` (4-char random suffix). To restore it, just rename it back to `~/.config/waybar`.
-
-| Widget | Description |
-|:---|:---|
-| `1 2 3 4` | Workspace switcher with neon pill borders |
-| `Omarchy OS` | Active window title |
-| `🕐 ` | Clock — center-aligned |
-| `⊞ 2% 🔄 30%` | CPU & RAM usage |
-| `☀️ 23°F` | Temperature sensor |
-| `📶` | Network / WiFi status |
-| `🔊 90%` | Volume control |
-| `⚡ 100%` | Battery indicator |
 
 <br>
 
