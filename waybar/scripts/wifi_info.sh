@@ -14,7 +14,7 @@ C_VAL='#85abbc'
 INTERFACE=$(ip route | grep default | awk '{print $5}' | head -n 1)
 
 if [[ -z "$INTERFACE" ]]; then
-    echo "{\"text\": \"󰖪  Offline\", \"tooltip\": \"<span color='#f38ba8'><b>SYSTEM OFFLINE</b></span>\"}"
+    echo "{\"text\": \"󰖪 \", \"tooltip\": \"<span color='#f38ba8'><b>SYSTEM OFFLINE</b></span>\"}"
     exit 0
 fi
 
