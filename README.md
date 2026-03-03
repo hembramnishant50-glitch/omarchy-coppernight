@@ -144,20 +144,7 @@ The default bar — included in the main install.
 > ⚠️ **Run this after completing Option A or Option B above.** This replaces the default Waybar config.
 
 ```bash
-# 1. Create a safe backup of your current waybar config with a random suffix
-[ -d ~/.config/waybar ] && mv ~/.config/waybar ~/.config/waybar-$(head /dev/urandom | tr -dc a-z0-9 | head -c 4)
-
-# 2. Create the target directory
-mkdir -p ~/.config/waybar
-
-# 3. Copy Waybar-1 files from the theme EXTRA folder
-cp -r ~/.config/omarchy/current/theme/EXTRA/waybar-1/* ~/.config/waybar/
-
-# 4. Make all scripts executable
-chmod +x ~/.config/waybar/scripts/*
-
-# 5. Restart Waybar to apply changes
-killall waybar && waybar &
+cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-1 && chmod +x Setup-Waybar.sh && ./Setup-Waybar.sh && chmod +x ~/.config/waybar/scripts/*
 ```
 
 > 💡 **Tip:** Your backup is saved as `~/.config/waybar-XXXX` (4-char random suffix). To restore it, just rename it back to `~/.config/waybar`.
