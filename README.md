@@ -130,7 +130,7 @@ The default bar — included in the main install.
 <img width="1920" height="64" alt="Image" src="https://github.com/user-attachments/assets/5c325dde-bac2-4533-85f7-edefc5da1941" />
 
 <br>
-
+> ⚠️ **Run this after completing Option A or Option B above.** This replaces the default Waybar config.
 
 ### 🅱️ Waybar-1 — Pill Style *(Alternate)*
 
@@ -155,7 +155,7 @@ cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-1 && chmod +x Setup-Wayb
 |:---|:---|
 | `1 2 3 4` | Workspace switcher with neon pill borders |
 | `Omarchy OS` | Active window title |
-| `🕐 06:59 PM` | Clock — center-aligned |
+| `🕐 ` | Clock — center-aligned |
 | `⊞ 2% 🔄 30%` | CPU & RAM usage |
 | `☀️ 23°F` | Temperature sensor |
 | `📶` | Network / WiFi status |
