@@ -21,7 +21,7 @@
     ],
 
     "custom/arch": {
-        "format": "",
+        "format": "",
         "on-click": "omarchy-menu",
         "tooltip": false
     },
@@ -106,7 +106,7 @@
         "format": "{icon} {capacity}%",
         "format-charging": "󱐋 {icon} {capacity}%",
         "format-plugged": " {icon} {capacity}%",
-        "format-icons": ["", "", "", "", ""],
+        "format-icons": ["", "", "", "", ""],
         "max-length": 25
     }
 }

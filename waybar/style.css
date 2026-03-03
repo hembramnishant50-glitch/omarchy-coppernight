@@ -37,8 +37,24 @@ window#waybar {
 /* -----------------------------------------------------
    Module Styling
    ----------------------------------------------------- */
-#custom-arch { color: #89b4fa; padding: 0 15px; font-size: 18px; }
-#custom-window_info { color: #b4befe; font-weight: bold; padding: 0 8px; }
+#custom-arch { 
+    color: #89b4fa; 
+    padding-left: 12px; 
+    padding-right: 15px; 
+    font-size: 18px; 
+    transition: all 0.3s ease;
+}
+
+#custom-arch:hover {
+    background: rgba(137, 180, 250, 0.15);
+    border-radius: 0px 12px 12px 0px; /* Rounded only on the right side for the edge icon */
+}
+
+#custom-window_info { 
+    color: #b4befe; 
+    font-weight: bold; 
+    padding: 0 8px; 
+}
 
 /* -----------------------------------------------------
    Modules (Clock, Audio, Network, etc.)
@@ -50,33 +66,27 @@ window#waybar {
 #battery {
     padding: 0 10px;
     margin: 4px 2px; 
-    border-radius: 12px; /* Set base roundness for clean hover shapes */
+    border-radius: 12px; 
     transition: all 0.3s ease;
 }
 
-/* Rounded Hover Effects for all Text Modules */
 #clock:hover, 
 #pulseaudio:hover, 
 #network:hover, 
 #custom-weather:hover, 
 #battery:hover {
-    background: rgba(137, 180, 250, 0.15); /* Light blue tint on hover */
-    border-radius: 12px; /* The roundness when cursor is on top */
+    background: rgba(137, 180, 250, 0.15); 
+    border-radius: 12px; 
 }
 
-/* Specific Colors */
 #clock { color: #cba6f7; font-weight: bold; }
 #pulseaudio { color: #a6e3a1; }
 #network { color: #89dceb; }
 
 /* -----------------------------------------------------
-   Weather Module (Offline & Animation)
+   Weather Module
    ----------------------------------------------------- */
-#custom-weather { 
-    color: #94e2d5; 
-}
-
-/* When searching for signal (󰚄) */
+#custom-weather { color: #94e2d5; }
 #custom-weather.offline {
     color: #f38ba8; 
     font-weight: bold;
@@ -104,14 +114,8 @@ window#waybar {
    Battery States
    ----------------------------------------------------- */
 #battery { color: #f9e2af; }
-
-#battery.charging, #battery.plugged {
-    color: #a6e3a1; 
-}
-
-#battery.critical:not(.charging) {
-    color: #f38ba8;
-}
+#battery.charging, #battery.plugged { color: #a6e3a1; }
+#battery.critical:not(.charging) { color: #f38ba8; }
 
 /* -----------------------------------------------------
    TOOLTIPS
