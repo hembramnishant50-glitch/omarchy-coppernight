@@ -18,4 +18,7 @@ mkdir -p "$TARGET_DIR"
 echo "Installing new Waybar config..."
 cp -r "$SOURCE_DIR/." "$TARGET_DIR/"
 
+echo "Restarting Waybar..."
+killall waybar; (waybar > /dev/null 2>&1 &)
+
 echo "Done! Your old config is safe in $BACKUP_DIR."
