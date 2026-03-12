@@ -217,11 +217,11 @@ if command -v flatpak &> /dev/null; then
 fi
 
 # 3. Copy lock screen config files
-cp -r \
-  ~/.config/omarchy/current/theme/scripts \
-  ~/.config/omarchy/current/theme/quotes.txt \
-  ~/.config/omarchy/current/theme/hyprlock.conf \
-  ~/.config/hypr/
+mv ~/.config/hypr/hyprlock.conf ~/.config/hypr/hyprlock.conf-Backup && \
+cp -r ~/.config/omarchy/current/theme/scripts \
+      ~/.config/omarchy/current/theme/quotes.txt \
+      ~/.config/omarchy/current/theme/hyprlock.conf \
+      ~/.config/hypr/
 
 # 4. Make scripts executable
 chmod +x ~/.config/hypr/scripts/*
