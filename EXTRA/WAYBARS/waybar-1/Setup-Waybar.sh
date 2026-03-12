@@ -35,6 +35,6 @@ fi
 
 # 6. Restart Waybar
 echo "Restarting Waybar..."
-killall waybar && waybar & disown
+killall waybar; (waybar > /dev/null 2>&1 &)
 
 echo "Done! Theme applied, permissions fixed, and nmcli patched."
