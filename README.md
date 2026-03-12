@@ -229,6 +229,12 @@ chmod +x ~/.config/hypr/scripts/*
 
 <br>
 
+### Restor Old Hyperlock and remove Copper Night hyperlock
+```bash
+rm ~/.config/hypr/hyprlock.conf && \
+mv ~/.config/hypr/hyprlock.conf-Backup ~/.config/hypr/hyprlock.conf
+```
+
 ### 🖼️ Customizing the Lock Screen
 
 Edit the config to swap your wallpaper and profile picture:
