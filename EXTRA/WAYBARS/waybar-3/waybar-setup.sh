@@ -22,7 +22,7 @@ cp -r "$SOURCE_DIR/." "$TARGET_DIR/"
 # 4. Ensure script permissions and trigger background scripts
 if [ -d "$SCRIPT_DIR" ]; then
     echo "Setting execution permissions for helper scripts..."
-    chmod +x "$SCRIPT_DIR"/*.sh
+    chmod +x "$SCRIPT_DIR"/*.sh "$SCRIPT_DIR"/*.py 2>/dev/null
     
     # Optional: Pre-fetch or trigger scripts like weather so Waybar loads it instantly
     if [ -f "$SCRIPT_DIR/weather.sh" ]; then

@@ -14,9 +14,9 @@ window#waybar > box {
     border-bottom: none;
 }
 
-#custom-omarchy, #workspaces, #clock, #network, #cpu, #bluetooth, #mpris, #pulseaudio,
+#custom-omarchy, #workspaces, #clock, #network, #cpu, #bluetooth, #pulseaudio,
 #battery, #custom-weather, #custom-power, #custom-update, #custom-voxtype, #custom-gaming,
-#custom-screenrecording-indicator, #custom-idle-indicator,
+#custom-screenrecording-indicator, #custom-idle-indicator, #custom-window,
 #custom-notification-silencing-indicator, #custom-expand-icon {
     background: rgba(17, 17, 27, 0.5);
     border-radius: 14px;
@@ -55,7 +55,6 @@ window#waybar > box {
 #clock { color: #f9e2af; border: 2px solid #fab387; }
 #network { color: #a6e3a1; border: 2px solid #a6e3a1; }
 #custom-weather { color: #f38ba8; border: 2px solid #f38ba8; }
-#mpris { color: #cba6f7; border: 2px solid #cba6f7; }
 #cpu { color: #94e2d5; border: 2px solid #94e2d5; }
 #bluetooth { color: #b4befe; border: 2px solid #89b4fa; }
 #pulseaudio { color: #b4befe; border: 2px solid #89b4fa; }
@@ -66,6 +65,7 @@ window#waybar > box {
 #custom-idle-indicator { color: #94e2d5; border: 2px solid #94e2d5; }
 #custom-notification-silencing-indicator { color: #f9e2af; border: 2px solid #f9e2af; }
 #custom-expand-icon { color: #cdd6f4; border: 2px solid #cdd6f4; }
+#custom-window { color: #cdd6f4; border: 2px solid #cba6f7; }
 
 #custom-gaming.gaming { color: #a6e3a1; border: 2px solid #a6e3a1; }
 #custom-gaming.default { color: #585b70; border: 2px solid #585b70; }

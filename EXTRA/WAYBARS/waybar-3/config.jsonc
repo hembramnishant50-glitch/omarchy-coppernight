@@ -7,7 +7,7 @@
     "margin-right": 10,
     "spacing": 0,
 
-    "modules-left": ["custom/omarchy", "hyprland/workspaces", "mpris"],
+    "modules-left": ["custom/omarchy", "hyprland/workspaces", "custom/window"],
     "modules-center": ["clock", "custom/update", "custom/voxtype", "custom/screenrecording-indicator", "custom/idle-indicator", "custom/notification-silencing-indicator"],
     "modules-right": [
         "group/tray-expander",
@@ -64,8 +64,7 @@
         "on-click": "omarchy-launch-bluetooth"
     },
 
-    "mpris": { "format": "{player_icon} {title}", "player-icons": { "default": "󰝚" }, "max-length": 20, "on-click": "playerctl play-pause" },
-    "network": {
+"network": {
         "format-wifi": " ",
         "format-ethernet": " ",
         "format-disconnected": " ",
@@ -95,6 +94,14 @@
     "on-click-right": "xdg-terminal-exec",
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
 },
+    "custom/window": {
+        "exec": "~/.config/waybar/scripts/window_info.py",
+        "return-type": "json",
+        "format": "{}",
+        "tooltip": true,
+        "interval": 1
+    },
+
     "pulseaudio": {
         "format": "{icon}",
         "on-click": "omarchy-launch-audio",
@@ -125,12 +132,12 @@
     "custom/power": { "format": "󰐥", "on-click": "omarchy-menu system" },
 
     "custom/gaming": {
-        "exec": "/home/nishant/.config/waybar/scripts/gaming-status.sh",
+        "exec": "~/.config/waybar/scripts/gaming-status.sh",
         "return-type": "json",
         "format": "{text}",
         "signal": 12,
         "interval": 5,
-        "on-click": "/home/nishant/.config/waybar/scripts/gaming-mode.sh"
+        "on-click": "~/.config/waybar/scripts/gaming-mode.sh"
     },
 
     "group/tray-expander": {
