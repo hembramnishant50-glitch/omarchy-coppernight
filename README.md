@@ -183,7 +183,7 @@ cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-3 \
 ### 🌆 Waybar-4 — Catppuccin Mocha Capsule
 
 <div align="center">
-<img width="1917" height="76" alt="Waybar-4 Catppuccin Mocha Capsule" />
+
 <p><em>Catppuccin Mocha · Copper borders · Rounded capsules with workspace circles</em></p>
 </div>
 
