@@ -1,17 +1,20 @@
 <div align="center">
 
 ```
-░█▀▀█ ░█▀▀▀█ ░█▀▀█ ░█▀▀█ ░█▀▀▀ ░█▀▀█   ░█▄─░█ ░█▀▀▀ ░█▀▀█ ░█─░█ ▀▀█▀▀
-░█─── ░█──░█ ░█▄▄█ ░█▄▄█ ░█▀▀▀ ░█▄▄▀   ░█░█░█ ░█▀▀▀ ░█─▄▄ ░█▀▀█ ─░█──
-░█▄▄█ ░█▄▄▄█ ░█─── ░█─── ░█▄▄▄ ░█─░█   ░█──▀█ ░█▄▄▄ ░█▄▄█ ░█─░█ ─░█──
+ ██████╗  ██████╗ ██████╗  ██████╗  ███████╗ ██████╗     ███╗   ██╗ ██╗  ██████╗ ██╗  ██╗ ████████╗
+██╔════╝ ██╔═══██╗ ██╔══██╗ ██╔══██╗ ██╔════╝ ██╔══██╗    ████╗  ██║ ██║ ██╔════╝ ██║  ██║ ╚══██╔══╝
+██║      ██║   ██║ ██████╔╝ ██████╔╝ █████╗   ██████╔╝    ██╔██╗ ██║ ██║ ██║  ███╗ ███████║    ██║
+██║      ██║   ██║ ██╔═══╝  ██╔═══╝  ██╔══╝   ██╔══██╗    ██║╚██╗██║ ██║ ██║   ██║ ██╔══██║    ██║
+╚██████╗ ╚██████╔╝ ██║      ██║      ███████╗ ██║  ██║    ██║ ╚████║ ██║ ╚██████╔╝ ██║  ██║    ██║
+ ╚═════╝  ╚═════╝ ╚═╝      ╚═╝      ╚══════╝ ╚═╝  ╚═╝    ╚═╝  ╚═══╝ ╚═╝  ╚═════╝ ╚═╝  ╚═╝    ╚═╝
 ```
 
 # 🌌 Copper Night
 
 > *"Where the deep indigo of Tokyo meets the warm glow of an ember sunset."*
 
-A high-performance **Hyprland** rice for **Omarchy** — featuring a carefully crafted **Tokyo Night** palette  
-kissed by a striking **Copper-Orange** border that glows like a setting sun.
+A high-performance **Hyprland** rice for **Omarchy** — a **Tokyo Night** palette  
+kissed by a **Copper-Orange** border that glows like a setting sun.
 
 <br>
 
@@ -21,7 +24,25 @@ kissed by a striking **Copper-Orange** border that glows like a setting sun.
 [![Omarchy](https://img.shields.io/badge/Made%20for-Omarchy-1E1E2E?style=for-the-badge&logo=archlinux&logoColor=white)](https://omarchy.org/)
 [![Stars](https://img.shields.io/github/stars/hembramnishant50-glitch/omarchy-coppernight-theme?style=for-the-badge&color=BB9AF7&logo=starship&logoColor=white)](https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme/stargazers)
 
-<br>
+</div>
+
+---
+
+```
+$ fastfetch
+
+   sunraku@copper-night
+   ─────────────────────
+   OS        Arch Linux x86_64
+   WM        Hyprland · Wayland
+   Shell     zsh
+   Theme     🌌 Copper Night v1.2
+   Accent    #fab387 · Copper-Orange
+   Palette   Tokyo Night × Copper
+   Status    ✓ 12 browsers themed · ✓ 5 waybar variants
+```
+
+<div align="center">
 
 <img src="preview.png" width="100%" alt="Copper Night desktop preview">
 
@@ -29,22 +50,7 @@ kissed by a striking **Copper-Orange** border that glows like a setting sun.
 
 ---
 
-## 📑 Table of Contents
-
-- [Screenshots](#screenshots)
-- [Features](#features)
-- [Component Coverage](#component-coverage)
-- [Color Palette](#color-palette)
-- [Installation](#installation)
-- [Waybar Variants](#waybar-variants)
-- [Weather Widget](#weather-widget)
-- [Lock Screen](#lock-screen)
-- [Wallpaper Collection](#wallpaper-collection)
-- [Contributing](#contributing)
-
----
-
-## 📸 Screenshots
+## ▸ 📸 Gallery
 
 <div align="center">
 
@@ -59,68 +65,13 @@ kissed by a striking **Copper-Orange** border that glows like a setting sun.
 
 ---
 
-## ✨ Features
+## ▸ ⚡ Install
 
-<div align="center">
-
-| | Feature | Description |
-|:---:|:---|:---|
-| 🖼️ | **Wallpaper** | Traditional Japanese Pixel Art Pagoda — handpicked for the aesthetic |
-| 🪟 | **Widgets** | Floating diagnostic panels with custom animated resource bars |
-| 🎨 | **Color Palette** | Deep Indigos · Electric Magentas · Warm Copper-Orange accents |
-| 🌤️ | **Weather Widget** | Live weather with click-to-change city — no script editing needed |
-| 🔒 | **Lock Screen** | Glassmorphism Hyprlock with blur, quotes, and media controls |
-| 🎵 | **Media Controls** | Playerctl integration with full Spotify Flatpak support |
-| 🍬 | **5 Waybar Variants** | Pick your vibe — Default, Pill, Ember Arc, Pastel, Catppuccin |
-
-</div>
-
----
-
-## 🎛️ Component Coverage
-
-One install themes your **entire desktop** — window manager, shell, editors, and more.
-
-| Category | Components |
-|:---|:---|
-| 🖥️ **Desktop** | Hyprland · Hyprlock · Waybar · Mako · SwayOSD |
-| 🔎 **Launchers** | Walker · Wofi |
-| 💻 **Terminals** | Alacritty · Kitty · Ghostty · Foot · Warp · Gum |
-| ✍️ **Editors & IDE** | Neovim · Helix · VSCode |
-| 🎨 **Apps** | GTK · Obsidian · Discord (Vencord) · Browser |
-| 📊 **TUI & Tools** | Btop · Cava · Chromium flags |
-| 🎹 **Extras** | RGB keyboard color · Papirus-Dark icons · Wallpapers |
-
----
-
-## 🎨 Color Palette
-
-<div align="center">
-
-| Swatch | Name | Hex |
-|:---:|:---|:---:|
-| ![](https://placehold.co/40x20/11111b/11111b) | Background | `#11111b` |
-| ![](https://placehold.co/40x20/565f89/565f89) | Deep Indigo | `#565f89` |
-| ![](https://placehold.co/40x20/7aa2f7/7aa2f7) | Electric Blue | `#7aa2f7` |
-| ![](https://placehold.co/40x20/bb9af7/bb9af7) | Magenta | `#bb9af7` |
-| ![](https://placehold.co/40x20/fab387/fab387) | Copper-Orange | `#fab387` |
-| ![](https://placehold.co/40x20/c0caf5/c0caf5) | Foreground | `#c0caf5` |
-
-</div>
-
-> 💡 **Copper-Orange** `#fab387` is the signature accent — it glows through window borders, Waybar modules, and the lock screen.
-
----
-
-## 🚀 Installation
-
-### Step 1 — Install the Theme
-
-```bash
-omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git
+```
+$ omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git
 ```
 
-### Step 2 — Install Waybar *(Optional)*
+### Then add Waybar *(optional)*
 
 > [!NOTE]
 > Your existing Waybar config is automatically backed up before anything is changed.
@@ -161,29 +112,27 @@ killall -q waybar; nohup waybar > /dev/null 2>&1 &
 
 ---
 
-## 🪟 Waybar Variants
+## ▸ 🪟 Waybar — Pick a Variant
 
 > [!WARNING]
-> All variants require **Step 1** (and **Step 2** for the default Waybar) to be completed first.
+> All variants require the theme install above (and **Step 2** for the default Waybar).
 
-| | Variant | Style | Setup |
-|:---:|:---|:---|:---|
-| 🅰️ | **Default** | Clean & minimal — ships out of the box | Ships by default |
-| 🅱️ | **Waybar-1** | Neon pill borders · rounded segments | `Setup-Waybar.sh` |
-| ⚡ | **Waybar-2** | Copper warmth · floating arcs | `waybar-setup.sh` |
-| 🍬 | **Waybar-3** | Neon pastel · rounded capsules | `waybar-setup.sh` |
-| 🌆 | **Waybar-4** | Catppuccin Mocha · copper borders | `waybar-setup.sh` |
+```
+  1) Default             → pre-installed with the theme
+  2) Pill Style          → EXTRA/WAYBARS/waybar-1 · ./Setup-Waybar.sh
+  3) Ember Arc           → EXTRA/WAYBARS/waybar-2 · ./waybar-setup.sh
+  4) Pastel Capsule      → EXTRA/WAYBARS/waybar-3 · ./waybar-setup.sh
+  5) Catppuccin Capsule  → EXTRA/WAYBARS/waybar-4 · ./waybar-setup.sh
+```
 
-<br>
-
-### 🅰️ Default Waybar
+### 1 · Default Waybar
 
 <div align="center">
 <img width="1920" height="55" alt="Default Waybar" src="https://github.com/user-attachments/assets/2aab9a8e-2bed-45e9-ab6b-a2c2e6c51d77" />
 <p><em>Clean and minimal — ships out of the box with the full install.</em></p>
 </div>
 
-### 🅱️ Waybar-1 — Pill Style
+### 2 · Waybar-1 — Pill Style
 
 <div align="center">
 <img width="1920" height="78" alt="Waybar-1 Pill Style" src="https://github.com/user-attachments/assets/05fd9edb-4d6b-4f5b-8fd4-56a004b1c428">
@@ -196,7 +145,7 @@ cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-1 \
   && chmod +x ~/.config/waybar/scripts/*
 ```
 
-### ⚡ Waybar-2 — Ember Arc
+### 3 · Waybar-2 — Ember Arc
 
 <div align="center">
 <img width="1917" height="76" alt="Waybar-2 Ember Arc" src="https://github.com/user-attachments/assets/72af47f3-be44-4c73-bca3-d028735b69c0" />
@@ -208,7 +157,7 @@ cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-2 \
   && chmod +x waybar-setup.sh && ./waybar-setup.sh
 ```
 
-### 🍬 Waybar-3 — Pastel Capsule
+### 4 · Waybar-3 — Pastel Capsule
 
 <div align="center">
 <img width="1917" height="76" alt="Waybar-3 Pastel Capsule" src="https://github.com/user-attachments/assets/a7b5d807-249c-4641-bad3-f6b2a8c113ea" />
@@ -220,7 +169,7 @@ cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-3 \
   && chmod +x waybar-setup.sh && ./waybar-setup.sh
 ```
 
-### 🌆 Waybar-4 — Catppuccin Mocha Capsule
+### 5 · Waybar-4 — Catppuccin Mocha Capsule
 
 <div align="center">
 <img width="1920" height="57" alt="Waybar-4 Catppuccin Mocha Capsule" src="https://github.com/user-attachments/assets/71e5fc69-c0f0-43d9-ad9c-d9782941b0ed" />
@@ -234,25 +183,23 @@ cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-4 \
 
 ---
 
-## 🌤️ Weather Widget
+## ▸ 🌤️ Weather Widget
 
 No more editing scripts. **One click** updates your city.
 
-<div align="center">
-
-| 🖱️ Click | ⌨️ Type | ✅ Done |
-|:---:|:---:|:---:|
-| Tap the weather icon | Enter your city name | Press `Enter` |
-| `🌡️` `☀️` `🌧️` | `London` · `Tokyo` · `Patna` | Updates instantly |
-
-</div>
+```
+click →  type city  →  enter
+  🌡️     "London"     ✓ done
+  ☀️     "Tokyo"      ✓ saved
+  🌧️     "Patna"      ✓ instant
+```
 
 > [!TIP]
 > Your city is saved automatically. To refresh, click the icon again or run `killall waybar; waybar &`.
 
 ---
 
-## 🔒 Lock Screen
+## ▸ 🔒 Lock Screen
 
 <div align="center">
 
@@ -262,10 +209,10 @@ No more editing scripts. **One click** updates your city.
 
 </div>
 
-### Installation
+### Setup
 
 > [!WARNING]
-> Complete **Step 1** (theme install) before running this.
+> Complete the theme install before running this.
 
 ```bash
 # 1. Install Playerctl (required for media key support)
@@ -316,7 +263,7 @@ omarchy-brightness-display off
 
 </details>
 
-### Customize the Lock Screen
+### Customize
 
 ```bash
 nano ~/.config/omarchy/current/theme/hyprlock.conf
@@ -346,7 +293,7 @@ image {
 | `3` | Standard — soft glass |
 | `5+` | Heavy — dreamy glow |
 
-### Restore the Original Lock Screen
+### Restore the original
 
 ```bash
 rm ~/.config/hypr/hyprlock.conf \
@@ -355,7 +302,77 @@ rm ~/.config/hypr/hyprlock.conf \
 
 ---
 
-## 🖼️ Wallpaper Collection
+## ▸ ✨ Features
+
+`◆ = enabled out of the box`
+
+| | Feature | What you get |
+|:---:|:---|:---|
+| ◆ | **Wallpaper** | Traditional Japanese Pixel Art Pagoda — handpicked for the aesthetic |
+| ◆ | **Widgets** | Floating diagnostic panels with custom animated resource bars |
+| ◆ | **Color Palette** | Deep Indigos · Electric Magentas · Warm Copper-Orange accents |
+| ◆ | **Weather Widget** | Live weather with click-to-change city — no script editing needed |
+| ◆ | **Lock Screen** | Glassmorphism Hyprlock with blur, quotes, and media controls |
+| ◆ | **Media Controls** | Playerctl integration with full Spotify Flatpak support |
+| ◆ | **5 Waybar Variants** | Pick your vibe — Default, Pill, Ember Arc, Pastel, Catppuccin |
+
+---
+
+## ▸ 🗂️ Theme Files
+
+One install themes your **entire desktop** — here's the layout:
+
+```
+~/.config/omarchy/current/theme/
+├── hyprland.conf          Hyprland WM
+├── hyprlock.conf          Lock screen
+├── waybar/                Waybar · 5 variants
+├── mako.ini               Notifications
+├── swayosd.css            On-screen display
+├── walker.css             App launcher
+├── wofi.css               Wofi launcher
+├── gtk.css                GTK apps
+├── alacritty.toml         Terminal
+├── kitty.conf             Terminal
+├── ghostty.conf           Terminal
+├── foot.ini               Terminal
+├── warp.yaml              Terminal
+├── gum.env.conf           Gum styling
+├── neovim.lua             Editor
+├── helix.toml             Editor
+├── vscode_colors.json     VSCode
+├── obsidian.css           Obsidian
+├── vencord.theme.css      Discord
+├── tokyo-night.theme.css  Discord · Tokyo Night
+├── theme.override.css     Browser
+├── chromium.theme         Chromium flags
+├── btop.theme             Btop
+├── cava_theme             Cava
+├── keyboard.rgb           RGB keyboard color
+├── icons.theme            Papirus-Dark icons
+├── quotes.txt             Lock screen quotes
+├── scripts/               Lock screen helpers
+└── backgrounds/           5 wallpapers
+```
+
+---
+
+## ▸ 🎨 Color Palette
+
+<div align="center">
+
+| Background | Deep Indigo | Electric Blue | Magenta | Copper-Orange | Foreground |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| ![](https://placehold.co/48x20/11111b/11111b) | ![](https://placehold.co/48x20/565f89/565f89) | ![](https://placehold.co/48x20/7aa2f7/7aa2f7) | ![](https://placehold.co/48x20/bb9af7/bb9af7) | ![](https://placehold.co/48x20/fab387/fab387) | ![](https://placehold.co/48x20/c0caf5/c0caf5) |
+| `#11111b` | `#565f89` | `#7aa2f7` | `#bb9af7` | `#fab387` | `#c0caf5` |
+
+</div>
+
+> 💡 **Copper-Orange** `#fab387` is the signature accent — it glows through window borders, Waybar modules, and the lock screen.
+
+---
+
+## ▸ 🖼️ Wallpapers
 
 > [!NOTE]
 > All wallpapers ship with the theme, optimized for dark desktop aesthetics.
@@ -391,14 +408,15 @@ rm ~/.config/hypr/hyprlock.conf \
 
 ---
 
-## 🤝 Contributing
+## ▸ 🤝 Contribute
 
 Contributions are warmly welcome!
 
-1. **Fork** this repository
-2. **Create** a branch: `git checkout -b feat/your-idea`
-3. **Commit** your changes: `git commit -m "feat: add your idea"`
-4. **Push** and open a **Pull Request**
+```
+git checkout -b feat/your-idea
+git commit -m "feat: add your idea"
+git push && open a Pull Request
+```
 
 ---
 
