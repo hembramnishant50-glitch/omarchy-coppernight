@@ -18,9 +18,29 @@ kissed by a striking **Copper-Orange** border that glows like a setting sun.
 [![Version](https://img.shields.io/badge/version-1.2-C87941?style=for-the-badge&logo=git&logoColor=white)](https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme)
 [![License](https://img.shields.io/badge/license-MIT-7AA2F7?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Hyprland](https://img.shields.io/badge/Hyprland-Rice-565f89?style=for-the-badge&logo=archlinux&logoColor=white)](https://hyprland.org)
+[![Omarchy](https://img.shields.io/badge/Made%20for-Omarchy-1E1E2E?style=for-the-badge&logo=archlinux&logoColor=white)](https://omarchy.org/)
 [![Stars](https://img.shields.io/github/stars/hembramnishant50-glitch/omarchy-coppernight-theme?style=for-the-badge&color=BB9AF7&logo=starship&logoColor=white)](https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme/stargazers)
 
+<br>
+
+<img src="preview.png" width="100%" alt="Copper Night desktop preview">
+
 </div>
+
+---
+
+## 📑 Table of Contents
+
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [Component Coverage](#component-coverage)
+- [Color Palette](#color-palette)
+- [Installation](#installation)
+- [Waybar Variants](#waybar-variants)
+- [Weather Widget](#weather-widget)
+- [Lock Screen](#lock-screen)
+- [Wallpaper Collection](#wallpaper-collection)
+- [Contributing](#contributing)
 
 ---
 
@@ -51,8 +71,25 @@ kissed by a striking **Copper-Orange** border that glows like a setting sun.
 | 🌤️ | **Weather Widget** | Live weather with click-to-change city — no script editing needed |
 | 🔒 | **Lock Screen** | Glassmorphism Hyprlock with blur, quotes, and media controls |
 | 🎵 | **Media Controls** | Playerctl integration with full Spotify Flatpak support |
+| 🍬 | **5 Waybar Variants** | Pick your vibe — Default, Pill, Ember Arc, Pastel, Catppuccin |
 
 </div>
+
+---
+
+## 🎛️ Component Coverage
+
+One install themes your **entire desktop** — window manager, shell, editors, and more.
+
+| Category | Components |
+|:---|:---|
+| 🖥️ **Desktop** | Hyprland · Hyprlock · Waybar · Mako · SwayOSD |
+| 🔎 **Launchers** | Walker · Wofi |
+| 💻 **Terminals** | Alacritty · Kitty · Ghostty · Foot · Warp · Gum |
+| ✍️ **Editors & IDE** | Neovim · Helix · VSCode |
+| 🎨 **Apps** | GTK · Obsidian · Discord (Vencord) · Browser |
+| 📊 **TUI & Tools** | Btop · Cava · Chromium flags |
+| 🎹 **Extras** | RGB keyboard color · Papirus-Dark icons · Wallpapers |
 
 ---
 
@@ -62,14 +99,16 @@ kissed by a striking **Copper-Orange** border that glows like a setting sun.
 
 | Swatch | Name | Hex |
 |:---:|:---|:---:|
-| ![](https://placehold.co/40x20/1a1b2e/1a1b2e) | Background | `#11111b` |
+| ![](https://placehold.co/40x20/11111b/11111b) | Background | `#11111b` |
 | ![](https://placehold.co/40x20/565f89/565f89) | Deep Indigo | `#565f89` |
 | ![](https://placehold.co/40x20/7aa2f7/7aa2f7) | Electric Blue | `#7aa2f7` |
 | ![](https://placehold.co/40x20/bb9af7/bb9af7) | Magenta | `#bb9af7` |
-| ![](https://placehold.co/40x20/c87941/c87941) | Copper-Orange | `#fab387` |
+| ![](https://placehold.co/40x20/fab387/fab387) | Copper-Orange | `#fab387` |
 | ![](https://placehold.co/40x20/c0caf5/c0caf5) | Foreground | `#c0caf5` |
 
 </div>
+
+> 💡 **Copper-Orange** `#fab387` is the signature accent — it glows through window borders, Waybar modules, and the lock screen.
 
 ---
 
@@ -81,11 +120,10 @@ kissed by a striking **Copper-Orange** border that glows like a setting sun.
 omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git
 ```
 
----
-
 ### Step 2 — Install Waybar *(Optional)*
 
-> 💾 Your existing Waybar config is automatically backed up before anything is changed.
+> [!NOTE]
+> Your existing Waybar config is automatically backed up before anything is changed.
 
 ```bash
 # Install dependencies
@@ -125,7 +163,16 @@ killall -q waybar; nohup waybar > /dev/null 2>&1 &
 
 ## 🪟 Waybar Variants
 
-> ⚠️ Waybar-1 and Waybar-2 require **Step 1** or **Step 2** to be completed first.
+> [!WARNING]
+> All variants require **Step 1** (and **Step 2** for the default Waybar) to be completed first.
+
+| | Variant | Style | Setup |
+|:---:|:---|:---|:---|
+| 🅰️ | **Default** | Clean & minimal — ships out of the box | Ships by default |
+| 🅱️ | **Waybar-1** | Neon pill borders · rounded segments | `Setup-Waybar.sh` |
+| ⚡ | **Waybar-2** | Copper warmth · floating arcs | `waybar-setup.sh` |
+| 🍬 | **Waybar-3** | Neon pastel · rounded capsules | `waybar-setup.sh` |
+| 🌆 | **Waybar-4** | Catppuccin Mocha · copper borders | `waybar-setup.sh` |
 
 <br>
 
@@ -136,12 +183,10 @@ killall -q waybar; nohup waybar > /dev/null 2>&1 &
 <p><em>Clean and minimal — ships out of the box with the full install.</em></p>
 </div>
 
----
-
 ### 🅱️ Waybar-1 — Pill Style
 
 <div align="center">
-<img width="1920" height="78" src="https://github.com/user-attachments/assets/05fd9edb-4d6b-4f5b-8fd4-56a004b1c428" alt="Waybar-1 Pill Style">
+<img width="1920" height="78" alt="Waybar-1 Pill Style" src="https://github.com/user-attachments/assets/05fd9edb-4d6b-4f5b-8fd4-56a004b1c428">
 <p><em>Neon pill borders · Rounded segments · Compact & clean</em></p>
 </div>
 
@@ -150,8 +195,6 @@ cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-1 \
   && chmod +x Setup-Waybar.sh && ./Setup-Waybar.sh \
   && chmod +x ~/.config/waybar/scripts/*
 ```
-
----
 
 ### ⚡ Waybar-2 — Ember Arc
 
@@ -165,11 +208,10 @@ cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-2 \
   && chmod +x waybar-setup.sh && ./waybar-setup.sh
 ```
 
----
 ### 🍬 Waybar-3 — Pastel Capsule
 
 <div align="center">
-<img width="1917" height="76" alt="Waybar-2 Ember Arc" src="https://github.com/user-attachments/assets/a7b5d807-249c-4641-bad3-f6b2a8c113ea" />
+<img width="1917" height="76" alt="Waybar-3 Pastel Capsule" src="https://github.com/user-attachments/assets/a7b5d807-249c-4641-bad3-f6b2a8c113ea" />
 <p><em>Neon pastel · Rounded capsules · Floating in a dark sky</em></p>
 </div>
 
@@ -178,16 +220,12 @@ cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-3 \
   && chmod +x waybar-setup.sh && ./waybar-setup.sh
 ```
 
----
-
 ### 🌆 Waybar-4 — Catppuccin Mocha Capsule
 
 <div align="center">
-
+<img width="1920" height="57" alt="Waybar-4 Catppuccin Mocha Capsule" src="https://github.com/user-attachments/assets/71e5fc69-c0f0-43d9-ad9c-d9782941b0ed" />
 <p><em>Catppuccin Mocha · Copper borders · Rounded capsules with workspace circles</em></p>
 </div>
-
-<img width="1920" height="57" alt="Image" src="https://github.com/user-attachments/assets/71e5fc69-c0f0-43d9-ad9c-d9782941b0ed" />
 
 ```bash
 cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-4 \
@@ -195,7 +233,6 @@ cd ~/.config/omarchy/current/theme/EXTRA/WAYBARS/waybar-4 \
 ```
 
 ---
-
 
 ## 🌤️ Weather Widget
 
@@ -210,7 +247,8 @@ No more editing scripts. **One click** updates your city.
 
 </div>
 
-> 💡 Your city is saved automatically. To refresh, click the icon again or run `killall waybar; waybar &`.
+> [!TIP]
+> Your city is saved automatically. To refresh, click the icon again or run `killall waybar; waybar &`.
 
 ---
 
@@ -226,7 +264,8 @@ No more editing scripts. **One click** updates your city.
 
 ### Installation
 
-> ⚠️ Complete **Step 1** (theme install) before running this.
+> [!WARNING]
+> Complete **Step 1** (theme install) before running this.
 
 ```bash
 # 1. Install Playerctl (required for media key support)
@@ -248,33 +287,34 @@ cp -r ~/.config/omarchy/current/theme/scripts \
 
 # 4. Make scripts executable
 chmod +x ~/.config/hypr/scripts/*
-
 ```
 
----
+<details>
+<summary><b>⚠️ Fix: Black Screen on Lock</b></summary>
 
-> ### ⚠️ Fix: Black Screen on Lock
->
-> If your screen goes black when locking, apply this quick fix.
->
-> **1. Open the file:**
-> ```bash
-> nano ~/.local/share/omarchy/bin/omarchy-system-lock
-> ```
->
-> **2. Find this line at the bottom:**
-> ```bash
-> omarchy-brightness-display off
-> ```
->
-> **3. Comment it out by adding `#` at the start:**
-> ```bash
-> # omarchy-brightness-display off
-> ```
->
-> **4. Save and exit:** `Ctrl+O` → `Enter` → `Ctrl+X`
+If your screen goes black when locking, apply this quick fix.
 
----
+**1. Open the file:**
+
+```bash
+nano ~/.local/share/omarchy/bin/omarchy-system-lock
+```
+
+**2. Find this line at the bottom:**
+
+```bash
+omarchy-brightness-display off
+```
+
+**3. Comment it out by adding `#` at the start:**
+
+```bash
+# omarchy-brightness-display off
+```
+
+**4. Save and exit:** `Ctrl+O` → `Enter` → `Ctrl+X`
+
+</details>
 
 ### Customize the Lock Screen
 
@@ -317,34 +357,37 @@ rm ~/.config/hypr/hyprlock.conf \
 
 ## 🖼️ Wallpaper Collection
 
-<div align="center">
-
+> [!NOTE]
 > All wallpapers ship with the theme, optimized for dark desktop aesthetics.
 
 ### 🌙 Featured — Cats at Moonrise
 
-<img src="https://github.com/user-attachments/assets/0d5fdda4-00e9-4478-a342-7dc5f7bb214d" width="100%" alt="Cats at Moonrise">
+<div align="center">
+
+<img src="backgrounds/cats-anime.jpg" width="100%" alt="Cats at Moonrise">
 
 *Five cats perched before a copper sunset — the spirit of Copper Night in one frame.*
 
-<br>
+</div>
+
+<div align="center">
 
 | | |
 |:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/b15da239-27ee-4555-b2d9-24f8f8f15602" width="100%"> | <img src="https://github.com/user-attachments/assets/55cc1ac0-f377-4fb0-9eb9-0da644e1d9d4" width="100%"> |
+| <img src="backgrounds/Character with Glowing Eyes and Katana.jpg" width="100%" alt="The Last Swordsman"> | <img src="backgrounds/Girl with Hannya Mask.jpeg" width="100%" alt="Girl and Hannya"> |
 | ⚔️ **The Last Swordsman** · *Dark Fantasy* | 👺 **Girl & Hannya** · *Monochrome Yokai* |
-| <img src="https://github.com/user-attachments/assets/34e74655-7dd6-4344-b53b-31707e25a4f9" width="100%"> | <img src="https://github.com/user-attachments/assets/ab07a513-d0d3-4daa-9501-ec87862752c1" width="100%"> |
-| 🪶 **Itachi & The Crows** · *Akatsuki* | 🏯 **Mountain Castle** · *Pixel Art* |
+| <img src="backgrounds/japanese-castle-pixel-digital-art.jpg" width="100%" alt="Mountain Castle"> | <img src="backgrounds/Itachi Uchiha.jpg" width="100%" alt="Itachi and The Crows"> |
+| 🏯 **Mountain Castle** · *Pixel Art* | 🪶 **Itachi & The Crows** · *Akatsuki* |
 
 </div>
 
-| Wallpaper | Style | Resolution |
-|:---|:---|:---:|
-| 🐱 Cats at Moonrise | Lofi · Ghibli | 3840 × 2160 |
-| 🏯 Mountain Castle | Pixel Art | 5120 × 2880 |
-| ⚔️ The Last Swordsman | Dark Fantasy | 3840 × 2160 |
-| 👺 Girl & Hannya | Monochrome · Yokai | 3840 × 2160 |
-| 🪶 Itachi & The Crows | Naruto · Akatsuki | 3840 × 2160 |
+| Wallpaper | File | Style | Resolution |
+|:---|:---|:---|:---:|
+| 🐱 Cats at Moonrise | `backgrounds/cats-anime.jpg` | Lofi · Ghibli | 3840 × 2160 |
+| 🏯 Mountain Castle | `backgrounds/japanese-castle-pixel-digital-art.jpg` | Pixel Art | 3840 × 2160 |
+| ⚔️ The Last Swordsman | `backgrounds/Character with Glowing Eyes and Katana.jpg` | Dark Fantasy | 3840 × 2160 |
+| 👺 Girl & Hannya | `backgrounds/Girl with Hannya Mask.jpeg` | Monochrome · Yokai | 3000 × 1688 |
+| 🪶 Itachi & The Crows | `backgrounds/Itachi Uchiha.jpg` | Naruto · Akatsuki | 3840 × 2160 |
 
 ---
 
