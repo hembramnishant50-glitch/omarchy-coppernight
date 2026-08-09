@@ -56,7 +56,7 @@ kissed by a **Copper-Orange** border that glows like a setting sun.
 ## ▸ ⚡ Install
 
 ```
-$ omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git
+ omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git
 ```
 
 ### Then add Waybar *(optional)*
