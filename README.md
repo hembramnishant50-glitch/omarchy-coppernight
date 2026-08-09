@@ -28,20 +28,6 @@ kissed by a **Copper-Orange** border that glows like a setting sun.
 
 ---
 
-```
-$ fastfetch
-
-   sunraku@copper-night
-   ─────────────────────
-   OS        Arch Linux x86_64
-   WM        Hyprland · Wayland
-   Shell     zsh
-   Theme     🌌 Copper Night v1.2
-   Accent    #fab387 · Copper-Orange
-   Palette   Tokyo Night × Copper
-   Status    ✓ 12 browsers themed · ✓ 5 waybar variants
-```
-
 <div align="center">
 
 <img src="preview.png" width="100%" alt="Copper Night desktop preview">
