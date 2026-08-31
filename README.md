@@ -29,18 +29,6 @@
 
 ---
 
-## 📸 Gallery
-
-<div align="center">
-
-| Desktop | Terminal | Lock Screen |
-|:-------:|:--------:|:-----------:|
-| ![Desktop](https://private-user-images.githubusercontent.com/235138312/569810468-74b6b030-6181-4f01-a142-0a56e4046b14.png) | ![Terminal](https://private-user-images.githubusercontent.com/235138312/569817836-94cdb423-e93f-4498-9f0c-a60f7ba3ed0f.png) | ![Lock](https://private-user-images.githubusercontent.com/235138312/551009845-86b69c94-6096-411f-a41e-4704c238f394.png) |
-
-</div>
-
----
-
 ## ⚡ Install
 
 ```bash
