@@ -1,0 +1,2217 @@
+<!doctype html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=i.length;r<a;r++)ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"))}for(var n=document.querySelectorAll("video"),r=0,a=n.length;r<a;r++)ewwwAttr(n[r],"poster",e?n[r].getAttribute("data-poster-webp"):n[r].getAttribute("data-poster-image"));for(var o,l=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=l.length;r<a;r++)e&&(ewwwAttr(l[r],"data-lazy-srcset",l[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(l[r],"data-srcset",l[r].getAttribute("data-srcset-webp")),ewwwAttr(l[r],"data-lazy-src",l[r].getAttribute("data-lazy-src-webp")),ewwwAttr(l[r],"data-src",l[r].getAttribute("data-src-webp")),ewwwAttr(l[r],"data-orig-file",l[r].getAttribute("data-webp-orig-file")),ewwwAttr(l[r],"data-medium-file",l[r].getAttribute("data-webp-medium-file")),ewwwAttr(l[r],"data-large-file",l[r].getAttribute("data-webp-large-file")),null!=(o=l[r].getAttribute("srcset"))&&!1!==o&&o.includes("R0lGOD")&&ewwwAttr(l[r],"src",l[r].getAttribute("data-lazy-src-webp"))),l[r].className=l[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var s=document.querySelectorAll(".ewww_webp"),r=0,a=s.length;r<a;r++)e?(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-webp")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-webp")),ewwwAttr(s[r],"data-orig-file",s[r].getAttribute("data-webp-orig-file")),ewwwAttr(s[r],"data-medium-file",s[r].getAttribute("data-webp-medium-file")),ewwwAttr(s[r],"data-large-file",s[r].getAttribute("data-webp-large-file")),ewwwAttr(s[r],"data-large_image",s[r].getAttribute("data-webp-large_image")),ewwwAttr(s[r],"data-src",s[r].getAttribute("data-webp-src"))):(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-img")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-img"))),s[r].className=s[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><!-- Manifest added by SuperPWA - Progressive Web Apps Plugin For WordPress -->
+<link rel="manifest" href="/superpwa-manifest.json">
+<link rel="prefetch" href="/superpwa-manifest.json">
+<meta name="theme-color" content="#D5E0EB">
+<!-- / SuperPWA.com -->
+
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>Page Not Found - 4k Mobile Wallpapers</title>
+<meta name="robots" content="follow, noindex"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Page Not Found - 4k Mobile Wallpapers" />
+<meta property="og:site_name" content="4k Mobile Wallpapers" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Page Not Found - 4k Mobile Wallpapers" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://4kmobilewallpapers.com/#person","name":"4k Mobile Wallpapers","image":{"@type":"ImageObject","@id":"https://4kmobilewallpapers.com/#logo","url":"https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-150x150.png","contentUrl":"https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-150x150.png","caption":"4k Mobile Wallpapers","inLanguage":"en-US"}},{"@type":"WebSite","@id":"https://4kmobilewallpapers.com/#website","url":"https://4kmobilewallpapers.com","name":"4k Mobile Wallpapers","publisher":{"@id":"https://4kmobilewallpapers.com/#person"},"inLanguage":"en-US"},{"@type":"WebPage","@id":"#webpage","url":"","name":"Page Not Found - 4k Mobile Wallpapers","isPartOf":{"@id":"https://4kmobilewallpapers.com/#website"},"inLanguage":"en-US"}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="alternate" type="application/rss+xml" title="4k Mobile Wallpapers &raquo; Feed" href="https://4kmobilewallpapers.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="4k Mobile Wallpapers &raquo; Comments Feed" href="https://4kmobilewallpapers.com/comments/feed/" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<link rel='stylesheet' id='blocksy-dynamic-global-css' href='https://4kmobilewallpapers.com/wp-content/uploads/blocksy/css/global.css?ver=46019' media='all' />
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://4kmobilewallpapers.com/wp-includes/blocks/paragraph/style.min.css */
+</style>
+
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--palette-color-1: var(--theme-palette-color-1, #2872fa);--wp--preset--color--palette-color-2: var(--theme-palette-color-2, #1559ed);--wp--preset--color--palette-color-3: var(--theme-palette-color-3, #3A4F66);--wp--preset--color--palette-color-4: var(--theme-palette-color-4, #192a3d);--wp--preset--color--palette-color-5: var(--theme-palette-color-5, #e1e8ed);--wp--preset--color--palette-color-6: var(--theme-palette-color-6, #f2f5f7);--wp--preset--color--palette-color-7: var(--theme-palette-color-7, #FAFBFC);--wp--preset--color--palette-color-8: var(--theme-palette-color-8, #ffffff);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--juicy-peach: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);--wp--preset--gradient--young-passion: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);--wp--preset--gradient--true-sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);--wp--preset--gradient--morpheus-den: linear-gradient(to top, #30cfd0 0%, #330867 100%);--wp--preset--gradient--plum-plate: linear-gradient(135deg, #667eea 0%, #764ba2 100%);--wp--preset--gradient--aqua-splash: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);--wp--preset--gradient--love-kiss: linear-gradient(to top, #ff0844 0%, #ffb199 100%);--wp--preset--gradient--new-retrowave: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);--wp--preset--gradient--plum-bath: linear-gradient(to top, #cc208e 0%, #6713d2 100%);--wp--preset--gradient--high-flight: linear-gradient(to right, #0acffe 0%, #495aff 100%);--wp--preset--gradient--teen-party: linear-gradient(135deg, #FF057C 0%, #8D0B93 50%, #321575 100%);--wp--preset--gradient--fabled-sunset: linear-gradient(135deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);--wp--preset--gradient--arielle-smile: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);--wp--preset--gradient--itmeo-branding: linear-gradient(180deg, #2af598 0%, #009efd 100%);--wp--preset--gradient--deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);--wp--preset--gradient--strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);--wp--preset--gradient--sweet-period: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);--wp--preset--gradient--purple-division: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);--wp--preset--gradient--cold-evening: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);--wp--preset--gradient--mountain-rock: linear-gradient(to right, #868f96 0%, #596164 100%);--wp--preset--gradient--desert-hump: linear-gradient(to top, #c79081 0%, #dfa579 100%);--wp--preset--gradient--ethernal-constance: linear-gradient(to top, #09203f 0%, #537895 100%);--wp--preset--gradient--happy-memories: linear-gradient(300deg, #ff5858 0%, #f09819 100%);--wp--preset--gradient--grown-early: linear-gradient(to top, #0ba360 0%, #3cba92 100%);--wp--preset--gradient--morning-salad: linear-gradient(135deg, #B7F8DB 0%, #50A7C2 100%);--wp--preset--gradient--night-call: linear-gradient(135deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);--wp--preset--gradient--mind-crawl: linear-gradient(135deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);--wp--preset--gradient--angel-care: linear-gradient(135deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);--wp--preset--gradient--juicy-cake: linear-gradient(to top, #e14fad 0%, #f9d423 100%);--wp--preset--gradient--rich-metal: linear-gradient(to right, #d7d2cc 0%, #304352 100%);--wp--preset--gradient--mole-hall: linear-gradient(340deg, #616161 0%, #9bc5c3 100%);--wp--preset--gradient--cloudy-knoxville: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);--wp--preset--gradient--soft-grass: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);--wp--preset--gradient--saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);--wp--preset--gradient--everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);--wp--preset--gradient--kind-steel: linear-gradient(340deg, #e9defa 0%, #fbfcdb 100%);--wp--preset--gradient--over-sun: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);--wp--preset--gradient--premium-white: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);--wp--preset--gradient--clean-mirror: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);--wp--preset--gradient--wild-apple: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);--wp--preset--gradient--snow-again: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);--wp--preset--gradient--confident-cloud: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);--wp--preset--gradient--glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);--wp--preset--gradient--perfect-white: linear-gradient(135deg, #E3FDF5 0%, #FFE6FA 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: clamp(22px, 1.375rem + ((1vw - 3.2px) * 0.625), 30px);--wp--preset--font-size--x-large: clamp(30px, 1.875rem + ((1vw - 3.2px) * 1.563), 50px);--wp--preset--font-size--xx-large: clamp(45px, 2.813rem + ((1vw - 3.2px) * 2.734), 80px);--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:root { --wp--style--global--content-size: var(--theme-block-max-width);--wp--style--global--wide-size: var(--theme-block-wide-max-width); }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: var(--theme-content-spacing); margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: var(--theme-content-spacing); }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: var(--theme-content-spacing);margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: var(--theme-content-spacing);margin-block-end: 0;}:root :where(.is-layout-flex){gap: var(--theme-content-spacing);}:root :where(.is-layout-grid){gap: var(--theme-content-spacing);}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){font-style: inherit;font-weight: inherit;letter-spacing: inherit;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-color{color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-color{color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-color{color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-color{color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-color{color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-color{color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-color{color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-color{color: var(--wp--preset--color--palette-color-8) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-background-color{background-color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-background-color{background-color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-background-color{background-color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-background-color{background-color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-background-color{background-color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-background-color{background-color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-background-color{background-color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-background-color{background-color: var(--wp--preset--color--palette-color-8) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-border-color{border-color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-border-color{border-color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-border-color{border-color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-border-color{border-color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-border-color{border-color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-border-color{border-color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-border-color{border-color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-border-color{border-color: var(--wp--preset--color--palette-color-8) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-juicy-peach-gradient-background{background: var(--wp--preset--gradient--juicy-peach) !important;}.has-young-passion-gradient-background{background: var(--wp--preset--gradient--young-passion) !important;}.has-true-sunset-gradient-background{background: var(--wp--preset--gradient--true-sunset) !important;}.has-morpheus-den-gradient-background{background: var(--wp--preset--gradient--morpheus-den) !important;}.has-plum-plate-gradient-background{background: var(--wp--preset--gradient--plum-plate) !important;}.has-aqua-splash-gradient-background{background: var(--wp--preset--gradient--aqua-splash) !important;}.has-love-kiss-gradient-background{background: var(--wp--preset--gradient--love-kiss) !important;}.has-new-retrowave-gradient-background{background: var(--wp--preset--gradient--new-retrowave) !important;}.has-plum-bath-gradient-background{background: var(--wp--preset--gradient--plum-bath) !important;}.has-high-flight-gradient-background{background: var(--wp--preset--gradient--high-flight) !important;}.has-teen-party-gradient-background{background: var(--wp--preset--gradient--teen-party) !important;}.has-fabled-sunset-gradient-background{background: var(--wp--preset--gradient--fabled-sunset) !important;}.has-arielle-smile-gradient-background{background: var(--wp--preset--gradient--arielle-smile) !important;}.has-itmeo-branding-gradient-background{background: var(--wp--preset--gradient--itmeo-branding) !important;}.has-deep-blue-gradient-background{background: var(--wp--preset--gradient--deep-blue) !important;}.has-strong-bliss-gradient-background{background: var(--wp--preset--gradient--strong-bliss) !important;}.has-sweet-period-gradient-background{background: var(--wp--preset--gradient--sweet-period) !important;}.has-purple-division-gradient-background{background: var(--wp--preset--gradient--purple-division) !important;}.has-cold-evening-gradient-background{background: var(--wp--preset--gradient--cold-evening) !important;}.has-mountain-rock-gradient-background{background: var(--wp--preset--gradient--mountain-rock) !important;}.has-desert-hump-gradient-background{background: var(--wp--preset--gradient--desert-hump) !important;}.has-ethernal-constance-gradient-background{background: var(--wp--preset--gradient--ethernal-constance) !important;}.has-happy-memories-gradient-background{background: var(--wp--preset--gradient--happy-memories) !important;}.has-grown-early-gradient-background{background: var(--wp--preset--gradient--grown-early) !important;}.has-morning-salad-gradient-background{background: var(--wp--preset--gradient--morning-salad) !important;}.has-night-call-gradient-background{background: var(--wp--preset--gradient--night-call) !important;}.has-mind-crawl-gradient-background{background: var(--wp--preset--gradient--mind-crawl) !important;}.has-angel-care-gradient-background{background: var(--wp--preset--gradient--angel-care) !important;}.has-juicy-cake-gradient-background{background: var(--wp--preset--gradient--juicy-cake) !important;}.has-rich-metal-gradient-background{background: var(--wp--preset--gradient--rich-metal) !important;}.has-mole-hall-gradient-background{background: var(--wp--preset--gradient--mole-hall) !important;}.has-cloudy-knoxville-gradient-background{background: var(--wp--preset--gradient--cloudy-knoxville) !important;}.has-soft-grass-gradient-background{background: var(--wp--preset--gradient--soft-grass) !important;}.has-saint-petersburg-gradient-background{background: var(--wp--preset--gradient--saint-petersburg) !important;}.has-everlasting-sky-gradient-background{background: var(--wp--preset--gradient--everlasting-sky) !important;}.has-kind-steel-gradient-background{background: var(--wp--preset--gradient--kind-steel) !important;}.has-over-sun-gradient-background{background: var(--wp--preset--gradient--over-sun) !important;}.has-premium-white-gradient-background{background: var(--wp--preset--gradient--premium-white) !important;}.has-clean-mirror-gradient-background{background: var(--wp--preset--gradient--clean-mirror) !important;}.has-wild-apple-gradient-background{background: var(--wp--preset--gradient--wild-apple) !important;}.has-snow-again-gradient-background{background: var(--wp--preset--gradient--snow-again) !important;}.has-confident-cloud-gradient-background{background: var(--wp--preset--gradient--confident-cloud) !important;}.has-glass-water-gradient-background{background: var(--wp--preset--gradient--glass-water) !important;}.has-perfect-white-gradient-background{background: var(--wp--preset--gradient--perfect-white) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='contact-form-7-css' href='https://4kmobilewallpapers.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.7' media='all' />
+<link rel='stylesheet' id='cmplz-general-css' href='https://4kmobilewallpapers.com/wp-content/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=1787224459' media='all' />
+<link rel='stylesheet' id='ct-main-styles-css' href='https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/main.min.css?ver=2.1.53' media='all' />
+<link rel='stylesheet' id='ct-page-title-styles-css' href='https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/page-title.min.css?ver=2.1.53' media='all' />
+<link rel='stylesheet' id='ct-cf-7-styles-css' href='https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/cf-7.min.css?ver=2.1.53' media='all' />
+<link rel='stylesheet' id='cmplz-banner-1-optin-css' href='https://4kmobilewallpapers.com/wp-content/uploads/complianz/css/banner-1-optin.css?ver=1787224467' media='all' />
+<link rel="https://api.w.org/" href="https://4kmobilewallpapers.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://4kmobilewallpapers.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6994117986450416"
+     crossorigin="anonymous"></script>
+			<style>.cmplz-hidden {
+					display: none !important;
+				}</style>
+				<noscript><link rel='stylesheet' href='https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/no-scripts.min.css' type='text/css'></noscript>
+<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style><style class="wpcode-css-snippet">/* 1. આખા કાર્ડમાંથી બોર્ડર કાઢી નાખી */
+.entry-card {
+    background: #16181c !important; 
+    border-radius: 0px !important;
+    overflow: hidden !important;
+    border: none !important; 
+    padding: 0 !important; 
+    margin-bottom: 20px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4) !important;
+}
+
+/* 2. ઈમેજ પર કોઈ આઉટલાઈન ના આવે તે માટે */
+.entry-card .ct-media-container,
+.entry-card .ct-media-container a,
+.entry-card .ct-media-container img {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    display: block !important;
+    border: none !important; 
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+/* 3. પ્રોફેશનલ પટ્ટો (હાઈટ સાવ ઘટાડીને સ્લિમ કરી દીધી) */
+.entry-card .entry-title {
+    background: linear-gradient(to bottom, #1c1e22, #121316) !important;
+    border-top: 1px solid #2a2c30 !important; 
+    
+    /* અક્ષરની છુપી જગ્યાને બેલેન્સ કરવા ઉપર 2px અને નીચે 8px રાખ્યું, જેથી આંખને સેન્ટર લાગે */
+    padding: 2px 10px 8px 10px !important; 
+    margin: 0 !important;
+    
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    line-height: 1 !important; 
+}
+
+/* 4. Title ના અક્ષરોની સ્ટાઈલ અને 30 Character Limit */
+.entry-card .entry-title a {
+    background: transparent !important;
+    border: none !important;
+    color: rgba(255, 255, 255, 0.6) !important; 
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 12px !important; 
+    font-weight: 500 !important; 
+    text-transform: uppercase !important; /* <--- અહીં ALL CAPS કરી દીધું છે */
+    letter-spacing: 0.3px !important; 
+    text-decoration: none !important; 
+    
+    /* 30 અક્ષર પછી ... લાવવાનું સેટિંગ */
+    display: inline-block !important;
+    max-width: min(100%, 35ch) !important; 
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    vertical-align: middle !important;
+}
+
+/* 5. હોવર ઇફેક્ટ */
+.entry-card .entry-title a:hover {
+    color: #ffffff !important;
+}</style><style class="wpcode-css-snippet">/* =========================================
+   0. GLOBAL STABILITY
+   ========================================= */
+html {
+    overflow-y: scroll !important;
+}
+
+/* =========================================
+   1. LAYOUT & MASONRY (BASE = TABLET/3 COLS)
+   ========================================= */
+.entries, .archive .entries, .category .entries, .home .entries, .search-results .entries, .ast-row, .post-grid {
+    display: block !important;
+    column-count: 3 !important; /* Default 3 for Tablet/Laptop */
+    column-gap: 20px !important;
+    width: 100% !important;
+}
+
+.entries article, .category .site-main .entries .entry, .search-results article {
+    display: inline-block !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
+    break-inside: avoid !important;
+}
+
+/* --- NEW: DESKTOP 4 COLUMNS --- */
+@media (min-width: 1200px) {
+    .entries, .archive .entries, .category .entries, .home .entries, .search-results .entries, .ast-row, .post-grid {
+        column-count: 4 !important;
+    }
+}
+
+/* =========================================
+   2. IMAGE STYLING
+   ========================================= */
+.wp-block-image img, .entry-card img, article img, .post-thumbnail img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    transition: transform 0.4s ease !important;
+    object-fit: cover !important;
+}
+
+.wp-block-image img:hover {
+    transform: scale(1.03) !important;
+}
+
+/* =========================================
+   3. HEADER STYLING
+   ========================================= */
+.site-header {
+    padding: 15px 0 !important;
+    background: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05) !important;
+    z-index: 9999 !important;
+    position: relative !important;
+}
+
+.site-title a {
+    font-size: 32px !important;
+    font-weight: 900 !important;
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+/* =========================================
+   4. SEARCH BAR (FINAL FIX - WHITE FILL & NO BLUE PATCH)
+   ========================================= */
+@media (min-width: 921px) {
+    .site-header .ast-builder-grid-row {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important; 
+    }
+    .pichub-custom-search {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 900px !important;      
+        min-width: 900px !important;  
+        max-width: 900px !important;  
+        flex-shrink: 0 !important;    
+    }
+}
+
+/* MAIN WRAPPER STYLING */
+.search-box-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    background: #ffffff !important; 
+    border: 1px solid #ebebeb !important; 
+    border-radius: 50px !important;
+    padding: 0 15px 0 25px !important; 
+    height: 52px !important; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05) !important; 
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    overflow: hidden !important; /* Prevents internal blue from leaking out */
+    position: relative !important;
+}
+
+/* Hover & Focus styling for the WHOLE box */
+.search-box-wrapper:hover,
+.search-box-wrapper:focus-within {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+    border-color: #333 !important; /* Border dark indicates active state */
+    transform: translateY(-2px) !important;
+}
+
+/* INPUT FIELD */
+.search-input {
+    border: none !important;
+    background: transparent !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    font-weight: 500 !important; 
+    color: #333 !important;
+    outline: none !important; 
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100% !important;
+    box-shadow: none !important;
+    z-index: 2 !important; 
+}
+
+/* --- THE MAGIC FIX: FORCE AUTOFILL TO BE WHITE --- */
+/* This covers the 'Blue Square' with White, so it blends perfectly */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 100px white inset !important; /* Forces White BG */
+    -webkit-text-fill-color: #333 !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* Button Styling */
+.search-btn {
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    margin-left: 10px !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: background 0.2s ease !important;
+    z-index: 2 !important;
+}
+
+.search-btn:hover {
+    background-color: #f5f5f5 !important;
+}
+
+.search-btn::after {
+    content: "" !important;
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666666' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    opacity: 0.6 !important;
+    transition: opacity 0.2s !important;
+}
+
+.search-btn:hover::after {
+    opacity: 1 !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") !important;
+}
+
+/* =========================================
+   5. DESKTOP MENU ONLY (FIX FOR MOBILE ISSUE)
+   ========================================= */
+
+/* આ લાઈનનો અર્થ: આ કોડ ફક્ત મોટા સ્ક્રીન (Desktop) પર જ લાગુ પડશે */
+@media (min-width: 921px) {
+
+    /* A. મેનુ કન્ટેનર (Layout) */
+    .main-header-menu,
+    .header-menu-1,
+    .ast-builder-menu-1 {
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 12px !important;
+        align-items: center !important;
+    }
+
+    /* HORIZONTAL SCROLL FOR MANY CATEGORIES */
+.main-header-menu,
+.header-menu-1,
+.ast-builder-menu-1 {
+    display: flex !important;
+    flex-wrap: nowrap !important; /* લાઈન તૂટવા નહી દે */
+    overflow-x: auto !important;  /* આડું સ્ક્રોલ ચાલુ કરશે */
+    justify-content: flex-start !important; /* ડાબી બાજુથી શરૂ થશે */
+    padding-bottom: 5px !important; /* નીચે થોડી જગ્યા */
+    
+    /* Hide Scrollbar for clean look */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide Scrollbar for Chrome, Safari and Opera */
+.main-header-menu::-webkit-scrollbar,
+.header-menu-1::-webkit-scrollbar,
+.ast-builder-menu-1::-webkit-scrollbar {
+    display: none !important;
+}
+    /* B. CATEGORIES STYLE (FIXED HEIGHT + HOVER EFFECT) */
+    .main-header-menu .menu-item:not(.menu-item-has-children) > a,
+    .header-menu-1 .menu-item:not(.menu-item-has-children) > a,
+    .ast-builder-menu-1 .menu-item:not(.menu-item-has-children) > a {
+        color: #444 !important;
+        font-weight: 600 !important;
+        text-transform: capitalize !important;
+        font-size: 14px !important;
+        text-decoration: none !important;
+        
+        /* --- FIXED HEIGHT SETTINGS (સાઈઝ નાની કરી) --- */
+        height: 42px !important;          
+        line-height: 1 !important;        
+        display: inline-flex !important;  
+        align-items: center !important;   
+        justify-content: center !important; 
+        padding: 0 24px !important;        
+        margin: 0 5px !important;          
+        /* ------------------------------------------- */
+
+        border: 1px solid #f0f0f0 !important;
+        border-radius: 50px !important;
+        background: #ffffff !important;
+        
+        /* Soft Shadow */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important; 
+        transition: all 0.3s ease !important;
+    }
+
+    /* --- HOVER EFFECT RESTORED (આ ઈફેક્ટ પાછી ઉમેરી) --- */
+    .main-header-menu .menu-item:not(.menu-item-has-children) > a:hover,
+    .header-menu-1 .menu-item:not(.menu-item-has-children) > a:hover,
+    .ast-builder-menu-1 .menu-item:not(.menu-item-has-children) > a:hover {
+        background-color: #000000 !important; /* બ્લેક કલર */
+        color: #ffffff !important;            /* વાઈટ ટેક્સ્ટ */
+        border-color: #000000 !important;
+        transform: translateY(-3px) !important; /* ઉપર જશે */
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+    }
+
+    /* C. TOOLS BUTTON (ORIGINAL STYLE) */
+    .main-header-menu .menu-item-has-children > a,
+    .header-menu-1 .menu-item-has-children > a,
+    .ast-builder-menu-1 .menu-item-has-children > a {
+        color: #000 !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        padding: 8px 16px !important; 
+        border: 1px solid #eee !important;
+        border-radius: 50px !important;
+        position: relative !important;
+        z-index: 1002 !important;
+        background: #fff !important;
+        margin: 0 !important;
+    }
+
+    .main-header-menu .menu-item-has-children:hover > a,
+    .header-menu-1 .menu-item-has-children:hover > a,
+    .ast-builder-menu-1 .menu-item-has-children:hover > a {
+        background: #000000 !important;
+        color: #ffffff !important;
+        border-color: #000000 !important;
+        transform: translateY(-2px) !important;
+    }
+
+    /* D. DROPDOWN BOX (PULLED UP FIX + RIGHT ALIGN + SCROLL) */
+    ul.sub-menu {
+        background-color: #ffffff !important;      
+        border-radius: 8px !important;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+        padding: 10px 0 !important; 
+        border: 1px solid #f0f0f0 !important;
+        width: 260px !important; 
+        
+        position: absolute !important;
+        top: 100% !important;
+        margin-top: -25px !important; /* Force Pull Up */
+        
+        /* FIX 1: ડ્રોપડાઉન Right થી Left ખુલશે જેથી સ્ક્રીનની બહાર ન જાય */
+        right: 0 !important;
+        left: auto !important;
+        transform-origin: top right !important;
+        
+        /* FIX 2: લાંબા લિસ્ટ માટે હાઈટ ફિક્સ અને સ્ક્રોલબાર (20-30 બ્લોગ માટે) */
+        max-height: 400px !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        
+        z-index: 1001 !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+
+    /* SCROLLBAR DESIGN FOR DROPDOWN */
+    ul.sub-menu::-webkit-scrollbar {
+        width: 6px !important;
+    }
+    ul.sub-menu::-webkit-scrollbar-track {
+        background: #f1f1f1 !important;
+        border-radius: 8px !important;
+    }
+    ul.sub-menu::-webkit-scrollbar-thumb {
+        background: #cccccc !important;
+        border-radius: 8px !important;
+    }
+    ul.sub-menu::-webkit-scrollbar-thumb:hover {
+        background: #999999 !important;
+    }
+
+    .menu-item-has-children:hover > ul.sub-menu {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /* E. DROPDOWN ITEMS (Original Style) */
+    .sub-menu .menu-item {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        display: block !important;
+    }
+
+    .sub-menu .menu-item a {
+        color: #333333 !important; 
+        font-size: 14px !important; 
+        font-weight: 500 !important; 
+        padding: 10px 20px !important; 
+        border-radius: 0 !important; 
+        display: block !important;
+        width: 100% !important;
+        background: transparent !important;
+        transition: all 0.2s ease !important;
+        text-decoration: none !important;
+        line-height: 1.4 !important; 
+        border: none !important;
+        text-transform: capitalize !important;
+    }
+
+    /* F. HOVER EFFECT (Original Black Line) */
+    .sub-menu li:hover > a, 
+    .sub-menu .menu-item a:hover {
+        background-color: #f7f7f7 !important; 
+        color: #000000 !important; 
+        padding-left: 25px !important; 
+        font-weight: 700 !important;
+        box-shadow: inset 3px 0 0 0 #000000 !important; 
+    }
+
+} 
+
+/* =========================================
+   G. MORE BUTTON & DROPDOWN (STRICT CLICK FIX)
+   ========================================= */
+
+@media (min-width: 921px) {
+
+    /* 1. CONTAINER FIX */
+    .main-header-menu,
+    .header-menu-1,
+    .ast-builder-menu-1 {
+        overflow: visible !important;
+        overflow-x: visible !important;
+    }
+
+    /* 2. MORE BUTTON STYLE - UPDATED CLASS SELECTOR */
+    /* હવે last-child ને બદલે .more-btn-custom ક્લાસ વાપર્યો છે */
+    .main-header-menu .more-btn-custom > a,
+    .header-menu-1 .more-btn-custom > a,
+    .ast-builder-menu-1 .more-btn-custom > a {
+        height: 42px !important;
+        line-height: 1 !important;
+        background: #ffffff !important;
+        color: #444 !important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        text-transform: capitalize !important;
+        border-radius: 50px !important;
+        padding: 0 24px !important;
+        border: 1px solid #f0f0f0 !important;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+        margin: 0 5px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        position: relative !important;
+        z-index: 1000 !important;
+    }
+
+    /* ---------------------------------------------------------
+       PART A: BUTTON COLORS (Hover & Click)
+       --------------------------------------------------------- */
+    
+    /* માઉસ બટન પર હોય (Hover) ત્યારે બ્લેક થવું જોઈએ */
+    .main-header-menu .more-btn-custom:hover > a,
+    .header-menu-1 .more-btn-custom:hover > a,
+    .ast-builder-menu-1 .more-btn-custom:hover > a {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        border-color: #000000 !important;
+    }
+    
+    /* જ્યારે ક્લિક કરેલું હોય (Focus) ત્યારે પણ બ્લેક રહેવું જોઈએ */
+    .main-header-menu .more-btn-custom:focus-within > a,
+    .header-menu-1 .more-btn-custom:focus-within > a,
+    .ast-builder-menu-1 .more-btn-custom:focus-within > a {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        border-color: #000000 !important;
+    }
+
+    /* Arrow Icon Fix */
+    .main-header-menu .more-btn-custom:hover > a svg,
+    .main-header-menu .more-btn-custom:focus-within > a svg,
+    .header-menu-1 .more-btn-custom:hover > a svg,
+    .header-menu-1 .more-btn-custom:focus-within > a svg,
+    .ast-builder-menu-1 .more-btn-custom:hover > a svg,
+    .ast-builder-menu-1 .more-btn-custom:focus-within > a svg {
+        fill: #ffffff !important;
+        color: #ffffff !important;
+    }
+
+    /* ---------------------------------------------------------
+       PART B: DROPDOWN BEHAVIOR (THE MAIN FIX)
+       --------------------------------------------------------- */
+
+    /* 1. DEFAULT & HOVER STATE: STRICTLY HIDDEN */
+    
+    .main-header-menu .more-btn-custom ul.sub-menu,
+    .main-header-menu .more-btn-custom:hover ul.sub-menu,
+    .header-menu-1 .more-btn-custom ul.sub-menu,
+    .header-menu-1 .more-btn-custom:hover ul.sub-menu,
+    .ast-builder-menu-1 .more-btn-custom ul.sub-menu,
+    .ast-builder-menu-1 .more-btn-custom:hover ul.sub-menu {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+    }
+
+    /* 2. CLICK STATE (FOCUS): ONLY NOW SHOW IT */
+    
+    .main-header-menu .more-btn-custom:focus-within > ul.sub-menu,
+    .header-menu-1 .more-btn-custom:focus-within > ul.sub-menu,
+    .ast-builder-menu-1 .more-btn-custom:focus-within > ul.sub-menu {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        
+        /* Design */
+        background-color: #ffffff !important;
+        width: 180px !important; 
+        border-radius: 8px !important;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.15) !important;
+        border: 1px solid #eee !important;
+        top: 100% !important;
+        right: 0 !important;
+        left: auto !important;
+        margin-top: 10px !important; 
+        z-index: 999 !important;
+        transform: translateY(0) !important;
+    }
+
+    /* 3. LIST ITEMS STYLE */
+    .main-header-menu .more-btn-custom .sub-menu .menu-item a,
+    .header-menu-1 .more-btn-custom .sub-menu .menu-item a,
+    .ast-builder-menu-1 .more-btn-custom .sub-menu .menu-item a {
+        border-radius: 0 !important;
+        border: none !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        height: auto !important;
+        display: block !important;
+        text-align: left !important;
+        padding: 12px 20px !important;
+        background: transparent !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+    }
+
+    .main-header-menu .more-btn-custom .sub-menu .menu-item a:hover,
+    .header-menu-1 .more-btn-custom .sub-menu .menu-item a:hover,
+    .ast-builder-menu-1 .more-btn-custom .sub-menu .menu-item a:hover {
+        background-color: #f7f7f7 !important;
+        color: #000 !important;
+        padding-left: 25px !important;
+    }
+}
+/* END DESKTOP MEDIA QUERY */
+/* =========================================
+   6. Copyright Bar (Bottom) - FIXED & MERGED
+   ========================================= */
+[data-row="bottom"], .ct-footer-copyright {
+    background-color: #ffffff !important;
+    padding: 15px 0 !important;
+    margin-top: 0px !important; 
+    text-align: center !important;
+
+    /* STACK ITEMS VERTICALLY */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 2px !important; /* ફેરફાર 1: ગેપ 8px થી ઘટાડીને 2px કર્યો */
+}
+
+/* કન્ટેનરને ઉભા સેટ કરવા */
+[data-row="bottom"] .ct-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+/* Widget Area Center */
+[data-row="bottom"] > div, 
+[data-row="bottom"] .ct-columns {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+/* =========================================
+   6.1 Total Views Counter - FINAL CENTER FIX
+   ========================================= */
+
+/* 1. Main Button Container */
+[data-row="bottom"] .widget_text, 
+[data-row="bottom"] .textwidget,
+[data-row="bottom"] .widget_block {
+    /* --- Flexbox: The Ultimate Centering Tool --- */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important; 
+    
+    /* --- Size & Spacing --- */
+    width: auto !important;
+    width: fit-content !important;
+    
+    /* પેડિંગ સરખું રાખ્યું છે (ઉપર અને નીચે) */
+    padding: 6px 15px !important; 
+
+    /* --- Design Style --- */
+    border: 1px solid #d1d1d1 !important; 
+    border-radius: 50px !important;        
+    background-color: transparent !important; 
+    
+    /* Positioning */
+    margin-top: 0px !important; /* ફેરફાર 2: માર્જિન 8px થી ઘટાડીને 0px કર્યું */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    
+    transition: all 0.3s ease !important;
+}
+
+/* 2. RESET EVERYTHING INSIDE (આ મહત્વનું છે) */
+[data-row="bottom"] .widget_text *, 
+[data-row="bottom"] .textwidget *,
+[data-row="bottom"] .widget_block * {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    vertical-align: middle !important;
+    
+    /* Font Style */
+    font-size: 11px !important;
+    color: #555555 !important;
+    font-weight: 500 !important;
+}
+
+
+/* =========================================
+   7. SINGLE POST PROFESSIONAL HOVER EFFECT
+   ========================================= */
+
+/* 1. Image Animation Setup */
+.single-post article figure img, 
+.single-post .entry-content > figure:first-of-type img,
+.single-post .entry-content > .wp-block-image:first-of-type img {
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.4s ease !important;
+    transform-origin: center center !important;
+    backface-visibility: hidden !important; 
+}
+
+/* 2. Hover Effect */
+.single-post article figure:hover img, 
+.single-post .entry-content > figure:first-of-type:hover img,
+.single-post .entry-content > .wp-block-image:first-of-type:hover img {
+    transform: scale(1.15) !important;        
+    cursor: zoom-in !important;
+}
+
+/* 3. FORCE REMOVE BACKGROUND & SHADOW */
+.single-post article figure, 
+.single-post article figure:hover,
+.single-post .entry-content > figure:first-of-type,
+.single-post .entry-content > figure:first-of-type:hover,
+.single-post .entry-content > .wp-block-image:first-of-type,
+.single-post .entry-content > .wp-block-image:first-of-type:hover {
+    background-color: transparent !important; 
+    background: none !important;
+    box-shadow: none !important;                
+    border: none !important;
+}
+
+/* =========================================
+   8. MOBILE RESPONSIVE MENU & HEADER FIXES
+   (CLEANED UP - NO BLUE BACKGROUND)
+   ========================================= */
+@media (max-width: 921px) {
+
+    /* --- A. Header Layout Fix --- */
+    .site-header .ast-builder-grid-row {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 0 15px !important;
+    }
+
+    /* --- B. Search Bar Mobile Fix --- */
+    .pichub-custom-search {
+        width: 100% !important;
+        margin: 15px 0 !important;
+    }
+    
+    .search-box-wrapper {
+        height: 45px !important;
+    }
+
+    /* --- C. Menu Items Setup --- */
+    .main-header-menu {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        background: #ffffff !important; /* White Background */
+    }
+
+    .main-header-menu > .menu-item {
+        width: 100% !important;
+        margin: 0 !important;
+        border-bottom: 1px solid #eeeeee !important; /* Light Grey Divider */
+    }
+
+    .main-header-menu > .menu-item > a {
+        display: flex !important;
+        justify-content: space-between !important; 
+        width: 100% !important;
+        color: #000000 !important; /* Dark Text */
+        font-weight: 600 !important;
+        padding: 15px 10px !important;
+        border: none !important;
+    }
+
+    /* --- D. DROPDOWN FIX (CLEAN/TRANSPARENT) --- */
+    ul.sub-menu {
+        position: relative !important;
+        width: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+        
+        /* FIX: REMOVED BLUE BACKGROUND */
+        background: transparent !important; 
+        
+        opacity: 1 !important;
+        visibility: visible !important;
+        margin-top: 0 !important;
+        padding: 0 !important; 
+    }
+
+    /* Submenu Items Colors */
+    .sub-menu .menu-item a {
+        color: #555555 !important;       /* Medium Grey Text */
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        text-align: left !important;
+        padding: 12px 20px !important;
+        background: transparent !important; 
+        border-bottom: 1px solid rgba(0,0,0,0.03) !important;
+    }
+
+    /* Hover Effect update (Simple Darken) */
+    .sub-menu li:hover > a, 
+    .sub-menu .menu-item a:hover {
+        background: transparent !important; 
+        color: #000000 !important;       /* Black Text on Hover */
+        padding-left: 25px !important;  
+        box-shadow: none !important; 
+    }
+}
+
+/* =========================================
+   9. FINAL RESPONSIVE PATCHES
+   ========================================= */
+
+/* --- FIX 1: Single Post Image Overflow --- */
+@media (max-width: 640px) {
+    .single-post article figure, 
+    .single-post .entry-content > figure:first-of-type,
+    .single-post .entry-content > .wp-block-image:first-of-type {
+        width: 100% !important;   
+        height: auto !important;   
+        margin: 15px auto !important;
+        padding: 0 15px !important; 
+    }
+}
+
+/* --- FIX 2: Masonry Grid Gap Adjustment --- */
+@media (max-width: 480px) {
+    .entries, .archive .entries, .category .entries {
+        column-gap: 15px !important; 
+    }
+    
+    .entries article {
+        margin-bottom: 15px !important;
+    }
+}
+
+/* --- FIX 3: Very Small Screens --- */
+@media (max-width: 380px) {
+    .site-title a {
+        font-size: 26px !important;
+    }
+
+    .search-box-wrapper {
+        padding: 0 10px 0 15px !important;
+        height: 48px !important;
+    }
+    
+    .search-input {
+        font-size: 14px !important;
+    }
+}
+
+/* --- FIX 4: Prevent Horizontal Scrolling --- */
+body, html {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+}
+
+/* =========================================
+   MOBILE SEARCH BOX FIX (FINAL)
+   ========================================= */
+@media (max-width: 921px) {
+    /* 1. Mobile Header Layout Fix */
+    .site-header .ast-builder-grid-row {
+        display: flex !important;
+        flex-direction: column !important; 
+        align-items: center !important;
+        justify-content: center !important;
+        padding-bottom: 10px !important;
+    }
+
+    /* 2. Custom Search Box Full Width */
+    .pichub-custom-search {
+        display: block !important;    
+        width: 90% !important;        
+        margin: 10px auto !important; 
+        min-width: unset !important;  
+    }
+
+    /* 3. Search Box Styling */
+    .search-box-wrapper {
+        width: 100% !important;
+        height: 45px !important;      
+        border: 1px solid #ddd !important;
+    }
+}
+
+/* --- GLOBAL MOBILE FIX FOR ARCTIC LAYOUT --- */
+@media screen and (max-width: 600px) {
+    .arctic-layout {
+        margin: 20px auto !important; 
+        padding: 15px !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .arctic-title {
+        font-size: 32px !important; 
+        text-align: center; 
+    }
+
+    .arctic-header {
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .prompt-snow {
+        flex-direction: column !important; 
+        align-items: flex-start !important;
+        gap: 15px !important;
+    }
+
+    .ps-text {
+        font-size: 13px !important; 
+        width: 100%;
+    }
+
+    .btn-trace {
+        align-self: flex-end; 
+        width: auto;
+    }
+
+    .arctic-grid {
+        gap: 25px !important;
+    }
+}
+
+/* Hide Default Theme Tags */
+.post-tags, 
+.tags-links, 
+.entry-tags, 
+.tagcloud,
+footer .tags {
+    display: none !important;
+}
+
+/* Ensure Our Custom Box Tags stay visible */
+.pichub-tags, 
+.pichub-tag {
+    display: flex !important;
+}
+
+/* =========================================
+   10. SEARCH SUGGESTIONS (SOFT GRAY FIX)
+   ========================================= */
+    
+/* Dropdown Container Styling */
+.ui-autocomplete, .ui-menu, .search-wp-live-search-results {
+    border-radius: 15px !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+    border: 1px solid #f0f0f0 !important;
+    padding: 10px 0 !important;
+    margin-top: 12px !important;
+    background: #ffffff !important;
+    overflow: hidden !important;
+    z-index: 99999 !important;
+}
+
+/* Dropdown Items Normal State */
+.ui-menu-item, .ui-menu-item-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+.ui-menu-item a, .ui-menu-item-wrapper {
+    display: block !important;
+    padding: 10px 20px !important;
+    font-size: 15px !important;
+    color: #333 !important;
+    border-radius: 0 !important;
+    transition: all 0.2s ease !important;
+    line-height: 1.5 !important;
+}
+
+/* OVERRIDE BLUE HOVER EFFECT (Soft Gray) */
+.ui-state-active, 
+.ui-widget-content .ui-state-active, 
+.ui-widget-header .ui-state-active, 
+a.ui-button:active, 
+.ui-button:active, 
+.ui-button.ui-state-active:hover,
+.ui-menu-item-wrapper:hover,
+.ui-menu-item-wrapper.ui-state-active {
+    border: none !important;
+    background: #f7f7f7 !important; /* Soft Gray */
+    color: #000000 !important;      /* Black Text */
+    font-weight: 600 !important;
+    margin: 0 !important;
+}
+/* =========================================
+   11. BLOCKSY FORCEFUL PREMIUM FOOTER (UPDATED)
+   ========================================= */
+
+/* 1. Main Footer Box (Force Background & Spacing) */
+footer, .ct-footer, [data-id="footer"] {
+    background-color: #f9f9f9 !important; /* આછો ગ્રે કલર */
+    border-top: 1px solid #e5e5e5 !important; /* ઉપર પાતળી બોર્ડર */
+    margin-top: 60px !important; /* Content થી દૂરી */
+    padding-top: 0px !important;
+    padding-bottom: 30px !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+/* 2. Headings (Titles like 'Quick Links') */
+footer h2, footer h3, footer h4, 
+.ct-footer h2, .ct-footer h3, .widget-title {
+    color: #111111 !important; /* Dark Black */
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 25px !important;
+    border-bottom: 2px solid #ddd !important; /* નીચે નાની લાઈન */
+    display: inline-block !important;
+    padding-bottom: 10px !important;
+}
+
+/* 3. Remove Default List Styles */
+footer ul, footer li, 
+.ct-footer ul, .ct-footer li {
+    list-style: none !important; /* ટપકાં કાઢી નાખ્યા */
+    padding: 0 !important;
+    margin-left: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+footer li, .ct-footer li {
+    margin-bottom: 12px !important; /* લિંક વચ્ચે જગ્યા */
+}
+
+/* 4. Link Styling (Clean Text) */
+footer a, .ct-footer a {
+    color: #666666 !important; /* મીડિયમ ગ્રે */
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+    padding: 2px 0 !important;
+}
+
+/* 5. HOVER EFFECT (For Text Links) */
+footer a:hover, .ct-footer a:hover {
+    color: #000000 !important; /* હોવર પર બ્લેક */
+    transform: translateX(10px) !important; /* જમણી બાજુ ખસશે */
+    font-weight: 700 !important;
+}
+
+/* Arrow જેવું દેખાડવા માટે હોવર પર */
+footer a:hover::before, .ct-footer a:hover::before {
+    content: "→" !important;
+    margin-right: 5px !important;
+    color: #000 !important;
+}
+
+/* --- FIX SOCIAL ICONS (NEW: ZOOM + FLOAT + INSTANT CLICK) --- */
+
+/* 1. Base Icon Style */
+footer [data-id="socials"] a,
+.ct-footer [data-id="socials"] a {
+    position: relative !important;
+    z-index: 1 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    /* Fast Transition for instant feel */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important; 
+    
+    background: transparent !important; 
+    box-shadow: none !important;
+    border-radius: 50% !important;
+    
+    /* Default Color (Gray to match text) */
+    color: #666666 !important;
+}
+
+/* 2. Hover State - ZOOM + BLACK COLOR + FLOAT UP */
+footer [data-id="socials"] a:hover,
+.ct-footer [data-id="socials"] a:hover {
+    /* આઈકન મોટું થશે અને થોડું ઉપર જશે */
+    transform: scale(1.2) translateY(-3px) !important; 
+    
+    color: #000000 !important; /* હોવર પર ડાર્ક બ્લેક */
+    background: transparent !important;
+    opacity: 1 !important;
+    padding-left: 0 !important;
+}
+
+/* 3. Remove Old Arrow Effect from Socials */
+footer [data-id="socials"] a:hover::before,
+.ct-footer [data-id="socials"] a:hover::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* 4. COMPLETELY REMOVE THE SHINE EFFECT */
+/* આ કોડથી પેલી સફેદ લાઈન અને ડીલે (Delay) નીકળી જશે */
+footer [data-id="socials"] a::after,
+.ct-footer [data-id="socials"] a::after {
+    display: none !important;
+    content: none !important;
+    animation: none !important;
+}
+
+/* 5. SVG Fill Fix (If using SVG icons) */
+footer [data-id="socials"] a:hover svg,
+.ct-footer [data-id="socials"] a:hover svg {
+    fill: #000000 !important; /* Ensure SVGs turn black */
+}
+
+/* 6. Copyright Bar (Bottom) - FIXED & MERGED */
+[data-row="bottom"], .ct-footer-copyright {
+    background-color: #ffffff !important; 
+    padding: 20px 0 !important;
+    margin-top: 0px !important; 
+    text-align: center !important;
+}
+
+/* 7. Mobile Alignment Fix */
+@media (max-width: 768px) {
+    footer, .ct-footer {
+        text-align: center !important;
+    }
+    footer h2, .widget-title {
+        display: block !important;
+        border-bottom: none !important; 
+        margin-bottom: 15px !important;
+    }
+}
+/*=========================================
+   Contact Us
+========================================= */
+/* --- 1. ગ્લોબલ સેટિંગ્સ --- */
+.contact-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- 2. કાર્ડ લેઆઉટ (Desktop) --- */
+.contact-grid {
+    display: flex; /* આનાથી આજુબાજુ ગોઠવાશે */
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* --- 3. ડાબી બાજુ (Blue Gradient Panel) --- */
+.contact-info {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+    padding: 60px 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-header h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sub-text {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 40px;
+}
+
+/* આઈકન અને ટેક્સ્ટ */
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.info-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    margin-top: 2px;
+    min-width: 30px; /* આઈકન દબાય નહીં તે માટે */
+}
+
+.info-text h4 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ઈમેઈલ મોબાઈલમાં તૂટે નહીં તે માટે */
+.info-text p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    word-break: break-all; /* લાંબા ઈમેઈલને બીજી લાઈનમાં લાવશે */
+    line-height: 1.5;
+}
+
+/* --- 4. જમણી બાજુ (Form Panel) --- */
+.contact-form-wrapper {
+    background: #ffffff;
+    padding: 60px 50px;
+    width: 60%;
+}
+
+.contact-form-wrapper h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* ઈનપુટ ડિઝાઈન */
+.wpcf7 label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; 
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wpcf7 input:focus,
+.wpcf7 textarea:focus {
+    border-color: #2a5298;
+    background: #fff;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(42, 82, 152, 0.1);
+}
+
+.wpcf7 textarea { height: 120px; resize: vertical; }
+
+/* સબમિટ બટન */
+.wpcf7 input[type="submit"] {
+    background: #2a5298;
+    color: white;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(42, 82, 152, 0.2);
+    width: auto;
+}
+
+.wpcf7 input[type="submit"]:hover {
+    background: #1e3c72;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+
+   STRICT UNIFORMITY LOGIC 
+
+   (સર્ચબાર અને ગેપને દરેક પેજ પર એકસરખો કરવા માટે)
+
+   ========================================= */
+
+
+
+@media (max-width: 921px) {
+
+
+
+    /* ૧. સર્ચબારની પહોળાઈ (Width) અને ઊંચાઈ (Height) ફિક્સ કરવા માટે */
+
+    .pichub-custom-search {
+
+        width: 90% !important; 
+
+        max-width: 90% !important; 
+
+        min-width: 90% !important;
+
+        margin: 5px auto 10px auto !important; /* ઉપર 5px અને નીચે 10px ની ફિક્સ જગ્યા */
+
+        display: block !important;
+
+    }
+
+
+
+    .search-box-wrapper {
+
+        height: 45px !important; /* સર્ચબારની ઊંચાઈ દરેક પેજ પર ૪૫px જ રહેશે */
+
+        width: 100% !important;
+
+    }
+
+
+
+    /* ૨. મેઈન કન્ટેન્ટ એરિયા - દરેક પેજ પર એક જ ઊંચાઈએ શરૂ થશે */
+
+    #primary, 
+
+    #content, 
+
+    .site-main,
+
+    .home .entry-content,
+
+    .single-post .entry-content {
+
+        margin-top: 0 !important;
+
+        padding-top: 0 !important;
+
+        display: block !important;
+
+    }
+
+
+
+    /* ૩. કન્ટેન્ટ (Grid કે Image) ને સર્ચબારની બરાબર નીચે ખેંચવા માટે */
+
+    /* આનાથી Home અને Post વચ્ચેની ગેપ એકસમાન થઈ જશે */
+
+    .home .entries, 
+
+    .home .ast-row,
+
+    .single-post article figure,
+
+    .single-post .post-thumbnail {
+
+        margin-top: 5px !important; /* સર્ચબાર પત્યા પછી બરાબર ૫px એ કન્ટેન્ટ શરૂ થશે */
+
+        padding-top: 0 !important;
+
+    }
+
+
+
+    /* ૪. Blocksy દ્વારા એડ થતી કોઈ પણ વધારાની ગેપને શૂન્ય કરવા માટે */
+
+    .ct-container, 
+
+    .ct-container-inner,
+
+    [data-container="narrow"],
+
+    [data-container="normal"] {
+
+        padding-top: 0 !important;
+
+        margin-top: 0 !important;
+
+        max-width: 100% !important; /* કન્ટેનરને ફૂલ વિડ્થ કરી દેશે જેથી સર્ચબાર ન દબાય */
+
+    }
+
+
+
+    /* ૫. હેડર રો ફિક્સ */
+
+    [data-row="bottom"] {
+
+        padding-top: 0 !important;
+
+        padding-bottom: 0 !important;
+
+        min-height: auto !important;
+
+    }
+
+} 
+/* =========================================
+   ABSOLUTE WIDTH CONSISTENCY 
+   (Home અને Post બધે જ સર્ચબારની સાઈઝ એકસમાન રાખશે)
+   ========================================= */
+
+@media (max-width: 921px) {
+
+    /* ૧. Viewport Width (vw) નો ઉપયોગ કરીને વિડ્થને લૉક કરવી */
+    .pichub-custom-search {
+        /* સ્ક્રીનની પૂરી પહોળાઈના ૯૦% જ રોકશે, ભલે પેજ ગમે તે હોય */
+        width: 90vw !important; 
+        max-width: 90vw !important; 
+        min-width: 90vw !important;
+        
+        margin: 8px auto !important; 
+        display: block !important;
+        float: none !important;
+        clear: both !important;
+    }
+
+    /* ૨. હેડર કન્ટેનરની તમામ મર્યાદાઓ હટાવવા માટે */
+    .site-header .ct-container,
+    .site-header .ct-container-inner,
+    .site-header .ast-builder-grid-row,
+    [data-row="bottom"] .ct-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        display: block !important;
+    }
+
+    /* ૩. સર્ચબારની અંદરનું રેપર */
+    .search-box-wrapper {
+        width: 100% !important;
+        height: 46px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* ૪. મોબાઈલ પર કોઈ પણ પેજ હોય, કન્ટેન્ટની શરૂઆત એક જ જગ્યાએથી થશે */
+    #primary, .site-main {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-top: 5px !important;
+    }
+}
+
+/* =========================================
+   MOBILE MASONRY FIX (2 COLUMNS FOR BIGGER IMAGES)
+   ========================================= */
+@media (max-width: 768px) {
+    .entries, .archive .entries, .category .entries, .home .entries, .search-results .entries, .ast-row, .post-grid {
+        column-count: 2 !important; /* મોબાઈલમાં 2 કોલમ */
+        column-gap: 15px !important; /* વચ્ચે થોડી જગ્યા */
+    }
+    
+    /* આર્ટિકલ વચ્ચેની જગ્યા */
+    .entries article, .category .site-main .entries .entry, .search-results article {
+        margin-bottom: 15px !important;
+    }
+}
+</style><script type="text/plain" data-service="google-analytics" data-category="statistics" async id="google_gtagjs" data-cmplz-src="https://www.googletagmanager.com/gtag/js?id=G-XFQJVDCBQK"></script>
+<script id="google_gtagjs-inline">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-XFQJVDCBQK', {} );
+</script>
+<link rel="icon" href="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/cropped-favicon-270x270.png" />
+	</head>
+
+
+<body data-cmplz=1 class="error404 wp-custom-logo wp-embed-responsive wp-theme-blocksy" data-link="type-2" data-prefix="" data-header="type-1:sticky" data-footer="type-1">
+
+<a class="skip-link screen-reader-text" href="#main">Skip to content</a><div class="ct-drawer-canvas" data-location="start"><div id="offcanvas" class="ct-panel ct-header" data-behaviour="right-side" role="dialog" aria-label="Offcanvas modal" inert=""><div class="ct-panel-inner">
+				<div class="ct-panel-actions">
+					<span class="ct-panel-heading">Menu</span>
+					
+				<button class="ct-toggle-close" data-type="type-1" aria-label="Close drawer">
+					<svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15"><path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"/></svg>
+				</button>
+			
+				</div>
+			<div class="ct-panel-content" data-device="desktop"><div class="ct-panel-content-inner"></div></div><div class="ct-panel-content" data-device="mobile"><div class="ct-panel-content-inner">
+<nav
+	class="mobile-menu menu-container has-submenu"
+	data-id="mobile-menu" data-interaction="click" data-toggle-type="type-1" data-submenu-dots="yes"	aria-label="Mobile Responsive">
+
+	<ul id="menu-mobile-responsive" class=""><li id="menu-item-1895" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1895"><span class="ct-sub-menu-parent"><a href="#" class="ct-menu-link">Categories</a><button class="ct-toggle-dropdown-mobile" aria-label="Expand dropdown menu" aria-haspopup="true" aria-expanded="false"><svg class="ct-icon toggle-icon-3" width="12" height="12" viewBox="0 0 15 15" aria-hidden="true"><path d="M2.6,5.8L2.6,5.8l4.3,5C7,11,7.3,11.1,7.5,11.1S8,11,8.1,10.8l4.2-4.9l0.1-0.1c0.1-0.1,0.1-0.2,0.1-0.3c0-0.3-0.2-0.5-0.5-0.5l0,0H3l0,0c-0.3,0-0.5,0.2-0.5,0.5C2.5,5.7,2.5,5.8,2.6,5.8z"/></svg></button></span>
+<ul class="sub-menu">
+	<li id="menu-item-2709" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2709"><a href="https://4kmobilewallpapers.com/category/iphone-wallpapers/" class="ct-menu-link">iPhone Wallpapers</a></li>
+	<li id="menu-item-1863" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1863"><a href="https://4kmobilewallpapers.com/category/4k-mobile-wallpaper/" class="ct-menu-link">4k Mobile</a></li>
+	<li id="menu-item-1991" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1991"><a href="https://4kmobilewallpapers.com/category/aesthetic/" class="ct-menu-link">Aesthetic</a></li>
+	<li id="menu-item-2675" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2675"><a href="https://4kmobilewallpapers.com/category/amoled/" class="ct-menu-link">AMOLED</a></li>
+	<li id="menu-item-1870" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1870"><a href="https://4kmobilewallpapers.com/category/cars/" class="ct-menu-link">Cars</a></li>
+	<li id="menu-item-1865" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1865"><a href="https://4kmobilewallpapers.com/category/neon/" class="ct-menu-link">Neon</a></li>
+	<li id="menu-item-2961" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2961"><a href="https://4kmobilewallpapers.com/category/dark-wallpaper/" class="ct-menu-link">Dark Wallpaper</a></li>
+	<li id="menu-item-1864" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1864"><a href="https://4kmobilewallpapers.com/category/wildlife/" class="ct-menu-link">Wildlife</a></li>
+	<li id="menu-item-2674" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2674"><a href="https://4kmobilewallpapers.com/category/abstract/" class="ct-menu-link">Abstract</a></li>
+	<li id="menu-item-1866" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1866"><a href="https://4kmobilewallpapers.com/category/nature/" class="ct-menu-link">Nature</a></li>
+	<li id="menu-item-2676" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2676"><a href="https://4kmobilewallpapers.com/category/cyberpunk/" class="ct-menu-link">Cyberpunk</a></li>
+	<li id="menu-item-1867" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1867"><a href="https://4kmobilewallpapers.com/category/gradient-wallpaper/" class="ct-menu-link">Gradient</a></li>
+	<li id="menu-item-1868" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1868"><a href="https://4kmobilewallpapers.com/category/animals/" class="ct-menu-link">Animals</a></li>
+	<li id="menu-item-1869" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1869"><a href="https://4kmobilewallpapers.com/category/bird/" class="ct-menu-link">Bird</a></li>
+	<li id="menu-item-3116" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3116"><a href="https://4kmobilewallpapers.com/category/god/" class="ct-menu-link">God</a></li>
+	<li id="menu-item-2677" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2677"><a href="https://4kmobilewallpapers.com/category/pc-wallpaper/" class="ct-menu-link">PC Wallpaper</a></li>
+</ul>
+</li>
+<li id="menu-item-1896" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1896"><span class="ct-sub-menu-parent"><a href="#" class="ct-menu-link">Tools</a><button class="ct-toggle-dropdown-mobile" aria-label="Expand dropdown menu" aria-haspopup="true" aria-expanded="false"><svg class="ct-icon toggle-icon-3" width="12" height="12" viewBox="0 0 15 15" aria-hidden="true"><path d="M2.6,5.8L2.6,5.8l4.3,5C7,11,7.3,11.1,7.5,11.1S8,11,8.1,10.8l4.2-4.9l0.1-0.1c0.1-0.1,0.1-0.2,0.1-0.3c0-0.3-0.2-0.5-0.5-0.5l0,0H3l0,0c-0.3,0-0.5,0.2-0.5,0.5C2.5,5.7,2.5,5.8,2.6,5.8z"/></svg></button></span>
+<ul class="sub-menu">
+	<li id="menu-item-1872" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1872"><a href="https://4kmobilewallpapers.com/image-converter/" class="ct-menu-link">Image Converter</a></li>
+	<li id="menu-item-1873" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1873"><a href="https://4kmobilewallpapers.com/wallpaper-cropper/" class="ct-menu-link">Wallpaper Cropper</a></li>
+	<li id="menu-item-1874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1874"><a href="https://4kmobilewallpapers.com/blur-and-dimmer-tool/" class="ct-menu-link">Blur &amp; Dimmer Tool</a></li>
+	<li id="menu-item-1875" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1875"><a href="https://4kmobilewallpapers.com/gradient-wallpaper-generator/" class="ct-menu-link">Gradient Wallpaper Generator</a></li>
+	<li id="menu-item-1876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1876"><a href="https://4kmobilewallpapers.com/image-resizer-converter/" class="ct-menu-link">Image Resizer &amp; Converter</a></li>
+	<li id="menu-item-1877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1877"><a href="https://4kmobilewallpapers.com/wallpaper-effect-tool/" class="ct-menu-link">Wallpaper Effect Tool</a></li>
+</ul>
+</li>
+<li id="menu-item-3806" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3806"><span class="ct-sub-menu-parent"><a href="#" class="ct-menu-link">Blogs</a><button class="ct-toggle-dropdown-mobile" aria-label="Expand dropdown menu" aria-haspopup="true" aria-expanded="false"><svg class="ct-icon toggle-icon-3" width="12" height="12" viewBox="0 0 15 15" aria-hidden="true"><path d="M2.6,5.8L2.6,5.8l4.3,5C7,11,7.3,11.1,7.5,11.1S8,11,8.1,10.8l4.2-4.9l0.1-0.1c0.1-0.1,0.1-0.2,0.1-0.3c0-0.3-0.2-0.5-0.5-0.5l0,0H3l0,0c-0.3,0-0.5,0.2-0.5,0.5C2.5,5.7,2.5,5.8,2.6,5.8z"/></svg></button></span>
+<ul class="sub-menu">
+	<li id="menu-item-5447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5447"><a href="https://4kmobilewallpapers.com/this-wallpaper-style-is-trending-worldwide-right-now/" class="ct-menu-link">This Wallpaper Style Is Trending Worldwide Right Now</a></li>
+	<li id="menu-item-5357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5357"><a href="https://4kmobilewallpapers.com/why-everyone-is-using-black-wallpapers/" class="ct-menu-link">Why Everyone Is Using Black Wallpapers in 2026?</a></li>
+	<li id="menu-item-5212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5212"><a href="https://4kmobilewallpapers.com/best-lock-screen-wallpapers-for-longer-battery-life/" class="ct-menu-link">Best Lock Screen Wallpapers for Longer Battery Life</a></li>
+	<li id="menu-item-5211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5211"><a href="https://4kmobilewallpapers.com/depth-effect-wallpapers-went-completely-viral/" class="ct-menu-link">Why Depth Effect Wallpapers Went Completely Viral on iPhone</a></li>
+	<li id="menu-item-4972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4972"><a href="https://4kmobilewallpapers.com/amoled-vs-normal-wallpapers-is-there-a-real-difference/" class="ct-menu-link">AMOLED vs Normal Wallpapers: Is There a Real Difference?</a></li>
+	<li id="menu-item-4971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4971"><a href="https://4kmobilewallpapers.com/best-iphone-wallpapers-that-make-your-screen-look-better/" class="ct-menu-link">Best iPhone Wallpapers That Make Your Screen Look Better Instantly</a></li>
+	<li id="menu-item-4924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4924"><a href="https://4kmobilewallpapers.com/do-black-wallpapers-really-save-battery-tested-on-oled-phones/" class="ct-menu-link">Do Black Wallpapers Really Save Battery?</a></li>
+	<li id="menu-item-4798" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4798"><a href="https://4kmobilewallpapers.com/top-10-dark-4k-wallpapers-for-pc/" class="ct-menu-link">Top 10 Dark 4K Wallpapers for PC</a></li>
+	<li id="menu-item-4923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4923"><a href="https://4kmobilewallpapers.com/5-wallpaper-mistakes-that-drain-your-battery-faster/" class="ct-menu-link">5 Wallpaper Mistakes That Drain Your Battery Faster</a></li>
+	<li id="menu-item-4280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4280"><a href="https://4kmobilewallpapers.com/the-ultimate-4k-wallpaper-collection-dark-aesthetic-nature/" class="ct-menu-link">The Ultimate 4K Wallpaper Collection: Dark, Aesthetic &amp; Nature</a></li>
+	<li id="menu-item-4189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4189"><a href="https://4kmobilewallpapers.com/top-10-4k-car-wallpapers/" class="ct-menu-link">Top 10 4K Car Wallpapers</a></li>
+	<li id="menu-item-4126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4126"><a href="https://4kmobilewallpapers.com/top-5-dark-wallpaper-4k-black-wallpaper/" class="ct-menu-link">Top 5 Dark Wallpaper &#8211; 4k Black Wallpaper</a></li>
+	<li id="menu-item-4069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4069"><a href="https://4kmobilewallpapers.com/top-5-ios-depth-effect-wallpapers/" class="ct-menu-link">Top 5 iOS Depth Effect Wallpapers</a></li>
+	<li id="menu-item-3807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3807"><a href="https://4kmobilewallpapers.com/4k-vs-1080p/" class="ct-menu-link">4K Vs. 1080p Resolution</a></li>
+	<li id="menu-item-3808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3808"><a href="https://4kmobilewallpapers.com/top-5-best-4k-iphone-wallpapers/" class="ct-menu-link">5 Best 4K iPhone Wallpapers</a></li>
+	<li id="menu-item-3809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3809"><a href="https://4kmobilewallpapers.com/about-us/" class="ct-menu-link">About 4k Mobile Wallpapers</a></li>
+	<li id="menu-item-3810" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3810"><a href="https://4kmobilewallpapers.com/best-4k-amoled-wallpapers-battery-saving/" class="ct-menu-link">Best 4K AMOLED Wallpapers to Save Battery</a></li>
+	<li id="menu-item-3811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3811"><a href="https://4kmobilewallpapers.com/the-ultimate-guide-to-styling-your-phone/" class="ct-menu-link">The Ultimate Guide to Styling Your Phone</a></li>
+	<li id="menu-item-3815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3815"><a href="https://4kmobilewallpapers.com/cyberpunk-2077-futuristic-city-aesthetics/" class="ct-menu-link">Cyberpunk 2077 &amp; Futuristic City Aesthetics</a></li>
+	<li id="menu-item-3820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3820"><a href="https://4kmobilewallpapers.com/how-to-make-a-picture-4k/" class="ct-menu-link">How to make a picture 4K?</a></li>
+	<li id="menu-item-3823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3823"><a href="https://4kmobilewallpapers.com/top-5-wallpaper-mistakes-that-drain-your-phone-battery-and-how-to-fix-them/" class="ct-menu-link">Top 5 Wallpaper Mistakes That Drain Your Phone Battery (And How to Fix Them)</a></li>
+	<li id="menu-item-3979" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3979"><a href="https://4kmobilewallpapers.com/how-to-choose-the-perfect-wallpaper/" class="ct-menu-link">How to Choose the Perfect Wallpaper?</a></li>
+	<li id="menu-item-3996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3996"><a href="https://4kmobilewallpapers.com/ios-depth-effect-smart-lock-screens/" class="ct-menu-link">iOS Depth Effect &amp; Smart Lock Screens</a></li>
+	<li id="menu-item-4041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4041"><a href="https://4kmobilewallpapers.com/the-truth-about-ai-wallpapers/" class="ct-menu-link">The Truth About AI Wallpapers</a></li>
+	<li id="menu-item-4062" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4062"><a href="https://4kmobilewallpapers.com/why-your-app-icons-look-messy-blurred-wallpaper-fix/" class="ct-menu-link">Why Your App Icons Look Messy (And How a Blurred Wallpaper Fixes It)</a></li>
+</ul>
+</li>
+<li id="menu-item-1897" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1897"><span class="ct-sub-menu-parent"><a href="#" class="ct-menu-link">Quick Links</a><button class="ct-toggle-dropdown-mobile" aria-label="Expand dropdown menu" aria-haspopup="true" aria-expanded="false"><svg class="ct-icon toggle-icon-3" width="12" height="12" viewBox="0 0 15 15" aria-hidden="true"><path d="M2.6,5.8L2.6,5.8l4.3,5C7,11,7.3,11.1,7.5,11.1S8,11,8.1,10.8l4.2-4.9l0.1-0.1c0.1-0.1,0.1-0.2,0.1-0.3c0-0.3-0.2-0.5-0.5-0.5l0,0H3l0,0c-0.3,0-0.5,0.2-0.5,0.5C2.5,5.7,2.5,5.8,2.6,5.8z"/></svg></button></span>
+<ul class="sub-menu">
+	<li id="menu-item-1882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1882"><a href="https://4kmobilewallpapers.com/about-us/" class="ct-menu-link">About Us</a></li>
+	<li id="menu-item-1880" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1880"><a rel="privacy-policy" href="https://4kmobilewallpapers.com/privacy-policy/" class="ct-menu-link">Privacy Policy</a></li>
+	<li id="menu-item-4515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4515"><a href="https://4kmobilewallpapers.com/cookie-policy-eu/" class="ct-menu-link">Cookie Policy (EU)</a></li>
+	<li id="menu-item-2424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2424"><a href="https://4kmobilewallpapers.com/terms-and-conditions/" class="ct-menu-link">Terms and Conditions</a></li>
+	<li id="menu-item-1879" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1879"><a href="https://4kmobilewallpapers.com/disclaimer/" class="ct-menu-link">Disclaimer</a></li>
+	<li id="menu-item-2533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2533"><a href="https://4kmobilewallpapers.com/dmca/" class="ct-menu-link">DMCA Copyright Policy</a></li>
+	<li id="menu-item-1881" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1881"><a href="https://4kmobilewallpapers.com/contact-us/" class="ct-menu-link">Contact Us</a></li>
+</ul>
+</li>
+</ul></nav>
+
+</div></div></div></div></div>
+<div id="main-container">
+	<header id="header" class="ct-header" data-id="type-1" itemscope="" itemtype="https://schema.org/WPHeader"><div data-device="desktop"><div class="ct-sticky-container"><div data-sticky="shrink"><div data-row="top" data-column-set="3"><div class="ct-container-fluid"><div data-column="start" data-placements="1"><div data-items="primary">
+<div	class="site-branding"
+	data-id="logo"	data-logo="top"	itemscope="itemscope" itemtype="https://schema.org/Organization">
+
+			<a href="https://4kmobilewallpapers.com/" class="site-logo-container" rel="home" itemprop="url" ><img width="1982" height="500" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAHkAQMAAADl2aDzAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAIhJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwDx7MAAcZeAkYAAAAASUVORK5CYII=" class="default-logo lazyload" alt="4k Mobile Wallpapers" decoding="async" fetchpriority="high"   data-src="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2.png" data-srcset="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2.png 1982w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-300x76.png 300w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-1024x258.png 1024w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-768x194.png 768w" data-max-width="1982" data-sizes="auto" data-eio-rwidth="1982" data-eio-rheight="500" /><noscript><img width="1982" height="500" src="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2.png" class="default-logo" alt="4k Mobile Wallpapers" decoding="async" fetchpriority="high" srcset="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2.png 1982w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-300x76.png 300w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-1024x258.png 1024w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-768x194.png 768w" sizes="(max-width: 1982px) 100vw, 1982px" data-eio="l" /></noscript></a>	
+			<div class="site-title-container">
+			<span class="site-title " itemprop="name"><a href="https://4kmobilewallpapers.com/" rel="home" itemprop="url"></a></span>					</div>
+	  </div>
+
+</div></div><div data-column="middle"><div data-items="">
+<div
+	class="ct-header-text "
+	data-id="text" data-width="stretch">
+	<div class="entry-content is-layout-flow">
+		<div class="pichub-custom-search">
+    <form role="search" action="/" method="get">
+        <div class="search-box-wrapper">
+            <input class="search-input" name="s" type="search" placeholder="Search amazing photos..." /> 
+            <button class="search-btn" type="submit"> </button>
+        </div>
+    </form>
+</div>	</div>
+</div>
+</div></div><div data-column="end" data-placements="1"><div data-items="primary">
+<nav
+	id="header-menu-2"
+	class="header-menu-2 menu-container"
+	data-id="menu-secondary" data-interaction="hover"	data-menu="type-1"
+	data-dropdown="type-1:simple"		data-responsive="no"	itemscope="" itemtype="https://schema.org/SiteNavigationElement"	aria-label="Tools, Blogs &amp; Quick Links">
+
+	<ul id="menu-tools-blogs-quick-links" class="menu"><li id="menu-item-3775" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3775 animated-submenu-block"><a href="#" class="ct-menu-link">Tools<span class="ct-toggle-dropdown-desktop"><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15" aria-hidden="true"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a><button class="ct-toggle-dropdown-desktop-ghost" aria-label="Expand dropdown menu" aria-haspopup="true" aria-expanded="false"></button>
+<ul class="sub-menu">
+	<li id="menu-item-3777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3777"><a href="https://4kmobilewallpapers.com/blur-and-dimmer-tool/" class="ct-menu-link">Blur &amp; Dimmer Tool</a></li>
+	<li id="menu-item-3778" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3778"><a href="https://4kmobilewallpapers.com/image-converter/" class="ct-menu-link">Image Converter</a></li>
+	<li id="menu-item-3780" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3780"><a href="https://4kmobilewallpapers.com/gradient-wallpaper-generator/" class="ct-menu-link">Gradient Wallpaper Generator</a></li>
+	<li id="menu-item-3781" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3781"><a href="https://4kmobilewallpapers.com/image-resizer-converter/" class="ct-menu-link">Image Resizer &amp; Converter</a></li>
+	<li id="menu-item-3782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3782"><a href="https://4kmobilewallpapers.com/wallpaper-cropper/" class="ct-menu-link">Wallpaper Cropper</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://4kmobilewallpapers.com/wallpaper-effect-tool/" class="ct-menu-link">Wallpaper Effect Tool</a></li>
+</ul>
+</li>
+<li id="menu-item-3783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3783 animated-submenu-block"><a href="#" class="ct-menu-link">Blogs<span class="ct-toggle-dropdown-desktop"><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15" aria-hidden="true"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a><button class="ct-toggle-dropdown-desktop-ghost" aria-label="Expand dropdown menu" aria-haspopup="true" aria-expanded="false"></button>
+<ul class="sub-menu">
+	<li id="menu-item-5446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5446"><a href="https://4kmobilewallpapers.com/this-wallpaper-style-is-trending-worldwide-right-now/" class="ct-menu-link">This Wallpaper Style Is Trending Worldwide Right Now</a></li>
+	<li id="menu-item-5358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5358"><a href="https://4kmobilewallpapers.com/why-everyone-is-using-black-wallpapers/" class="ct-menu-link">Why Everyone Is Using Black Wallpapers in 2026?</a></li>
+	<li id="menu-item-5210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5210"><a href="https://4kmobilewallpapers.com/best-lock-screen-wallpapers-for-longer-battery-life/" class="ct-menu-link">Best Lock Screen Wallpapers for Longer Battery Life</a></li>
+	<li id="menu-item-5209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5209"><a href="https://4kmobilewallpapers.com/depth-effect-wallpapers-went-completely-viral/" class="ct-menu-link">Why Depth Effect Wallpapers Went Completely Viral on iPhone</a></li>
+	<li id="menu-item-4973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4973"><a href="https://4kmobilewallpapers.com/best-iphone-wallpapers-that-make-your-screen-look-better/" class="ct-menu-link">Best iPhone Wallpapers That Make Your Screen Look Better Instantly</a></li>
+	<li id="menu-item-4974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4974"><a href="https://4kmobilewallpapers.com/amoled-vs-normal-wallpapers-is-there-a-real-difference/" class="ct-menu-link">AMOLED vs Normal Wallpapers: Is There a Real Difference?</a></li>
+	<li id="menu-item-4921" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4921"><a href="https://4kmobilewallpapers.com/5-wallpaper-mistakes-that-drain-your-battery-faster/" class="ct-menu-link">5 Wallpaper Mistakes That Drain Your Battery Faster</a></li>
+	<li id="menu-item-4922" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4922"><a href="https://4kmobilewallpapers.com/do-black-wallpapers-really-save-battery-tested-on-oled-phones/" class="ct-menu-link">Do Black Wallpapers Really Save Battery?</a></li>
+	<li id="menu-item-4799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4799"><a href="https://4kmobilewallpapers.com/top-10-dark-4k-wallpapers-for-pc/" class="ct-menu-link">Top 10 Dark 4K Wallpapers for PC</a></li>
+	<li id="menu-item-4279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4279"><a href="https://4kmobilewallpapers.com/the-ultimate-4k-wallpaper-collection-dark-aesthetic-nature/" class="ct-menu-link">The Ultimate 4K Wallpaper Collection: Dark, Aesthetic &amp; Nature</a></li>
+	<li id="menu-item-4190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4190"><a href="https://4kmobilewallpapers.com/top-10-4k-car-wallpapers/" class="ct-menu-link">Top 10 4K Car Wallpapers</a></li>
+	<li id="menu-item-4127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4127"><a href="https://4kmobilewallpapers.com/top-5-dark-wallpaper-4k-black-wallpaper/" class="ct-menu-link">Top 5 Dark Wallpaper &#8211; 4k Black Wallpaper</a></li>
+	<li id="menu-item-4068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4068"><a href="https://4kmobilewallpapers.com/top-5-ios-depth-effect-wallpapers/" class="ct-menu-link">Top 5 iOS Depth Effect Wallpapers</a></li>
+	<li id="menu-item-3784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3784"><a href="https://4kmobilewallpapers.com/4k-vs-1080p/" class="ct-menu-link">4K Vs. 1080p Resolution</a></li>
+	<li id="menu-item-3785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3785"><a href="https://4kmobilewallpapers.com/top-5-best-4k-iphone-wallpapers/" class="ct-menu-link">5 Best 4K iPhone Wallpapers</a></li>
+	<li id="menu-item-3786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3786"><a href="https://4kmobilewallpapers.com/about-us/" class="ct-menu-link">About 4k Mobile Wallpapers</a></li>
+	<li id="menu-item-3787" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3787"><a href="https://4kmobilewallpapers.com/best-4k-amoled-wallpapers-battery-saving/" class="ct-menu-link">Best 4K AMOLED Wallpapers to Save Battery</a></li>
+	<li id="menu-item-3798" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3798"><a href="https://4kmobilewallpapers.com/the-ultimate-guide-to-styling-your-phone/" class="ct-menu-link">The Ultimate Guide to Styling Your Phone</a></li>
+	<li id="menu-item-3816" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3816"><a href="https://4kmobilewallpapers.com/cyberpunk-2077-futuristic-city-aesthetics/" class="ct-menu-link">Cyberpunk 2077 &amp; Futuristic City Aesthetics</a></li>
+	<li id="menu-item-3819" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3819"><a href="https://4kmobilewallpapers.com/how-to-make-a-picture-4k/" class="ct-menu-link">How to make a picture 4K?</a></li>
+	<li id="menu-item-3824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3824"><a href="https://4kmobilewallpapers.com/top-5-wallpaper-mistakes-that-drain-your-phone-battery-and-how-to-fix-them/" class="ct-menu-link">Top 5 Wallpaper Mistakes That Drain Your Phone Battery (And How to Fix Them)</a></li>
+	<li id="menu-item-3978" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3978"><a href="https://4kmobilewallpapers.com/how-to-choose-the-perfect-wallpaper/" class="ct-menu-link">How to Choose the Perfect Wallpaper?</a></li>
+	<li id="menu-item-3997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3997"><a href="https://4kmobilewallpapers.com/ios-depth-effect-smart-lock-screens/" class="ct-menu-link">iOS Depth Effect &amp; Smart Lock Screens</a></li>
+	<li id="menu-item-4040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4040"><a href="https://4kmobilewallpapers.com/the-truth-about-ai-wallpapers/" class="ct-menu-link">The Truth About AI Wallpapers</a></li>
+	<li id="menu-item-4063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4063"><a href="https://4kmobilewallpapers.com/why-your-app-icons-look-messy-blurred-wallpaper-fix/" class="ct-menu-link">Why Your App Icons Look Messy (And How a Blurred Wallpaper Fixes It)</a></li>
+</ul>
+</li>
+<li id="menu-item-5492" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5492 animated-submenu-block"><a href="#" class="ct-menu-link">Quick Links<span class="ct-toggle-dropdown-desktop"><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15" aria-hidden="true"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a><button class="ct-toggle-dropdown-desktop-ghost" aria-label="Expand dropdown menu" aria-haspopup="true" aria-expanded="false"></button>
+<ul class="sub-menu">
+	<li id="menu-item-5499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5499"><a href="https://4kmobilewallpapers.com/about-us/" class="ct-menu-link">About 4k Mobile Wallpapers</a></li>
+	<li id="menu-item-5493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-5493"><a rel="privacy-policy" href="https://4kmobilewallpapers.com/privacy-policy/" class="ct-menu-link">Privacy Policy</a></li>
+	<li id="menu-item-5495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5495"><a href="https://4kmobilewallpapers.com/disclaimer/" class="ct-menu-link">Disclaimer</a></li>
+	<li id="menu-item-5498" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5498"><a href="https://4kmobilewallpapers.com/terms-and-conditions/" class="ct-menu-link">Terms and Conditions</a></li>
+	<li id="menu-item-5496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5496"><a href="https://4kmobilewallpapers.com/dmca/" class="ct-menu-link">DMCA Copyright Policy</a></li>
+	<li id="menu-item-5494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5494"><a href="https://4kmobilewallpapers.com/cookie-policy-eu/" class="ct-menu-link">Cookie Policy (EU)</a></li>
+	<li id="menu-item-5500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5500"><a href="https://4kmobilewallpapers.com/contact-us/" class="ct-menu-link">Contact Us</a></li>
+</ul>
+</li>
+</ul></nav>
+
+</div></div></div></div></div></div><div data-row="middle" data-column-set="1"><div class="ct-container-fluid"><div data-column="middle"><div data-items="">
+<nav
+	id="header-menu-1"
+	class="header-menu-1 menu-container"
+	data-id="menu" data-interaction="click:item"	data-menu="type-1"
+	data-dropdown="type-1:padded"		data-responsive="no"	itemscope="" itemtype="https://schema.org/SiteNavigationElement"	aria-label="Categories">
+
+	<ul id="menu-categories" class="menu"><li id="menu-item-2708" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2708"><a href="https://4kmobilewallpapers.com/category/iphone-wallpapers/" class="ct-menu-link">iPhone Wallpapers</a></li>
+<li id="menu-item-830" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-830"><a href="https://4kmobilewallpapers.com/category/nature/" class="ct-menu-link">Nature</a></li>
+<li id="menu-item-1188" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1188"><a href="https://4kmobilewallpapers.com/category/4k-mobile-wallpaper/" class="ct-menu-link">4k Mobile</a></li>
+<li id="menu-item-1992" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1992"><a href="https://4kmobilewallpapers.com/category/aesthetic/" class="ct-menu-link">Aesthetic</a></li>
+<li id="menu-item-1279" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1279"><a href="https://4kmobilewallpapers.com/category/neon/" class="ct-menu-link">Neon</a></li>
+<li id="menu-item-2679" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2679"><a href="https://4kmobilewallpapers.com/category/amoled/" class="ct-menu-link">AMOLED</a></li>
+<li id="menu-item-829" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-829"><a href="https://4kmobilewallpapers.com/category/cars/" class="ct-menu-link">Cars</a></li>
+<li id="menu-item-2960" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2960"><a href="https://4kmobilewallpapers.com/category/dark-wallpaper/" class="ct-menu-link">Dark Wallpaper</a></li>
+<li id="menu-item-824" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-824"><a href="https://4kmobilewallpapers.com/category/animals/" class="ct-menu-link">Animals</a></li>
+<li id="menu-item-2680" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2680"><a href="https://4kmobilewallpapers.com/category/cyberpunk/" class="ct-menu-link">Cyberpunk</a></li>
+<li id="menu-item-2681" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2681"><a href="https://4kmobilewallpapers.com/category/pc-wallpaper/" class="ct-menu-link">PC Wallpaper</a></li>
+<li id="menu-item-3115" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3115"><a href="https://4kmobilewallpapers.com/category/god/" class="ct-menu-link">God</a></li>
+<li id="menu-item-2464" class="more-btn-custom menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2464 animated-submenu-block"><a href="#" class="ct-menu-link" aria-haspopup="true" aria-expanded="false">More<span class="ct-toggle-dropdown-desktop"><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15" aria-hidden="true"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-826" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-826"><a href="https://4kmobilewallpapers.com/category/bird/" class="ct-menu-link">Bird</a></li>
+	<li id="menu-item-833" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-833"><a href="https://4kmobilewallpapers.com/category/wildlife/" class="ct-menu-link">Wildlife</a></li>
+	<li id="menu-item-2678" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2678"><a href="https://4kmobilewallpapers.com/category/abstract/" class="ct-menu-link">Abstract</a></li>
+	<li id="menu-item-1189" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1189"><a href="https://4kmobilewallpapers.com/category/gradient-wallpaper/" class="ct-menu-link">Gradient</a></li>
+</ul>
+</li>
+</ul></nav>
+
+</div></div></div></div></div><div data-device="mobile"><div data-row="middle" data-column-set="2"><div class="ct-container-fluid"><div data-column="start" data-placements="1"><div data-items="primary">
+<div	class="site-branding"
+	data-id="logo"	data-logo="top"	>
+
+			<a href="https://4kmobilewallpapers.com/" class="site-logo-container" rel="home" itemprop="url" ><img width="1982" height="500" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAHkAQMAAADl2aDzAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAIhJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwDx7MAAcZeAkYAAAAASUVORK5CYII=" class="default-logo lazyload" alt="4k Mobile Wallpapers" decoding="async"   data-src="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2.png" data-srcset="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2.png 1982w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-300x76.png 300w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-1024x258.png 1024w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-768x194.png 768w" data-max-width="1982" data-sizes="auto" data-eio-rwidth="1982" data-eio-rheight="500" /><noscript><img width="1982" height="500" src="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2.png" class="default-logo" alt="4k Mobile Wallpapers" decoding="async" srcset="https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2.png 1982w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-300x76.png 300w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-1024x258.png 1024w, https://4kmobilewallpapers.com/wp-content/uploads/2026/01/logo2-768x194.png 768w" sizes="(max-width: 1982px) 100vw, 1982px" data-eio="l" /></noscript></a>	
+			<div class="site-title-container">
+			<span class="site-title "><a href="https://4kmobilewallpapers.com/" rel="home" ></a></span>					</div>
+	  </div>
+
+</div></div><div data-column="end" data-placements="1"><div data-items="primary">
+<button
+	class="ct-header-trigger ct-toggle "
+	data-toggle-panel="#offcanvas"
+	aria-controls="offcanvas"
+	data-design="simple"
+	data-label="right"
+	aria-label="Menu"
+	data-id="trigger">
+
+	<span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg" aria-hidden="true">Menu</span>
+
+	<svg class="ct-icon" width="18" height="14" viewBox="0 0 18 14" data-type="type-1" aria-hidden="true">
+		<rect y="0.00" width="18" height="1.7" rx="1"/>
+		<rect y="6.15" width="18" height="1.7" rx="1"/>
+		<rect y="12.3" width="18" height="1.7" rx="1"/>
+	</svg></button>
+</div></div></div></div><div data-row="bottom" data-column-set="1"><div class="ct-container-fluid"><div data-column="middle"><div data-items="">
+<div
+	class="ct-header-text "
+	data-id="text" data-width="stretch">
+	<div class="entry-content is-layout-flow">
+		<div class="pichub-custom-search">
+    <form role="search" action="/" method="get">
+        <div class="search-box-wrapper">
+            <input class="search-input" name="s" type="search" placeholder="Search amazing photos..." /> 
+            <button class="search-btn" type="submit"> </button>
+        </div>
+    </form>
+</div>	</div>
+</div>
+</div></div></div></div></div></header>
+	<main id="main" class="site-main hfeed" tabindex="-1">
+
+		<div class="ct-container" data-vertical-spacing="top:bottom">
+	<section class="ct-no-results">
+
+		<section class="hero-section" data-type="type-1">
+			<header class="entry-header">
+				<h1 class="page-title" itemprop="headline">
+					Oops! That page can&rsquo;t be found.				</h1>
+
+				<div class="page-description">
+					It looks like nothing was found at this location. Maybe try to search for something else?				</div>
+			</header>
+		</section>
+
+		<div class="entry-content is-layout-flow">
+			
+
+<form role="search" method="get" class="ct-search-form" data-form-controls="inside" data-taxonomy-filter="false" data-submit-button="minimal:icon" action="https://4kmobilewallpapers.com/" data-live-results="thumbs">
+
+	<div class="ct-search-form-inner ct-pseudo-input" >
+		
+			<input
+				type="search" 				placeholder="Search"
+				value=""
+				name="s"
+				autocomplete="off"
+				title="Search for..."
+				aria-label="Search for..."
+									role="combobox"
+					aria-autocomplete="list"
+					aria-controls="ct-search-results-390"
+					aria-describedby="ct-search-status-390"
+					aria-expanded="false"
+											>
+
+			
+		
+		<button type="submit" class="wp-element-button" aria-label="Search button">
+			<svg class="ct-icon ct-search-button-content" aria-hidden="true" width="15" height="15" viewBox="0 0 15 15"><path d="M14.8,13.7L12,11c0.9-1.2,1.5-2.6,1.5-4.2c0-3.7-3-6.8-6.8-6.8S0,3,0,6.8s3,6.8,6.8,6.8c1.6,0,3.1-0.6,4.2-1.5l2.8,2.8c0.1,0.1,0.3,0.2,0.5,0.2s0.4-0.1,0.5-0.2C15.1,14.5,15.1,14,14.8,13.7z M1.5,6.8c0-2.9,2.4-5.2,5.2-5.2S12,3.9,12,6.8S9.6,12,6.8,12S1.5,9.6,1.5,6.8z"/></svg>
+			<span class="ct-ajax-loader">
+				<svg viewBox="0 0 24 24">
+					<circle cx="12" cy="12" r="10" opacity="0.2" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+
+					<path d="m12,2c5.52,0,10,4.48,10,10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+						<animateTransform
+							attributeName="transform"
+							attributeType="XML"
+							type="rotate"
+							dur="0.6s"
+							from="0 12 12"
+							to="360 12 12"
+							repeatCount="indefinite"
+							begin="indefinite"
+						/>
+					</path>
+				</svg>
+			</span>
+		</button>
+
+		
+		
+		
+
+			</div>
+
+			<div
+			class="screen-reader-text"
+			id="ct-search-status-390"
+			aria-live="polite"
+			role="status">
+			No results		</div>
+	
+</form>
+		</div>
+
+	</section>
+</div>
+	</main>
+
+	<footer id="footer" class="ct-footer" data-id="type-1" itemscope="" itemtype="https://schema.org/WPFooter"><div data-row="top"><div class="ct-container"><div data-column="widget-area-6"><div class="ct-widget is-layout-flow widget_block" id="block-34"><p></p>
+</div></div></div></div><div data-row="middle"><div class="ct-container-fluid"><div data-column="widget-area-1"><div class="ct-widget is-layout-flow widget_block widget_text" id="block-15">
+<p class="wp-block-paragraph"></p>
+</div><div class="ct-widget is-layout-flow widget_block widget_text" id="block-18">
+<p class="wp-block-paragraph"></p>
+</div><div class="ct-widget is-layout-flow widget_block" id="block-21"><div class="brand-widget">
+    <div class="brand-header">
+        <div class="brand-icon">4K</div>
+        <div class="brand-name">
+            <span class="name-main">MOBILE</span>
+            <span class="name-sub">WALLPAPERS</span>
+        </div>
+    </div>
+    
+    <p class="brand-desc">
+        We provide high-quality 4K wallpapers and powerful creative tools to upgrade your mobile screen.
+    </p>
+</div>
+
+<style>
+    /* Google Font Import */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+
+    .brand-widget {
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        max-width: 350px; 
+        padding-top: 5px; 
+    }
+
+    /* --- Logo Section --- */
+    .brand-header {
+        display: flex;
+        align-items: center;
+        gap: 15px; 
+        margin-bottom: 18px; 
+    }
+
+    /* 4K Box - BIGGER */
+    .brand-icon {
+        background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
+        color: white;
+        font-size: 32px; 
+        font-weight: 900;
+        padding: 10px 16px; 
+        border-radius: 12px;
+        line-height: 1;
+        box-shadow: 0 5px 15px rgba(0, 201, 255, 0.3);
+    }
+
+    /* Name Text Style */
+    .brand-name {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+    }
+
+    .name-main {
+        font-size: 28px; 
+        font-weight: 800;
+        color: #2c3e50;
+        letter-spacing: -1px;
+    }
+
+    .name-sub {
+        font-size: 12px; 
+        font-weight: 700;
+        color: #95a5a6;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-top: 4px;
+    }
+
+    /* --- Description Text - BIGGER --- */
+    .brand-desc {
+        font-size: 15px; 
+        color: #555; 
+        line-height: 1.6;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    /* --- Responsive Fix (Gravity Center for Mobile) --- */
+    @media (max-width: 768px) {
+        .brand-widget {
+            max-width: 100%;
+            margin-bottom: 30px;
+            /* Center the text description */
+            text-align: center; 
+            /* Center the widget itself if inside another container */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .brand-header {
+            /* Center the Icon and Name horizontally */
+            justify-content: center;
+        }
+
+        .brand-name {
+            /* Center the 'MOBILE' and 'WALLPAPERS' text stack */
+            align-items: center;
+        }
+    }
+</style></div></div><div data-column="widget-area-3"><div class="ct-widget is-layout-flow widget_nav_menu" id="nav_menu-5"><h3 class="widget-title">Related Tools</h3><nav class="menu-related-tools-container" aria-label="Related Tools"><ul id="menu-related-tools" class="widget-menu"><li id="menu-item-700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-700"><a href="https://4kmobilewallpapers.com/blur-and-dimmer-tool/">Blur &amp; Dimmer Tool</a></li>
+<li id="menu-item-699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-699"><a href="https://4kmobilewallpapers.com/wallpaper-cropper/">Wallpaper Cropper</a></li>
+<li id="menu-item-2426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2426"><a href="https://4kmobilewallpapers.com/image-converter/">Image Converter</a></li>
+<li id="menu-item-643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643"><a href="https://4kmobilewallpapers.com/image-resizer-converter/">Image Resizer &amp; Converter</a></li>
+<li id="menu-item-644" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-644"><a href="https://4kmobilewallpapers.com/wallpaper-effect-tool/">Wallpaper Effect Tool</a></li>
+<li id="menu-item-674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-674"><a href="https://4kmobilewallpapers.com/gradient-wallpaper-generator/">Gradient Wallpaper Generator</a></li>
+</ul></nav></div></div><div data-column="widget-area-2"><div class="ct-widget is-layout-flow widget_nav_menu" id="nav_menu-7"><h3 class="widget-title">Quick Links</h3><nav class="menu-quick-links-container" aria-label="Quick Links"><ul id="menu-quick-links" class="widget-menu"><li id="menu-item-704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-704"><a href="https://4kmobilewallpapers.com/about-us/">About Us</a></li>
+<li id="menu-item-702" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-702"><a rel="privacy-policy" href="https://4kmobilewallpapers.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-4514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4514"><a href="https://4kmobilewallpapers.com/cookie-policy-eu/">Cookie Policy (EU)</a></li>
+<li id="menu-item-2423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2423"><a href="https://4kmobilewallpapers.com/terms-and-conditions/">Terms and Conditions</a></li>
+<li id="menu-item-701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="https://4kmobilewallpapers.com/disclaimer/">Disclaimer</a></li>
+<li id="menu-item-703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-703"><a href="https://4kmobilewallpapers.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-2532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2532"><a href="https://4kmobilewallpapers.com/dmca/">DMCA Copyright Policy</a></li>
+</ul></nav></div></div><div data-column="widget-area-5"><div class="ct-widget is-layout-flow widget_nav_menu" id="nav_menu-9"><h3 class="widget-title">Trends</h3><nav class="menu-trends-container" aria-label="Trends"><ul id="menu-trends" class="widget-menu"><li id="menu-item-4188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4188"><a href="https://4kmobilewallpapers.com/top-10-4k-car-wallpapers/">Top 10 4K Car Wallpapers</a></li>
+<li id="menu-item-4128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4128"><a href="https://4kmobilewallpapers.com/top-5-dark-wallpaper-4k-black-wallpaper/">Top 5 Dark Wallpaper &#8211; 4k Black Wallpaper</a></li>
+<li id="menu-item-2987" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2987"><a href="https://4kmobilewallpapers.com/top-10-amoled-wallpapers/">Top 10 AMOLED Wallpapers</a></li>
+<li id="menu-item-2994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2994"><a href="https://4kmobilewallpapers.com/top-5-best-4k-iphone-wallpapers/">5 Best 4K iPhone Wallpapers</a></li>
+<li id="menu-item-4070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4070"><a href="https://4kmobilewallpapers.com/top-5-ios-depth-effect-wallpapers/">Top 5 iOS Depth Effect Wallpapers</a></li>
+<li id="menu-item-4797" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4797"><a href="https://4kmobilewallpapers.com/top-10-dark-4k-wallpapers-for-pc/">Top 10 Dark 4K Wallpapers for PC</a></li>
+</ul></nav></div></div></div></div><div data-row="bottom"><div class="ct-container-fluid" data-columns-divider="md"><div data-column="copyright">
+<div
+	class="ct-footer-copyright"
+	data-id="copyright">
+
+	<p>Copyright © 2026 - <strong>4kmobilewallpapers.com</strong>. All rights reserved.</p></div>
+</div><div data-column="socials">
+<div
+	class="ct-footer-socials"
+	data-id="socials">
+
+	
+		<div class="ct-social-box" data-color="official" data-icon-size="custom" data-icons-type="simple" >
+			
+			
+							
+				<a href="https://pin.it/2cyjdRqFB" data-network="pinterest" aria-label="Pinterest" style="--official-color: #ea575a" target="_blank" rel="noopener noreferrer">
+					<span class="ct-icon-container">
+					<svg
+					width="20px"
+					height="20px"
+					viewBox="0 0 20 20"
+					aria-hidden="true">
+						<path d="M10,0C4.5,0,0,4.5,0,10c0,4.1,2.5,7.6,6,9.2c0-0.7,0-1.5,0.2-2.3c0.2-0.8,1.3-5.4,1.3-5.4s-0.3-0.6-0.3-1.6c0-1.5,0.9-2.6,1.9-2.6c0.9,0,1.3,0.7,1.3,1.5c0,0.9-0.6,2.3-0.9,3.5c-0.3,1.1,0.5,1.9,1.6,1.9c1.9,0,3.2-2.4,3.2-5.3c0-2.2-1.5-3.8-4.2-3.8c-3,0-4.9,2.3-4.9,4.8c0,0.9,0.3,1.5,0.7,2C6,12,6.1,12.1,6,12.4c0,0.2-0.2,0.6-0.2,0.8c-0.1,0.3-0.3,0.3-0.5,0.3c-1.4-0.6-2-2.1-2-3.8c0-2.8,2.4-6.2,7.1-6.2c3.8,0,6.3,2.8,6.3,5.7c0,3.9-2.2,6.9-5.4,6.9c-1.1,0-2.1-0.6-2.4-1.2c0,0-0.6,2.3-0.7,2.7c-0.2,0.8-0.6,1.5-1,2.1C8.1,19.9,9,20,10,20c5.5,0,10-4.5,10-10C20,4.5,15.5,0,10,0z"/>
+					</svg>
+				</span>				</a>
+							
+				<a href="https://www.facebook.com/share/174nGudG3r/" data-network="facebook" aria-label="Facebook" style="--official-color: #557dbc" target="_blank" rel="noopener noreferrer">
+					<span class="ct-icon-container">
+					<svg
+					width="20px"
+					height="20px"
+					viewBox="0 0 20 20"
+					aria-hidden="true">
+						<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"/>
+					</svg>
+				</span>				</a>
+			
+			
+					</div>
+
+	</div>
+
+</div></div></div></footer></div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/blocksy/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+<!-- Consent Management powered by Complianz | GDPR/CCPA Cookie Consent https://wordpress.org/plugins/complianz-gdpr -->
+<div id="cmplz-cookiebanner-container"><div id="cmplz-cookiebanner-1-optin" class="cmplz-cookiebanner cmplz-hidden banner-1 banner-a optin cmplz-bottom-right cmplz-categories-type-view-preferences" aria-modal="true" data-nosnippet="true" role="dialog" aria-live="polite" aria-labelledby="cmplz-header-1-optin" aria-describedby="cmplz-message-1-optin">
+	<div class="cmplz-header">
+		<div class="cmplz-logo"></div>
+		<div class="cmplz-title" id="cmplz-header-1-optin">Manage Consent</div>
+		<div class="cmplz-close" tabindex="0" role="button" aria-label="Close dialog">
+			<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+		</div>
+	</div>
+
+	<div class="cmplz-divider cmplz-divider-header"></div>
+	<div class="cmplz-body">
+		<div class="cmplz-message" id="cmplz-message-1-optin">To provide the best experiences, we use technologies like cookies to store and/or access device information. Consenting to these technologies will allow us to process data such as browsing behavior or unique IDs on this site. Not consenting or withdrawing consent, may adversely affect certain features and functions.</div>
+		<!-- categories start -->
+		<div class="cmplz-categories">
+			<div class="cmplz-category cmplz-functional">
+				<div class="cmplz-category-header">
+					<span class="cmplz-category-title" id="cmplz-title-functional-1-optin">Functional</span>
+					<span class='cmplz-always-active'>
+						<span class="cmplz-banner-checkbox">
+							<input type="checkbox"
+									id="cmplz-functional-optin"
+									data-category="cmplz_functional"
+									class="cmplz-consent-checkbox cmplz-functional"
+									size="40"
+									value="1"/>
+							<label class="cmplz-label" for="cmplz-functional-optin"><span class="screen-reader-text">Functional</span></label>
+						</span>
+						Always active					</span>
+					<button class="cmplz-category-toggle"
+							aria-expanded="false"
+							aria-controls="cmplz-desc-functional-1-optin"
+							aria-labelledby="cmplz-title-functional-1-optin">
+						<span class="cmplz-icon cmplz-open">
+							<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+						</span>
+					</button>
+				</div>
+				<div class="cmplz-description" id="cmplz-desc-functional-1-optin" hidden>
+					<span class="cmplz-description-functional">The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.</span>
+				</div>
+			</div>
+
+			<div class="cmplz-category cmplz-preferences">
+				<div class="cmplz-category-header">
+					<span class="cmplz-category-title" id="cmplz-title-preferences-1-optin">Preferences</span>
+					<span class="cmplz-banner-checkbox">
+						<input type="checkbox"
+								id="cmplz-preferences-optin"
+								data-category="cmplz_preferences"
+								class="cmplz-consent-checkbox cmplz-preferences"
+								size="40"
+								value="1"/>
+						<label class="cmplz-label" for="cmplz-preferences-optin"><span class="screen-reader-text">Preferences</span></label>
+					</span>
+					<button class="cmplz-category-toggle"
+							aria-expanded="false"
+							aria-controls="cmplz-desc-preferences-1-optin"
+							aria-labelledby="cmplz-title-preferences-1-optin">
+						<span class="cmplz-icon cmplz-open">
+							<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+						</span>
+					</button>
+				</div>
+				<div class="cmplz-description" id="cmplz-desc-preferences-1-optin" hidden>
+					<span class="cmplz-description-preferences">The technical storage or access is necessary for the legitimate purpose of storing preferences that are not requested by the subscriber or user.</span>
+				</div>
+			</div>
+
+			<div class="cmplz-category cmplz-statistics">
+				<div class="cmplz-category-header">
+					<span class="cmplz-category-title" id="cmplz-title-statistics-1-optin">Statistics</span>
+					<span class="cmplz-banner-checkbox">
+						<input type="checkbox"
+								id="cmplz-statistics-optin"
+								data-category="cmplz_statistics"
+								class="cmplz-consent-checkbox cmplz-statistics"
+								size="40"
+								value="1"/>
+						<label class="cmplz-label" for="cmplz-statistics-optin"><span class="screen-reader-text">Statistics</span></label>
+					</span>
+					<button class="cmplz-category-toggle"
+							aria-expanded="false"
+							aria-controls="cmplz-desc-statistics-1-optin"
+							aria-labelledby="cmplz-title-statistics-1-optin">
+						<span class="cmplz-icon cmplz-open">
+							<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+						</span>
+					</button>
+				</div>
+				<div class="cmplz-description" id="cmplz-desc-statistics-1-optin" hidden>
+					<span class="cmplz-description-statistics">The technical storage or access that is used exclusively for statistical purposes.</span>
+					<span class="cmplz-description-statistics-anonymous">The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.</span>
+				</div>
+			</div>
+
+			<div class="cmplz-category cmplz-marketing">
+				<div class="cmplz-category-header">
+					<span class="cmplz-category-title" id="cmplz-title-marketing-1-optin">Marketing</span>
+					<span class="cmplz-banner-checkbox">
+						<input type="checkbox"
+								id="cmplz-marketing-optin"
+								data-category="cmplz_marketing"
+								class="cmplz-consent-checkbox cmplz-marketing"
+								size="40"
+								value="1"/>
+						<label class="cmplz-label" for="cmplz-marketing-optin"><span class="screen-reader-text">Marketing</span></label>
+					</span>
+					<button class="cmplz-category-toggle"
+							aria-expanded="false"
+							aria-controls="cmplz-desc-marketing-1-optin"
+							aria-labelledby="cmplz-title-marketing-1-optin">
+						<span class="cmplz-icon cmplz-open">
+							<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+						</span>
+					</button>
+				</div>
+				<div class="cmplz-description" id="cmplz-desc-marketing-1-optin" hidden>
+					<span class="cmplz-description-marketing">The technical storage or access is required to create user profiles to send advertising, or to track the user on a website or across several websites for similar marketing purposes.</span>
+				</div>
+			</div>
+		</div><!-- categories end -->
+			</div>
+
+	<div class="cmplz-links cmplz-information">
+		<ul>
+			<li><a class="cmplz-link cmplz-manage-options cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">Manage options</a></li>
+			<li><a class="cmplz-link cmplz-manage-third-parties cookie-statement" href="#" data-relative_url="#cmplz-cookies-overview">Manage services</a></li>
+			<li><a class="cmplz-link cmplz-manage-vendors tcf cookie-statement" href="#" data-relative_url="#cmplz-tcf-wrapper">Manage {vendor_count} vendors</a></li>
+			<li><a class="cmplz-link cmplz-external cmplz-read-more-purposes tcf" target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/tcf/purposes/" aria-label="Read more about TCF purposes on Cookie Database">Read more about these purposes</a></li>
+		</ul>
+			</div>
+
+	<div class="cmplz-divider cmplz-footer"></div>
+
+	<div class="cmplz-buttons">
+		<button class="cmplz-btn cmplz-accept">Accept</button>
+		<button class="cmplz-btn cmplz-deny">Deny</button>
+		<button class="cmplz-btn cmplz-view-preferences">View preferences</button>
+		<button class="cmplz-btn cmplz-save-preferences">Save preferences</button>
+		<a class="cmplz-btn cmplz-manage-options tcf cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">View preferences</a>
+			</div>
+
+
+	<div class="cmplz-documents cmplz-links">
+		<ul>
+			<li><a class="cmplz-link cookie-statement" href="#" data-relative_url="">{title}</a></li>
+			<li><a class="cmplz-link privacy-statement" href="#" data-relative_url="">{title}</a></li>
+			<li><a class="cmplz-link impressum" href="#" data-relative_url="">{title}</a></li>
+		</ul>
+			</div>
+</div>
+</div>
+					<div id="cmplz-manage-consent" data-nosnippet="true"><button class="cmplz-btn cmplz-hidden cmplz-manage-consent manage-consent-1" aria-haspopup="dialog" aria-controls="cmplz-cookiebanner-1-optin">Manage consent</button>
+
+</div><div class="ct-drawer-canvas" data-location="end"><div class="ct-drawer-inner">
+	<a href="#main-container" class="ct-back-to-top ct-hidden-sm"
+		data-shape="square"
+		data-alignment="right"
+		title="Go to top" aria-label="Go to top" hidden>
+
+		<svg class="ct-icon" width="15" height="15" viewBox="0 0 20 20"><path d="M10,0L9.4,0.6L0.8,9.1l1.2,1.2l7.1-7.1V20h1.7V3.3l7.1,7.1l1.2-1.2l-8.5-8.5L10,0z"/></svg>	</a>
+
+	</div></div><script>
+  // Disable Right Click
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  });
+
+  // Optional: Disable key shortcuts like F12, Ctrl+U (Inspect Element & View Source)
+  document.onkeydown = function(e) {
+      if(event.keyCode == 123) { // F12
+          return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
+          return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Ctrl+Shift+C
+          return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
+          return false;
+      }
+      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
+          return false;
+      }
+  }
+</script><script id="eio-lazy-load-js-before">
+var eio_lazy_vars = {"bg_min_dpr":1.1,"exactdn_domain":"","safe_domains":["4kmobilewallpapers.com","www.4kmobilewallpapers.com"],"skip_autoscale":0,"threshold":0,"use_dpr":1};
+//# sourceURL=eio-lazy-load-js-before
+</script>
+<script async data-wp-strategy="async" id="eio-lazy-load-js" src="https://4kmobilewallpapers.com/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=876"></script>
+<script id="wp-hooks-js" src="https://4kmobilewallpapers.com/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://4kmobilewallpapers.com/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="swv-js" src="https://4kmobilewallpapers.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.7"></script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/4kmobilewallpapers.com\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script id="contact-form-7-js" src="https://4kmobilewallpapers.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.7"></script>
+<script id="superpwa-register-sw-js-extra">
+var superpwa_sw = {"url":"/superpwa-sw.js?2.2.41","disable_addtohome":"0","enableOnDesktop":"","offline_form_addon_active":"","ajax_url":"https://4kmobilewallpapers.com/wp-admin/admin-ajax.php","offline_message":"1","offline_message_txt":"You are currently offline.","online_message_txt":"You're back online . \u003Ca href=\"javascript:location.reload()\"\u003Erefresh\u003C/a\u003E","manifest_name":"superpwa-manifest.json","script_debug":""};
+//# sourceURL=superpwa-register-sw-js-extra
+</script>
+<script id="superpwa-register-sw-js" src="https://4kmobilewallpapers.com/wp-content/plugins/super-progressive-web-apps/public/js/register-sw.js?ver=2.2.47"></script>
+<script id="ct-scripts-js-extra">
+var ct_localizations = {"ajax_url":"https://4kmobilewallpapers.com/wp-admin/admin-ajax.php","public_url":"https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/","rest_url":"https://4kmobilewallpapers.com/wp-json/","search_url":"https://4kmobilewallpapers.com/search/QUERY_STRING/","show_more_text":"Show more","more_text":"More","search_live_results":"Search results","search_live_no_results":"No results","search_live_results_closed":"Search results closed.","search_live_no_result":"No results","search_live_one_result":"You got %s result. Please press Tab to select it.","search_live_many_results":"You got %s results. Please press Tab to select one.","search_live_stock_status_texts":{"instock":"In stock","outofstock":"Out of stock"},"clipboard_copied":"Copied!","clipboard_failed":"Failed to Copy","expand_submenu":"Expand dropdown menu","collapse_submenu":"Collapse dropdown menu","dynamic_js_chunks":[{"id":"blocksy_sticky_header","selector":"header [data-sticky]","url":"https://4kmobilewallpapers.com/wp-content/plugins/blocksy-companion/static/bundle/sticky.js?ver=2.1.53","version":"2.1.53"}],"dynamic_styles":{"lazy_load":"https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/non-critical-styles.min.css?ver=2.1.53","search_lazy":"https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/non-critical-search-styles.min.css?ver=2.1.53","back_to_top":"https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/back-to-top.min.css?ver=2.1.53"},"dynamic_styles_selectors":[{"selector":".ct-header-cart, #woo-cart-panel","url":"https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/cart-header-element-lazy.min.css?ver=2.1.53"},{"selector":".flexy","url":"https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/flexy.min.css?ver=2.1.53"},{"selector":".ct-pagination","url":"https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/pagination.min.css?ver=2.1.53"},{"selector":"#account-modal","url":"https://4kmobilewallpapers.com/wp-content/plugins/blocksy-companion/static/bundle/header-account-modal-lazy.min.css?ver=2.1.53"},{"selector":".ct-header-account","url":"https://4kmobilewallpapers.com/wp-content/plugins/blocksy-companion/static/bundle/header-account-dropdown-lazy.min.css?ver=2.1.53"}],"login_generic_error_msg":"An unexpected error occurred. Please try again later."};
+//# sourceURL=ct-scripts-js-extra
+</script>
+<script id="ct-scripts-js" src="https://4kmobilewallpapers.com/wp-content/themes/blocksy/static/bundle/main.js?ver=2.1.53"></script>
+<script id="cmplz-cookiebanner-js-extra">
+var complianz = {"prefix":"cmplz_","debug":"","user_banner_id":"1","set_cookies":[],"block_ajax_content":"","banner_version":"25","version":"7.5.3.1","store_consent":"","do_not_track_enabled":"1","consenttype":"optin","region":"eu","geoip":"","dismiss_timeout":"","disable_cookiebanner":"","soft_cookiewall":"","dismiss_on_scroll":"","cookie_expiry":"365","url":"https://4kmobilewallpapers.com/wp-json/complianz/v1/","locale":"lang=en&locale=en_US","set_cookies_on_root":"","cookie_domain":"","current_policy_id":"37","cookie_path":"/","categories":{"statistics":"statistics","marketing":"marketing"},"tcf_active":"","placeholdertext":"Click to accept {category} cookies and enable this content","css_file":"https://4kmobilewallpapers.com/wp-content/uploads/complianz/css/banner-{banner_id}-{type}.css?v=25","page_links":{"eu":{"cookie-statement":{"title":"Cookie Policy ","url":"https://4kmobilewallpapers.com/cookie-policy-eu/"},"privacy-statement":{"title":"Privacy Policy","url":"https://4kmobilewallpapers.com/privacy-policy/"}}},"tm_categories":"","forceEnableStats":"1","preview":"","clean_cookies":"","aria_label":"Click to accept {category} cookies and enable this content","iapi_nav":"fallback"};
+//# sourceURL=cmplz-cookiebanner-js-extra
+</script>
+<script defer id="cmplz-cookiebanner-js" src="https://4kmobilewallpapers.com/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1787224459"></script>
+
+</body>
+</html>
+
+
+<!-- Page cached by LiteSpeed Cache 7.9 on 2026-08-31 04:30:23 -->
