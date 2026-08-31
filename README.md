@@ -74,21 +74,17 @@ omarchy theme set coppernight
 <table>
   <tr>
     <td width="50%">
-      <h3 align="center">🖥️ Desktop & Windows</h3>
       <img width="100%" alt="Desktop Preview 1" src="https://github.com/user-attachments/assets/1123edd2-2feb-484f-ad2f-b2e7cad416d0" style="border-radius: 8px;" />
     </td>
     <td width="50%">
-      <h3 align="center">⚡ Terminal & Workflow</h3>
       <img width="100%" alt="Desktop Preview 2" src="https://github.com/user-attachments/assets/a2be3a0d-90ca-4d62-b8cf-a878875a19b5" style="border-radius: 8px;" />
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <h3 align="center">📊 Diagnostic & Monitoring</h3>
       <img width="100%" alt="Desktop Preview 3" src="https://github.com/user-attachments/assets/46fce314-c79d-43a7-98d4-0ccb6785b579" style="border-radius: 8px;" />
     </td>
     <td width="50%">
-      <h3 align="center">🌙 Clean Workspace</h3>
       <img width="100%" alt="Desktop Preview 4" src="https://github.com/user-attachments/assets/88f07ade-8802-4f77-953f-1ffb7df9d39b" style="border-radius: 8px;" />
     </td>
   </tr>
