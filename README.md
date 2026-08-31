@@ -29,6 +29,32 @@
 
 ---
 
+## 📸 Preview
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/1123edd2-2feb-484f-ad2f-b2e7cad416d0" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a2be3a0d-90ca-4d62-b8cf-a878875a19b5" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/46fce314-c79d-43a7-98d4-0ccb6785b579" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/88f07ade-8802-4f77-953f-1ffb7df9d39b" />
+
+---
+
+## 🖼️ Wallpapers
+
+<img width="3840" height="2160" alt="Wallpaper 1" src="https://github.com/user-attachments/assets/d23c6966-20de-4f4c-8fa7-d76956f056cb" />
+
+<img width="3840" height="2160" alt="Wallpaper 2" src="https://github.com/user-attachments/assets/bcfeda8f-b740-4a28-afa1-1735278ef2c7" />
+
+<img width="3000" height="1688" alt="Wallpaper 3" src="https://github.com/user-attachments/assets/bdba9ff4-24fa-427c-8675-ed9c5a8eb90f" />
+
+<img width="3840" height="2160" alt="Wallpaper 4" src="https://github.com/user-attachments/assets/11c136f1-c97e-4122-bba5-f7ba7fbd6da7" />
+
+<img width="3840" height="2160" alt="Wallpaper 5" src="https://github.com/user-attachments/assets/1905cb46-aec0-425f-b335-6038b6b49e90" />
+
+---
+
 ## ⚡ Install
 
 ```bash
