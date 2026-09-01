@@ -44,7 +44,7 @@
 Install and apply the theme with one command in **Omarchy**:
 
 ```bash
-omarchy theme install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git
+omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git
 ```
 
 To switch to Copper Night anytime:
