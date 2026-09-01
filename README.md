@@ -44,7 +44,7 @@
 Install Copper Night directly from GitHub in one command. Omarchy handles the rest — no manual copying required.
 
 ```bash
-omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git
+omarchy-theme-clone-set https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme.git
 ```
 
 Switch back to Copper Night at any time:
