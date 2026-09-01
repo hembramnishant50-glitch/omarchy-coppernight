@@ -155,13 +155,19 @@ omarchy theme set coppernight
 
 ## 🤝 Contributing
 
-Contributions, bug reports, and new website userstyles are always welcome!
+> Love Omarchy? Love Copper Night? Contributions make it shine brighter ✨
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some NewAwesomeFeature'`)
-4. Push to the branch (`git push origin feature/NewAwesomeFeature`)
-5. Open a Pull Request
+We welcome **bug reports**, **new website userstyles**, **wallpapers**, and **UI polish** — every idea counts!
+
+### How to Contribute
+
+1. 🍴 **Fork** this repository
+2. 🌿 Create your branch — `git checkout -b feature/my-awesome-tweak`
+3. 💾 Commit — `git commit -m 'feat: add my awesome tweak'`
+4. 🚀 Push — `git push origin feature/my-awesome-tweak`
+5. 🔃 Open a **Pull Request** — describe your change with a preview if possible
+
+Found a bug? Open an [Issue](https://github.com/hembramnishant50-glitch/omarchy-coppernight-theme/issues) — we reply fast 💬
 
 ---
 
@@ -169,9 +175,10 @@ Contributions, bug reports, and new website userstyles are always welcome!
 
 <div align="center">
 
-### 💖 Crafted with Passion by [Nishant](https://github.com/hembramnishant50-glitch)
+### 💖 Crafted with Passion by [Nishant](https://github.com/hembramnishant50-glitch) — with Love for [Omarchy](https://omarchy.org/) 🥰
 
-*"Night falls on Tokyo, lit by an eternal copper spark."*
+*“Night falls on Tokyo, lit by an eternal copper spark — made for the Omarchy family, by the Omarchy family.”*  
+*Thank you to the Omarchy community for the inspiration, the tools, and the endless rice love 🌸*
 
 <br/>
 
