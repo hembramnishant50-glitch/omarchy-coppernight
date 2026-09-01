@@ -65,12 +65,27 @@ messagedialog button {
   color: @foreground;
   border: 1px solid @bright_black;
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 14px;
 }
 
 messagedialog button:hover {
   background-color: @blue;
   color: @background;
+}
+
+headerbar {
+  border-radius: 14px 14px 0 0;
+  background-color: @background alpha(0.8);
+}
+
+window {
+  border-radius: 14px;
+  background-color: @background;
+}
+
+card {
+  border-radius: 14px;
+  background-color: @background alpha(0.3);
 }
 
 toast {
