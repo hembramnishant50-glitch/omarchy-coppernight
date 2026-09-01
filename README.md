@@ -27,13 +27,13 @@
 
 <br/>
 
-<a href="#-preview">
+<a href="#-theme-files">
   <img width="100%" alt="Copper Night Hero Preview" src="https://github.com/user-attachments/assets/1123edd2-2feb-484f-ad2f-b2e7cad416d0" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);" />
 </a>
 
 <br/>
 
-[✨ Features](#-features) • [⚡ Installation](#-installation) • [📸 Previews](#-preview) • [🖼️ Wallpapers](#-wallpapers) • [🎨 Palette](#-color-palette) • [🌐 Web Styles](#-web-userstyles) • [📁 Structure](#-theme-structure)
+[✨ Features](#-features) • [⚡ Installation](#-installation) • [📁 Theme Files](#-theme-files) • [🎨 Color Palette](#-color-palette) • [🌐 Web Styles](#-web-userstyles) • [💻 Terminals](#-terminals) • [📦 Editors & Shell](#-editors--shell) • [🚀 Launchers & UI](#-launchers--ui) • [📬 Notifications & OSD](#-notifications--osd) • [🔒 Lock Screen](#-lock-screen)
 
 </div>
 
@@ -61,73 +61,54 @@ omarchy theme set coppernight
 - 🌅 **Warm Copper-Orange Accents** (`#fab387`) for borders, focused windows, and primary highlights.
 - 🎨 **Pastel Accent Hierarchy** featuring Lite Green (`#a6e3a1`), Lite Pink (`#f5c2e7`), Sky Blue (`#89b4fa`), and Mauve (`#cba6f7`).
 - 🪟 **Omarchy Quattro Hyprland Settings** with 14px rounded corners, dual-layer glow borders, active blur (size 6, passes 3), and custom bezier animations (`overshot`, `smoothOut`).
-- 💻 **Cross-Terminal Theming** for Alacritty, Ghostty, Foot, and Kitty.
+- 💻 **Cross-Terminal Theming** for Alacritty, Ghostty, Foot, and Kitty (all cleaned of hardcoded Catppuccin colors).
 - 🌐 **136+ Universal Web Userstyles** via [Stylus.json](Stylus.json) covering YouTube, GitHub, Crunchyroll, CareerWill, Claude, ChatGPT, and more.
 - 📊 **Fully-Themed Apps**: Neovim, VSCode, BTOP, GTK 3/4, Chromium flags, and Icon set.
+- 🎵 **Discord Vencord Theme** with Coppernight palette.
+- 📊 **5 Waybar Variants** with rounded corners.
+- 📊 **Glassmorphism Lock Screen** with live clock, quotes, and media controls.
 
 ---
 
-## 📸 Preview
+## 📁 Theme Files
 
 <div align="center">
 
-<table>
-  <tr>
-    <td width="50%">
-      <img width="100%" alt="Desktop Preview 1" src="https://github.com/user-attachments/assets/1123edd2-2feb-484f-ad2f-b2e7cad416d0" style="border-radius: 8px;" />
-    </td>
-    <td width="50%">
-      <img width="100%" alt="Desktop Preview 2" src="https://github.com/user-attachments/assets/a2be3a0d-90ca-4d62-b8cf-a878875a19b5" style="border-radius: 8px;" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img width="100%" alt="Desktop Preview 3" src="https://github.com/user-attachments/assets/46fce314-c79d-43a7-98d4-0ccb6785b579" style="border-radius: 8px;" />
-    </td>
-    <td width="50%">
-      <img width="100%" alt="Desktop Preview 4" src="https://github.com/user-attachments/assets/88f07ade-8802-4f77-953f-1ffb7df9d39b" style="border-radius: 8px;" />
-    </td>
-  </tr>
-</table>
+| File | Size | Description |
+|------|------|-----------|
+| `colors.toml` | 685B | Master palette (background `#11111b`, accent `#fab387`) |
+| `hyprland.lua` | 2.2KB | Hyprland WM config (rounding=14, blur, shadows, animations) |
+| `gtk.css` | 2.7KB | GTK theming with `border-radius: 14px` |
+| `Stylus.json` | 2.7MB | 136+ web userstyles for Chrome/Firefox |
+| `youtube-coppernight.user.less` | 19KB | YouTube userstyle |
+| `btop.theme` | 1.5KB | BTOP diagnostic monitor colors |
+| `neovim.lua` | 156B | Neovim tokyonight colorscheme |
+| `vscode.json` | 78B | VSCode theme linkage |
+| `alacritty.toml` | 809B | Terminal config (Catppuccin removed) |
+| `kitty.conf` | 468B | Terminal config (Catppuccin removed) |
+| `ghostty.conf` | 467B | Terminal config (Catppuccin removed) |
+| `foot.ini` | 387B | Terminal config (Catppuccin removed) |
+| `starship.toml` | 1.1KB | Prompt theme |
+| `config.fish` | 1.5KB | Fish shell config |
+| `helix.toml` | 4.7KB | Helix editor theme |
+| `fastfetch.jsonc` | 3.5KB | Fastfetch system info |
+| `cava_theme` | 278B | CAVA visualizer config |
+| `vencord.theme.css` | 223B | Discord Vencord theme |
+| `ghostty_override.conf` | 1.3KB | Ghostty config override |
 
-</div>
+### Wallpapers (5 images)
+| Image | Resolution |
+|-------|-----------|
+| `pagoda-dusk.jpg` | 3840×2160 |
+| `tokyo-skyline.jpg` | 3840×2160 |
+| `autumn-horizon.jpg` | 3000×1688 |
+| `amber-twilight.jpg` | 3840×2160 |
+| `ember-peak.jpg` | 3840×2160 |
 
----
-
-## 🖼️ Wallpapers
-
-<div align="center">
-
-A handpicked collection of high-resolution pixel art, nature, and synth landscape wallpapers crafted to complement the Copper Night palette.
-
-<table>
-  <tr>
-    <td width="50%">
-      <img width="100%" alt="Pagoda Dusk" src="https://github.com/user-attachments/assets/d23c6966-20de-4f4c-8fa7-d76956f056cb" style="border-radius: 8px;" />
-      <p align="center"><em>⛩️ Pagoda Dusk</em></p>
-    </td>
-    <td width="50%">
-      <img width="100%" alt="Tokyo Skyline" src="https://github.com/user-attachments/assets/bcfeda8f-b740-4a28-afa1-1735278ef2c7" style="border-radius: 8px;" />
-      <p align="center"><em>🌆 Tokyo Skyline</em></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img width="100%" alt="Autumn Horizon" src="https://github.com/user-attachments/assets/bdba9ff4-24fa-427c-8675-ed9c5a8eb90f" style="border-radius: 8px;" />
-      <p align="center"><em>🍂 Autumn Horizon</em></p>
-    </td>
-    <td width="50%">
-      <img width="100%" alt="Amber Twilight" src="https://github.com/user-attachments/assets/11c136f1-c97e-4122-bba5-f7ba7fbd6da7" style="border-radius: 8px;" />
-      <p align="center"><em>🌄 Amber Twilight</em></p>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img width="75%" alt="Ember Peak" src="https://github.com/user-attachments/assets/1905cb46-aec0-425f-b335-6038b6b49e90" style="border-radius: 8px;" />
-      <p align="center"><em>⛰️ Ember Peak</em></p>
-    </td>
-  </tr>
-</table>
+### Documentation
+| File | Description |
+|------|-----------|
+| `README.md` | Full theme documentation (features, palette, install, structure) |
 
 </div>
 
@@ -179,26 +160,52 @@ Copper Night includes complete browser extension styling for **136+ popular web 
 
 ---
 
+## 💻 Terminals
+
+All terminal configs have been cleaned of hardcoded Catppuccin colors and now use the Coppernight palette:
+
+| Terminal | Config File | Status |
+|----------|-------------|--------|
+| **Alacritty** | `alacritty.toml` | ✅ Cleaned |
+| **Kitty** | `kitty.conf` | ✅ Cleaned |
+| **Ghostty** | `ghostty.conf` | ✅ Cleaned |
+| **Foot** | `foot.ini` | ✅ Cleaned |
+
+**Apply with:** `omarchy restart terminal`
+
+---
+
 ## 📁 Theme Structure
 
 ```
 ~/.config/omarchy/themes/coppernight/
-├── colors.toml                 # Master palette definition
-├── hyprland.lua                # Hyprland layout, animations & rounding
-├── btop.theme                  # BTOP diagnostic monitor colors
-├── gtk.css                     # GTK 3 / GTK 4 interface stylings
-├── chromium.theme              # Chromium / Chrome dark flags
-├── icons.theme                 # Icon pack configuration
-├── neovim.lua                  # Neovim TokyoNight / Copper colors
-├── vscode.json                 # VSCode theme linkage
-├── Stylus.json                 # 136+ browser userstyles backup
-├── youtube-coppernight.user.less# Standalone YouTube Less theme
-└── backgrounds/                # High-resolution themed wallpapers
-    ├── pagoda-dusk.jpg
-    ├── tokyo-skyline.jpg
-    ├── autumn-horizon.jpg
-    ├── amber-twilight.jpg
-    └── ember-peak.jpg
+├── colors.toml             # Master palette definition
+├── hyprland.lua           # Hyprland WM layout, animations & rounding
+├── btop.theme             # BTOP diagnostic monitor colors
+├── gtk.css                # GTK 3 / GTK 4 interface stylings
+├── chromium.theme         # Chromium / Chrome dark flags
+├── icons.theme            # Icon pack configuration
+├── neovim.lua             # Neovim TokyoNight / Copper colors
+├── vscode.json            # VSCode theme linkage
+├── Stylus.json            # 136+ browser userstyles backup
+├── youtube-coppernight.user.less  # Standalone YouTube Less theme
+├── vite.css               # (placeholder for future use)
+├── backgrounds/           # High-resolution themed wallpapers (5 images)
+├── README.md              # Full theme documentation
+├── alacritty.toml         # Terminal config
+├── kitty.conf             # Terminal config
+├── ghostty.conf           # Terminal config
+├── foot.ini               # Terminal config
+├── neovim.lua             # Editor config
+├── vscode.json            # VSCode theme linkage
+├── starship.toml          # Prompt theme
+├── config.fish            # Fish shell config
+├── helix.toml             # Editor config
+├── fastfetch.jsonc        # Fastfetch system info
+├── cava_theme             # CAVA visualizer config
+├── vencord.theme.css      # Discord Vencord theme
+├── ghostty_override.conf  # Ghostty config override
+└── walker.css             # Walker launcher theming
 ```
 
 ---
@@ -217,9 +224,9 @@ Copper Night includes complete browser extension styling for **136+ popular web 
 Contributions, bug reports, and new website userstyles are always welcome!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/NewAwesomeFeature`)
-3. Commit your Changes (`git commit -m 'Add some NewAwesomeFeature'`)
-4. Push to the Branch (`git push origin feature/NewAwesomeFeature`)
+2. Create your Feature Branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some NewAwesomeFeature'`)
+4. Push to the branch (`git push origin feature/NewAwesomeFeature`)
 5. Open a Pull Request
 
 ---
@@ -234,7 +241,7 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more informa
 
 ### 💖 Crafted with Passion by [Nishant](https://github.com/hembramnishant50-glitch)
 
-*“Night falls on Tokyo, lit by an eternal copper spark.”*
+*"Night falls on Tokyo, lit by an eternal copper spark."*
 
 <br/>
 
