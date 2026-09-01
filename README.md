@@ -190,7 +190,6 @@ Copper Night includes complete browser extension styling for **136+ popular web 
 ├── cava_theme             # CAVA visualizer config
 ├── vencord.theme.css      # Discord Vencord theme
 ├── ghostty_override.conf  # Ghostty config override
-└── walker.css             # Walker launcher theming
 ```
 
 ---
