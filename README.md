@@ -57,14 +57,20 @@ omarchy theme set coppernight
 
 ## ✨ Features
 
-- 🌑 **Ultra-Deep Indigo Canvas** (`#11111b`) with smooth contrast and eye-comfort tuning.
-- 🌅 **Warm Copper-Orange Accents** (`#fab387`) for borders, focused windows, and primary highlights.
-- 🎨 **Pastel Accent Hierarchy** featuring Lite Green (`#a6e3a1`), Lite Pink (`#f5c2e7`), Sky Blue (`#89b4fa`), and Mauve (`#cba6f7`).
-- 🪟 **Omarchy Quattro Hyprland Settings** with 14px rounded corners, dual-layer glow borders, active blur (size 6, passes 3), and custom bezier animations (`overshot`, `smoothOut`).
-- 💻 **Cross-Terminal Theming** for Alacritty, Ghostty, Foot, and Kitty (all cleaned of hardcoded Catppuccin colors).
-- 🌐 **136+ Universal Web Userstyles** via [Stylus.json](Stylus.json) covering YouTube, GitHub, Crunchyroll, CareerWill, Claude, ChatGPT, and more.
-- 📊 **Fully-Themed Apps**: Neovim, VSCode, BTOP, GTK 3/4, Chromium flags, and Icon set.
-- 🎵 **Discord Vencord Theme** with Coppernight palette.
+<div align="center">
+
+| | Feature | Details |
+|:---:|---|---|
+| 🌑 | **Ultra-Deep Indigo Canvas** | `background #11111b` — true OLED-friendly base with tuned contrast for long coding sessions |
+| 🌅 | **Copper & Mauve Borders** | Active ` #fab387 ` • Inactive ` #cba6f7 ` — warm copper glow meets soft mauve calm |
+| 🎨 | **Pastel Accent Harmony** | Lite Green `#a6e3a1` • Lite Pink `#f5c2e7` • Sky `#89dceb` • Mauve `#cba6f7` — cohesive hierarchy |
+| 🪟 | **Hyprland — Rounded & Smooth** | `rounding 16px` • `gaps 6/14` • `blur 12/3` • `shadow 30` • Mac-style `popin 85%` • `slidefade` workspaces |
+| 💻 | **Terminals — Unified** | Alacritty • Ghostty • Foot • Kitty — all stripped of Catppuccin, reborn in Coppernight |
+| 🌐 | **Web — 136+ Userstyles** | YouTube, GitHub, Crunchyroll, CareerWill, Claude, ChatGPT & more via `Stylus.json` |
+| 🧩 | **Apps — Fully Themed** | Neovim • VSCode • Helix • BTOP • CAVA • GTK 3/4 • Chromium • Icons • Starship • Fastfetch |
+| 🎵 | **Discord — Vencord** | Custom `vencord.theme.css` in full Coppernight palette |
+
+</div>
 
 ---
 
