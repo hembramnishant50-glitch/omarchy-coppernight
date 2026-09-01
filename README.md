@@ -160,21 +160,6 @@ Copper Night includes complete browser extension styling for **136+ popular web 
 
 ---
 
-## 💻 Terminals
-
-All terminal configs have been cleaned of hardcoded Catppuccin colors and now use the Coppernight palette:
-
-| Terminal | Config File | Status |
-|----------|-------------|--------|
-| **Alacritty** | `alacritty.toml` | ✅ Cleaned |
-| **Kitty** | `kitty.conf` | ✅ Cleaned |
-| **Ghostty** | `ghostty.conf` | ✅ Cleaned |
-| **Foot** | `foot.ini` | ✅ Cleaned |
-
-**Apply with:** `omarchy restart terminal`
-
----
-
 ## 📁 Theme Structure
 
 ```
