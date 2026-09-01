@@ -65,8 +65,6 @@ omarchy theme set coppernight
 - 🌐 **136+ Universal Web Userstyles** via [Stylus.json](Stylus.json) covering YouTube, GitHub, Crunchyroll, CareerWill, Claude, ChatGPT, and more.
 - 📊 **Fully-Themed Apps**: Neovim, VSCode, BTOP, GTK 3/4, Chromium flags, and Icon set.
 - 🎵 **Discord Vencord Theme** with Coppernight palette.
-- 📊 **5 Waybar Variants** with rounded corners.
-- 📊 **Glassmorphism Lock Screen** with live clock, quotes, and media controls.
 
 ---
 
@@ -96,20 +94,6 @@ omarchy theme set coppernight
 | `vencord.theme.css` | 223B | Discord Vencord theme |
 | `ghostty_override.conf` | 1.3KB | Ghostty config override |
 
-### Wallpapers (5 images)
-| Image | Resolution |
-|-------|-----------|
-| `pagoda-dusk.jpg` | 3840×2160 |
-| `tokyo-skyline.jpg` | 3840×2160 |
-| `autumn-horizon.jpg` | 3000×1688 |
-| `amber-twilight.jpg` | 3840×2160 |
-| `ember-peak.jpg` | 3840×2160 |
-
-### Documentation
-| File | Description |
-|------|-----------|
-| `README.md` | Full theme documentation (features, palette, install, structure) |
-
 </div>
 
 ---
@@ -132,31 +116,6 @@ omarchy theme set coppernight
 | ![#f38ba8](https://img.shields.io/badge/-%23f38ba8-f38ba8?style=flat-square) | **Red** | `#f38ba8` | Warnings, errors, deletions, critical notices |
 
 </div>
-
----
-
-## 🌐 Web Userstyles
-
-Copper Night includes complete browser extension styling for **136+ popular web applications**:
-
-<div align="center">
-
-| Category | Supported Websites & Web Apps |
-|:---|:---|
-| **🤖 AI & LLM** | ChatGPT • Claude • DeepSeek • Google Gemini • Ollama • Perplexity • Poe |
-| **🎬 Media & Video** | YouTube • Crunchyroll • Invidious • Twitch • Holodex |
-| **💻 Dev & Code** | GitHub • Codeberg • Dev.to • NPM • PyPI • Crates.io • Modrinth • Hoppscotch |
-| **🔍 Search** | Google • DuckDuckGo • Brave Search • Ecosia • Startpage • SearXNG |
-| **📱 Social & Chat** | Instagram • LinkedIn • Mastodon • Twitter/X • Bluesky • Lemmy • Reddit • Discord • WhatsApp |
-| **📚 Education & Docs** | CareerWill • MDN • DevDocs • ArchWiki • Wikipedia • NixOS Manual • Learn X in Y |
-| **📬 Productivity** | Gmail • ProtonMail • Tuta • Migadu • Raindrop • Amplenote |
-
-</div>
-
-### 📥 Import via Stylus Extension:
-1. Install [Stylus Extension](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) (Chrome / Firefox).
-2. Open Stylus Options ➜ Click **Backup** / **Import**.
-3. Select [`Stylus.json`](Stylus.json) from this repository to load all 136+ themes instantly.
 
 ---
 
@@ -194,15 +153,6 @@ Copper Night includes complete browser extension styling for **136+ popular web 
 
 ---
 
-## 🛠️ Tech Stack & Compatibility
-
-- **Compositor**: [Hyprland](https://hyprland.org/) (Wayland)
-- **Desktop Environment**: [Omarchy Quattro (v4.0+)](https://omarchy.org/)
-- **Terminals**: Alacritty, Ghostty, Foot, Kitty
-- **Web Styler**: [Stylus](https://github.com/openstyles/stylus) Less CSS Engine
-
----
-
 ## 🤝 Contributing
 
 Contributions, bug reports, and new website userstyles are always welcome!
@@ -214,10 +164,6 @@ Contributions, bug reports, and new website userstyles are always welcome!
 5. Open a Pull Request
 
 ---
-
-## 📜 License
-
-Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
 
 ---
 
